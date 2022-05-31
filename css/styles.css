@@ -11487,3 +11487,8 @@ header.masthead h1, header.masthead .h1 {
   font-family: "Merriweather", serif;
   font-weight: 700;
 }
+
+footer a:link,  footer a:visited, footer a:active {
+  color: #6c757d;
+  text-decoration: none;
+}
