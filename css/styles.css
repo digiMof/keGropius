@@ -11456,3 +11456,34 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+/*moffolette*/
+.moffolette-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 80px;
+}
+.moffolette {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 3px;
+  border-radius: 10px;
+}
+.polaroidimg {
+  width: 100%;
+  object-fit: cover;
+  height: 13vw;
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+.polartext {
+  text-align: center;
+  padding: 5px 15px;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
