@@ -7378,7 +7378,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 0rem !important;
 }
 
 .mb-auto {
@@ -11487,8 +11487,11 @@ header.masthead h1, header.masthead .h1 {
   font-family: "Merriweather", serif;
   font-weight: 700;
 }
-
+footer {
+  background-color: #f08b59;
+  color: black;
+}
 footer a:link,  footer a:visited, footer a:active {
-  color: #6c757d;
+  color: black;
   text-decoration: none;
 }
