@@ -1,3 +1,5 @@
+// Toggle Competency Questions
+
 function showProT() {
     var bar = document.getElementById('cqbar');
     var labelT = document.getElementById('cqTtxt');
@@ -6,7 +8,7 @@ function showProT() {
     var cqsT = document.getElementById('cqtaut');
     var cqsG = document.getElementById('cqgrop');
     var cqsC = document.getElementById('cqcomp');
-    bar.style.width = "15%";
+    bar.style.width = "25%";
     labelT.style.color = "black";
     labelG.style.color = "grey";
     labelC.style.color = "grey";
@@ -24,7 +26,7 @@ function showProG() {
     var cqsT = document.getElementById('cqtaut');
     var cqsG = document.getElementById('cqgrop');
     var cqsC = document.getElementById('cqcomp');
-    bar.style.width = "50%";
+    bar.style.width = "60%";
     labelT.style.color = "black";
     labelG.style.color = "black";
     labelC.style.color = "grey";
@@ -41,12 +43,26 @@ function showProC() {
     var cqsT = document.getElementById('cqtaut');
     var cqsG = document.getElementById('cqgrop');
     var cqsC = document.getElementById('cqcomp');
-    bar.style.width = "85%";
+    bar.style.width = "100%";
     labelT.style.color = "black";
     labelG.style.color = "black";
     labelC.style.color = "black";
     cqsT.style.display = "none";
     cqsG.style.display = "none";
     cqsC.style.display = "block";
-    
+}
+
+// Toggle Ontology Taut
+function showTauttl() {
+    var ser = document.getElementById("TautTTL");
+    var graph = document.getElementById("TautGraph");
+    ser.style.display = "block";
+    graph.style.display = "none";
+}
+
+function showTautgraph() {
+    var ser = document.getElementById("TautTTL");
+    var graph = document.getElementById("TautGraph");
+    ser.style.display = "none";
+    graph.style.display = "block";
 }

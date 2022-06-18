@@ -11495,31 +11495,3 @@ footer a:link,  footer a:visited, footer a:active {
   color: black;
   text-decoration: none;
 }
-
-.mypar {
-  margin-top: 2em; 
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-#intromodel {
-  background-image: linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,.65)), url('https://www.filippocapurro.it/wp-content/uploads/2021/01/Blau-Kandinsky.jpg');
-}
-
-#cqtaut {
-  margin-top: 1.5em;
-  display: none;
-  line-height: 1.7em;
-}
-
-#cqgrop {
-  margin-top: 1.5em;
-  display: none;
-  line-height: 1.7em;
-}
-
-#cqcomp {
-  margin-top: 1.5em;
-  display: none;
-  line-height: 1.7em;
-}
