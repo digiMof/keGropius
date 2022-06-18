@@ -34,3 +34,7 @@
 #TautGraph {
     display: none;
 }
+
+.toggleOntology:hover {
+    color: #f4623a;
+}
