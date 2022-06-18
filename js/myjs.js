@@ -53,6 +53,7 @@ function showProC() {
 }
 
 // Toggle Ontology Taut
+
 function showTauttl() {
     var ser = document.getElementById("TautTTL");
     var graph = document.getElementById("TautGraph");
