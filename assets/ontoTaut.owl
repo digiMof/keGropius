@@ -1,0 +1,251 @@
+@prefix : <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut> .
+
+<http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#fosteredBy
+:fosteredBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :GovernmentInstitution ;
+            rdfs:range :Promotion .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#freeFrom
+:freeFrom rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :GovernmentInstitution ;
+          rdfs:range :EducationalChange .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#hasScope
+:hasScope rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :PublicNature ;
+          rdfs:range :BuldActivity .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involves
+:involves rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Academy ,
+                      :Exhibit ,
+                      :FineArt ,
+                      :Person ,
+                      :Product ;
+          rdfs:range :Dissolution ,
+                     :EducationalChange ,
+                     :Promotion ,
+                     :Unity .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#pushesForward
+:pushesForward rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replaces
+:replaces rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Academy ;
+          rdfs:range :NewlyFormed .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#responsibleFor
+:responsibleFor rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :Nation ;
+                rdfs:range :Artist .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy
+:Academy rdf:type owl:Class ;
+         rdfs:subClassOf :ArtisticInstitution .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Artist
+:Artist rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        owl:disjointWith :NonArtist .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArtisticInstitution
+:ArtisticInstitution rdf:type owl:Class ;
+                     rdfs:subClassOf :Institution ;
+                     owl:disjointWith :GovernmentInstitution .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#BuldActivity
+:BuldActivity rdf:type owl:Class ;
+              rdfs:subClassOf :Craft ,
+                              :FineArt .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Craft
+:Craft rdf:type owl:Class ;
+       rdfs:subClassOf :Techne ;
+       owl:disjointWith :FineArt .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#DailyObject
+:DailyObject rdf:type owl:Class ;
+             rdfs:subClassOf :Product ;
+             owl:disjointWith :WorkOfArt .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#DispropArtisticValueMon
+:DispropArtisticValueMon rdf:type owl:Class ;
+                         rdfs:subClassOf :Monument .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Dissolution
+:Dissolution rdf:type owl:Class ;
+             rdfs:subClassOf :SecondaryGoal .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#EducationalChange
+:EducationalChange rdf:type owl:Class ;
+                   rdfs:subClassOf :SecondaryGoal .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Exhibit
+:Exhibit rdf:type owl:Class ;
+         rdfs:subClassOf :ArtisticInstitution .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#FineArt
+:FineArt rdf:type owl:Class ;
+         rdfs:subClassOf :Techne .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Goal
+:Goal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution
+:GovernmentInstitution rdf:type owl:Class ;
+                       rdfs:subClassOf :Institution .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Institution
+:Institution rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Monument
+:Monument rdf:type owl:Class ;
+          rdfs:subClassOf :DailyObject ,
+                          :WorkOfArt .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Nation
+:Nation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormed
+:NewlyFormed rdf:type owl:Class ;
+             rdfs:subClassOf :ArtisticInstitution .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NoArtisticValueMon
+:NoArtisticValueMon rdf:type owl:Class ;
+                    rdfs:subClassOf :Monument .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NonArtist
+:NonArtist rdf:type owl:Class ;
+           rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Product
+:Product rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Promotion
+:Promotion rdf:type owl:Class ;
+           rdfs:subClassOf :SecondaryGoal .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#PublicNature
+:PublicNature rdf:type owl:Class ;
+              rdfs:subClassOf :SecondaryGoal .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal
+:SecondaryGoal rdf:type owl:Class ;
+               rdfs:subClassOf :Goal ;
+               owl:disjointWith :SloganGoal .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SloganGoal
+:SloganGoal rdf:type owl:Class ;
+            rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Techne
+:Techne rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#TextualSection
+:TextualSection rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Unity
+:Unity rdf:type owl:Class ;
+       rdfs:subClassOf :SloganGoal .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#WorkOfArt
+:WorkOfArt rdf:type owl:Class ;
+           rdfs:subClassOf :Product .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Academy
+                :Exhibit
+                :NewlyFormed
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Dissolution
+                :EducationalChange
+                :Promotion
+                :PublicNature
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Goal
+                :Institution
+                :Nation
+                :Person
+                :Product
+                :Techne
+                :TextualSection
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
