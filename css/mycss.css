@@ -35,6 +35,13 @@
     display: none;
 }
 
+#GropiusTTL {
+    display: none;
+}
+
+#GropiusGraph {
+    display: none;
+}
 .toggleOntology:hover {
     color: #f4623a;
 }
