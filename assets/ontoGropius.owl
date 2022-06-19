@@ -1,0 +1,696 @@
+@prefix : <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius> .
+
+<http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusagainst
+:against rdf:type owl:ObjectProperty ;
+         rdfs:domain :Aestheticism ,
+                     :Dilettantism ;
+         rdfs:range :Academy ,
+                    :Werklehre .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusaimsAt
+:aimsAt rdf:type owl:ObjectProperty ;
+        rdfs:domain :CollaborativeWorkOfArt ;
+        rdfs:range :NewlyFormedInstitution .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusbasisOf
+:basisOf rdf:type owl:ObjectProperty ;
+         rdfs:domain :Cooperation ,
+                     :Course ,
+                     :CreativeWork ,
+                     :NewlyFormedInstitution ;
+         rdfs:range :Conceptualization ,
+                    :Course ,
+                    :CreativePower ,
+                    :NewlyFormedInstitution ,
+                    :Visualization ,
+                    :Vorlehre .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiuschangedInto
+:changedInto rdf:type owl:ObjectProperty ;
+             rdfs:domain :NewlyFormedInstitution ;
+             rdfs:range :Academy .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusdependsOn
+:dependsOn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Artist ,
+                       :CreativeWork ;
+           rdfs:range :ArchitectureDesign ,
+                      :Quality .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusembodiedIn
+:embodiedIn rdf:type owl:ObjectProperty ;
+            rdfs:domain :BuildingActivity ,
+                        :Form ;
+            rdfs:range :Idea ,
+                       :Zeitgeist .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusemphasizes
+:emphasizes rdf:type owl:ObjectProperty ;
+            rdfs:domain :ArchitectureDesign ;
+            rdfs:range :Kunstgewerbeschule .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusfailedAt
+:failedAt rdf:type owl:ObjectProperty ;
+          rdfs:domain :KnowledgeOfTheory ;
+          rdfs:range :Academy .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusfollows
+:follows rdf:type owl:ObjectProperty ;
+         rdfs:domain :Aestheticism ,
+                     :ComplementaryCourse ,
+                     :ConventionalApproach ;
+         rdfs:range :Academy ,
+                    :Journeyman .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusformalizes
+:formalizes rdf:type owl:ObjectProperty ;
+            rdfs:domain :Idea ;
+            rdfs:range :ArchitectureDesign .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusfounded
+:founded rdf:type owl:ObjectProperty ;
+         rdfs:domain :ArtisticMovement ;
+         rdfs:range :Kunstgewerbeschule .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusfreeFrom
+:freeFrom rdf:type owl:ObjectProperty ;
+          rdfs:domain :Aestheticism ,
+                      :ConventionalApproach ;
+          rdfs:range :ArchitectureDesign ,
+                     :Vorlehre .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiushasDuration
+:hasDuration rdf:type owl:ObjectProperty ;
+             rdfs:domain :Duration ;
+             rdfs:range :Course .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiushasOutcome
+:hasOutcome rdf:type owl:ObjectProperty ;
+            rdfs:domain :Outcome ;
+            rdfs:range :Course .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiushasRole
+:hasRole rdf:type owl:ObjectProperty ;
+         rdfs:domain :Role ;
+         rdfs:range :ArchitectureDesign .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiushasScope
+:hasScope rdf:type owl:ObjectProperty ;
+          rdfs:domain :Cooperation ,
+                      :Union ;
+          rdfs:range :ArtisticMovement ,
+                     :Institution ,
+                     :NewlyFormedInstitution .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusimproves
+:improves rdf:type owl:ObjectProperty ;
+          rdfs:domain :Academy ,
+                      :Creativity ,
+                      :Expressivity ,
+                      :Originality ,
+                      :Outcome ;
+          rdfs:range :Person ,
+                     :Vorlehre .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusinfluencedBy
+:influencedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :Instructor ;
+              rdfs:range :Vorlehre .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusinvolves
+:involves rdf:type owl:ObjectProperty ;
+          rdfs:domain :Artist ,
+                      :Arts ,
+                      :Crafts ,
+                      :Ego ,
+                      :FolkArts ,
+                      :IndustrialDesigner ,
+                      :NonEgo ,
+                      :Promotion ;
+          rdfs:range :ArtisticDesigner ,
+                     :Death ,
+                     :Dualism ,
+                     :Isolation ,
+                     :Synthesis ,
+                     :Union ,
+                     :Unity .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusjoins
+:joins rdf:type owl:ObjectProperty ;
+       rdfs:domain :ArtisticMovement ;
+       rdfs:range :Artist .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusmustFollow
+:mustFollow rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :follows ;
+            rdfs:domain :NewApproach ;
+            rdfs:range :ArchitectureDesign .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusmustHaveRole
+:mustHaveRole rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasRole ;
+              rdfs:domain :Role ;
+              rdfs:range :CreativeWork .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusmustRethink
+:mustRethink rdf:type owl:ObjectProperty ;
+             rdfs:domain :ArchitectureDesign ,
+                         :Vocabulary ,
+                         :Work ;
+             rdfs:range :Journeyman ,
+                        :Person ,
+                        :Werklehre .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusprerequisitFor
+:prerequisitFor rdf:type owl:ObjectProperty ;
+                rdfs:domain :ArchitectureDesign ;
+                rdfs:range :Werklehre .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusproduces
+:produces rdf:type owl:ObjectProperty ;
+          rdfs:domain :Coordination ,
+                      :CreativePower ,
+                      :Expressivity ,
+                      :Originality ,
+                      :ValueDiscounting ;
+          rdfs:range :Academy ,
+                     :NewApproach ,
+                     :PersonalExperience ,
+                     :Synthesis .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusreflects
+:reflects rdf:type owl:ObjectProperty ;
+          rdfs:domain :Institution ;
+          rdfs:range :Zeitgeist .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusreliesOn
+:reliesOn rdf:type owl:ObjectProperty ;
+          rdfs:domain :Synthesis ;
+          rdfs:range :Formlehre ,
+                     :Werklehre .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiussimultaneousTo
+:simultaneousTo rdf:type owl:ObjectProperty ;
+                rdfs:domain :Conceptualization ,
+                            :Visualization ;
+                rdfs:range :Conceptualization ,
+                           :Visualization .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusstimulates
+:stimulates rdf:type owl:ObjectProperty ;
+            rdfs:domain :Conceptualization ,
+                        :PersonalExperience ;
+            rdfs:range :NewlyFormedInstitution ,
+                       :Vorlehre .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusAcademy
+:Academy rdf:type owl:Class ;
+         rdfs:subClassOf :Institution ;
+         owl:disjointWith :NewlyFormedInstitution .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusAcitivity
+:Acitivity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusAestheticism
+:Aestheticism rdf:type owl:Class ;
+              rdfs:subClassOf :Error .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusArchitectureDesign
+:ArchitectureDesign rdf:type owl:Class ;
+                    rdfs:subClassOf :Arts ,
+                                    :Crafts .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusArtist
+:Artist rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        owl:disjointWith :NonArtist .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusArtisticDesigner
+:ArtisticDesigner rdf:type owl:Class ;
+                  rdfs:subClassOf :Artist .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusArtisticMovement
+:ArtisticMovement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusArts
+:Arts rdf:type owl:Class ;
+      rdfs:subClassOf :CreativeWork .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusBauhausCourse
+:BauhausCourse rdf:type owl:Class ;
+               rdfs:subClassOf :Course ;
+               owl:disjointWith :ComplementaryCourse .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusBuildingActivity
+:BuildingActivity rdf:type owl:Class ;
+                  rdfs:subClassOf :CollaborativeWorkOfArt .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusCollaborativeWorkOfArt
+:CollaborativeWorkOfArt rdf:type owl:Class ;
+                        rdfs:subClassOf :DailyLifeProduct ,
+                                        :WorkOfArt .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusComplementaryCourse
+:ComplementaryCourse rdf:type owl:Class ;
+                     rdfs:subClassOf :Course .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusConceptualization
+:Conceptualization rdf:type owl:Class ;
+                   rdfs:subClassOf :Acitivity .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusConventionalApproach
+:ConventionalApproach rdf:type owl:Class ;
+                      rdfs:subClassOf :Training .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusCooperation
+:Cooperation rdf:type owl:Class ;
+             rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusCoordination
+:Coordination rdf:type owl:Class ;
+              rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusCourse
+:Course rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusCrafts
+:Crafts rdf:type owl:Class ;
+        rdfs:subClassOf :CreativeWork .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusCreation
+:Creation rdf:type owl:Class ;
+          rdfs:subClassOf :ManualTraining ;
+          owl:disjointWith :Reproduction .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusCreativePower
+:CreativePower rdf:type owl:Class ;
+               rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusCreativeWork
+:CreativeWork rdf:type owl:Class ;
+              rdfs:subClassOf :Work ;
+              owl:disjointWith :MechanicWork .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusCreativity
+:Creativity rdf:type owl:Class ;
+            rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusDailyLifeProduct
+:DailyLifeProduct rdf:type owl:Class ;
+                  rdfs:subClassOf :Product .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusDeath
+:Death rdf:type owl:Class ;
+       rdfs:subClassOf :Effect .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusDilettantism
+:Dilettantism rdf:type owl:Class ;
+              rdfs:subClassOf :Error .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusDualism
+:Dualism rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusDuration
+:Duration rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusEffect
+:Effect rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusEgo
+:Ego rdf:type owl:Class ;
+     owl:disjointWith :NonEgo .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusError
+:Error rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusExperimentation
+:Experimentation rdf:type owl:Class ;
+                 rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusExpressivity
+:Expressivity rdf:type owl:Class ;
+              rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusFolkArts
+:FolkArts rdf:type owl:Class ;
+          rdfs:subClassOf :Arts .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusForm
+:Form rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusFormlehre
+:Formlehre rdf:type owl:Class ;
+           rdfs:subClassOf :BauhausCourse .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusFormulae
+:Formulae rdf:type owl:Class ;
+          rdfs:subClassOf :ConventionalApproach .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusGoal
+:Goal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusIdea
+:Idea rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusIndustrialDesigner
+:IndustrialDesigner rdf:type owl:Class ;
+                    rdfs:subClassOf :NonArtist .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusIndustrialProduct
+:IndustrialProduct rdf:type owl:Class ;
+                   rdfs:subClassOf :Product .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusInstitution
+:Institution rdf:type owl:Class ;
+             rdfs:subClassOf :Form ;
+             owl:disjointWith :Product .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusInstructor
+:Instructor rdf:type owl:Class ;
+            rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusIsolation
+:Isolation rdf:type owl:Class ;
+           rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusJourneyman
+:Journeyman rdf:type owl:Class ;
+            rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusKnowledge
+:Knowledge rdf:type owl:Class ;
+           rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusKnowledgeOfTheory
+:KnowledgeOfTheory rdf:type owl:Class ;
+                   rdfs:subClassOf :Vocabulary .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusKunstgewerbeschule
+:Kunstgewerbeschule rdf:type owl:Class ;
+                    rdfs:subClassOf :NewlyFormedInstitution .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusManualTraining
+:ManualTraining rdf:type owl:Class ;
+                rdfs:subClassOf :PersonalExperience .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusMechanicWork
+:MechanicWork rdf:type owl:Class ;
+              rdfs:subClassOf :Work .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusNewApproach
+:NewApproach rdf:type owl:Class ;
+             rdfs:subClassOf :Training .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusNewlyFormedInstitution
+:NewlyFormedInstitution rdf:type owl:Class ;
+                        rdfs:subClassOf :Institution .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusNonArtist
+:NonArtist rdf:type owl:Class ;
+           rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusNonEgo
+:NonEgo rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusOriginality
+:Originality rdf:type owl:Class ;
+             rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusOutcome
+:Outcome rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusPerson
+:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusPersonalExperience
+:PersonalExperience rdf:type owl:Class ;
+                    rdfs:subClassOf :NewApproach .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusProduct
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf :Form .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusPromotion
+:Promotion rdf:type owl:Class ;
+           rdfs:subClassOf :Effect .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusQuality
+:Quality rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusReproduction
+:Reproduction rdf:type owl:Class ;
+              rdfs:subClassOf :ManualTraining .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusRole
+:Role rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusSouveraign
+:Souveraign rdf:type owl:Class ;
+            rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusSpace
+:Space rdf:type owl:Class ;
+       rdfs:subClassOf :Idea .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusSynthesis
+:Synthesis rdf:type owl:Class ;
+           rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusTalent
+:Talent rdf:type owl:Class ;
+        rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusTraining
+:Training rdf:type owl:Class ;
+          rdfs:subClassOf :Acitivity .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusUnion
+:Union rdf:type owl:Class ;
+       rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusUnity
+:Unity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusValueDiscounting
+:ValueDiscounting rdf:type owl:Class ;
+                  rdfs:subClassOf :Error .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusVisualization
+:Visualization rdf:type owl:Class ;
+               rdfs:subClassOf :Acitivity .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusVocabulary
+:Vocabulary rdf:type owl:Class ;
+            rdfs:subClassOf :NewApproach .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusVorlehre
+:Vorlehre rdf:type owl:Class ;
+          rdfs:subClassOf :BauhausCourse .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusWerklehre
+:Werklehre rdf:type owl:Class ;
+           rdfs:subClassOf :BauhausCourse .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusWork
+:Work rdf:type owl:Class ;
+      rdfs:subClassOf :Acitivity .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusWorkOfArt
+:WorkOfArt rdf:type owl:Class ;
+           rdfs:subClassOf :Product .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusZeitgeist
+:Zeitgeist rdf:type owl:Class ;
+           rdfs:subClassOf :Idea .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusBauhaus
+:Bauhaus rdf:type owl:NamedIndividual ,
+                  :NewlyFormedInstitution .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusCommonBasis
+:CommonBasis rdf:type owl:NamedIndividual ,
+                      :KnowledgeOfTheory .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusGenerationalAchievement
+:GenerationalAchievement rdf:type owl:NamedIndividual ,
+                                  :KnowledgeOfTheory .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusScholarship
+:Scholarship rdf:type owl:NamedIndividual ,
+                      :Role .
+
+
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropiusUnifier
+:Unifier rdf:type owl:NamedIndividual ,
+                  :Role .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Aestheticism
+                :Dilettantism
+                :ValueDiscounting
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Conceptualization
+                :Training
+                :Visualization
+                :Work
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Creativity
+                :Expressivity
+                :Knowledge
+                :Originality
+                :Talent
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Formlehre
+                :Vorlehre
+                :Werklehre
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
