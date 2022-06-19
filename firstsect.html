@@ -154,11 +154,32 @@
                 </span>
         </div>
     </section>
-    <section  class="page-section" id="ontotautsection">
+    <section  class="page-section" id="ontogropsection">
         <div class="container px-4 px-lg-5">
             <h2 class="text-center mt-0">Ontology development of Gropius' <i>Theory and Organization of the Bauhaus</i></h2>
                 <p class="mypar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod in eros ut facilisis. Praesent nec erat eu nisl rutrum aliquam volutpat non lorem. Pellentesque eu pharetra justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis maximus nunc viverra, dictum leo condimentum, pulvinar lorem. Proin a rhoncus felis, id ultricies nunc. Fusce hendrerit eleifend ligula et auctor. Cras ullamcorper at arcu sed venenatis. Aenean pharetra efficitur varius. Phasellus eleifend congue elit, maximus lacinia dolor faucibus eu. Morbi non orci lobortis, varius neque eget, lacinia arcu. Maecenas semper nibh in mauris posuere, accumsan aliquet justo interdum. Mauris hendrerit consectetur erat, eu eleifend odio ultricies at. Ut velit lacus, pretium eu sapien sit amet, aliquam maximus justo. Aenean id mollis velit. Mauris bibendum vulputate arcu a pretium. </p>
-                
+                <div class="container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
+                    <div class="row text-center" style="font-size: 1.3em; color: grey;">
+                        <div class="col-sm toggleOntology" onclick="showGropiusttl()">
+                            <div><i class="bi bi-code fs-1" style="color:#60370e;"></i></div>
+                            <h4 style="color: #60370e;">Turtle Serialization</h4> <!-- #f4623a-->
+                        </div>
+                        <div class="col-sm toggleOntology" onclick="showGropiusgraph()">
+                            <div><i class="bi bi-diagram-3 fs-1" style="color: #60370e;"></i></div>
+                            <h4 style="color: #60370e;">Graph Visualization</h4>
+                        </div>
+                    </div>
+                </div>
+                <span id="GropiusTTL">
+                    <script src="https://gist.github.com/ManueleVeggi/fe0a174c5453d43ff534b9e0137fec33.js"></script>
+                    <p><a href="assets/ontoGropius.owl" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file</p>
+                </span>
+                <span id="GropiusGraph">
+                    <img src="assets/ontoGropiusVis.png" class="assetimg" style="width: 100%; box-shadow: 10px 10px 5px #874b0f;" onclick="window.open('assets/ontoGropiusVis.png')">
+                    <p style="margin-top: 1.5em;"><a href="assets/ontoGropiusVis.png" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file <br>
+                    <a href="assets/ontoGropiusVis.png" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the conceptual map</p>
+                </span>
+        </div>
     </section>
 
     <!-- FOOTER-->
