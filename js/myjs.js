@@ -67,3 +67,19 @@ function showTautgraph() {
     ser.style.display = "none";
     graph.style.display = "block";
 }
+
+// Toggle Ontology Gropius
+
+function showGropiusttl() {
+    var ser = document.getElementById("GropiusTTL");
+    var graph = document.getElementById("GropiusGraph");
+    ser.style.display = "block";
+    graph.style.display = "none";
+}
+
+function showGropiusgraph() {
+    var ser = document.getElementById("GropiusTTL");
+    var graph = document.getElementById("GropiusGraph");
+    ser.style.display = "none";
+    graph.style.display = "block";
+}
