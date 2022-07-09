@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>KR&#339;PiUS</title> <!-- source: https://startbootstrap.com/theme/creative -->
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <!-- Personal Stylesheets -->
+    <link href="css/mycss.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav"
+        style="background-color: rgb(190, 108, 25);">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html#page-top">KR&#339;PiUS</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html#workflow"" id=" navbarDarkDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Workflow
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="firstsect.html">Text modelling</a></li>
+                            <li><a class="dropdown-item" href="#">Text comparison</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="page-section" id="intromodel">
+        <div class="container px-4 px-lg-5">
+            <h1 class="text-center mt-0">Ontologies Alignment</h2>
+                <p class="mypar">The second step of our project consists in the building of a third ontology to compare the two ontologies previously build for Groupius' and Taut's texts. In this third ontologies superclasses, equivalences, relations, ... will be specified for both the classes and the properties.</p>
+        </div>
+    </section>
+    <!-- COMPETENCY QUESTIONS SECTION -->
+    <section class="page-section" id="cqsection">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Competency questions? IDK</h2>
+            <div class="container" style="margin-top: 3em;">
+                <div class="row text-center" style="font-size: 1.3em; color: grey;">
+                    <div class="col-sm" id="cqTtxt" onclick="showProT()"><b>Bruno Taut</b></div>
+                    <div class="col-sm" id="cqGtxt" onclick="showProG()"><b>Walter Gropius</b></div>
+                    <div class="col-sm" id="cqCtxt" onclick="showProC()"><b>Compare the texts</b></div>
+                </div>
+            </div>
+            <div class="progress" style="margin-top: 1.2em; height: 0.3em;">
+                <div id="cqbar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <div class="container" id="cqtaut">
+                <div class="row">
+                    <ul>
+                        <li><b>What is the main goal?</b> Unity involving Art and people</li>
+                        <li><b>Which are the activities whose scope is of public nature?</b> Building activity</li>
+                        <li><b>Which are the institutions to be dissolved (in their present form)?</b> Academies (Royal Academy of Arts, Royal
+                            Academy of Architecture, Royal Prussian State Art Commission)</li>
+                        <li><b>What is demanded for all education?</b> Freedom from government domination</li>
+                        <li><b>How should museums be considered?</b> Places of education </li>
+                        <li><b>What products need to be dissolved?</b> Monuments without artistic value</li>
+                        <li><b>What should government institutions guarantee?</b> Promotion of art</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" id="cqgrop">
+                <div class="row">
+                    <div class="col-sm">
+                        <ul>
+                            <li><b>How are ideas expressed?</b> Embodied as form</li>
+                            <li><b>How are artistic movements created?</b> Founded by academies</li>
+                            <li><b>What’s Architecture dependant upon?</b> Artist</li>
+                            <li><b>Which is main goal of institutions?</b> Union</li>
+                            <li><b>What are institutions reflected in?</b> Zeitgeist</li>
+                            <li><b>How can work be split?</b> Creative work and Mechanic Work</li>
+                            <li><b>What must people rethink?</b> Work</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <li><b>What should academies be substituted with?</b> Newly formed Institution</li>
+                            <li><b>What qualities are improved by preliminary courses at the Bauhaus?</b> Creativity, originality, expressivity</li>
+                            <li><b>Who is the person responsible of rethinking architecture</b> Journeyman</li>
+                            <li><b>Which courses are included in the Bauhaus courses?</b> Vorlehre, Formlehre, Werklehre</li>
+                            <li><b>What’s the main goal of newly-formed institutions?</b> Cooperation</li>
+                            <li><b>What is included in the new approach in training?</b> Personal experience, manual training, Vocabulary (knowledge of theory)</li>
+                            <li><b>Which kind of work does synthesis involve?</b> Arts and crafts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="cqcomp">
+                <div class="row">
+                    <ul>
+                        <li><b>What’s the goal of both, the slogan by Taut and the credo of the Bauhaus?</b> Unification: for Taut, ”Art and people must form a unity”, for Gropius a ”unification in all training and desing” must be achieved</li>
+                        <li><b>What actions should be taken towards academies?</b> Dissolution, changed into newly-formed institution (CONTROLLA!)</li>
+                        <li><b>What is demanded of education programmes?</b> Freedom from government, personal experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ONTOLOGY DEVELOPMENT FOR TAUT SECTION -->
+    <section  class="page-section" id="ontotautsection" style="background: #f6d8b9">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Ontology development of Taut's <i>Program for the Arbeitsrat für Kunst</i></h2>
+                <p class="mypar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod in eros ut facilisis. Praesent nec erat eu nisl rutrum aliquam volutpat non lorem. Pellentesque eu pharetra justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis maximus nunc viverra, dictum leo condimentum, pulvinar lorem. Proin a rhoncus felis, id ultricies nunc. Fusce hendrerit eleifend ligula et auctor. Cras ullamcorper at arcu sed venenatis. Aenean pharetra efficitur varius. Phasellus eleifend congue elit, maximus lacinia dolor faucibus eu. Morbi non orci lobortis, varius neque eget, lacinia arcu. Maecenas semper nibh in mauris posuere, accumsan aliquet justo interdum. Mauris hendrerit consectetur erat, eu eleifend odio ultricies at. Ut velit lacus, pretium eu sapien sit amet, aliquam maximus justo. Aenean id mollis velit. Mauris bibendum vulputate arcu a pretium. </p>
+                <div class="container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
+                    <div class="row text-center" style="font-size: 1.3em; color: grey;">
+                        <div class="col-sm toggleOntology" onclick="showTauttl()">
+                            <div><i class="bi bi-code fs-1" style="color:#60370e;"></i></div>
+                            <h4 style="color: #60370e;">Turtle Serialization</h4> <!-- #f4623a-->
+                        </div>
+                        <div class="col-sm toggleOntology" onclick="showTautgraph()">
+                            <div><i class="bi bi-diagram-3 fs-1" style="color: #60370e;"></i></div>
+                            <h4 style="color: #60370e;">Graph Visualization</h4>
+                        </div>
+                    </div>
+                </div>
+                <span id="TautTTL">
+                    <script src="https://gist.github.com/ManueleVeggi/fe0a174c5453d43ff534b9e0137fec33.js"></script>
+                    <p><a href="assets/ontoTaut.owl" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file</p>
+                </span>
+                <span id="TautGraph">
+                    <img src="assets/ontoTaut.jpg" class="assetimg" style="width: 100%; box-shadow: 10px 10px 5px #874b0f;" onclick="window.open('assets/ontoTaut.jpg')">
+                    <p style="margin-top: 1.5em;"><a href="assets/ontoTaut.jpg" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file <br>
+                    <a href="assets/ontoTautMap.png" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the conceptual map</p>
+                </span>
+        </div>
+    </section>
+    <!-- ONTOLOGY DEVELOPMENT FOR GROPIUS SECTION -->
+    <section  class="page-section" id="ontotautsection">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Ontology development of Gropius' <i>Theory and Organization of the Bauhaus</i></h2>
+                <p class="mypar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod in eros ut facilisis. Praesent nec erat eu nisl rutrum aliquam volutpat non lorem. Pellentesque eu pharetra justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis maximus nunc viverra, dictum leo condimentum, pulvinar lorem. Proin a rhoncus felis, id ultricies nunc. Fusce hendrerit eleifend ligula et auctor. Cras ullamcorper at arcu sed venenatis. Aenean pharetra efficitur varius. Phasellus eleifend congue elit, maximus lacinia dolor faucibus eu. Morbi non orci lobortis, varius neque eget, lacinia arcu. Maecenas semper nibh in mauris posuere, accumsan aliquet justo interdum. Mauris hendrerit consectetur erat, eu eleifend odio ultricies at. Ut velit lacus, pretium eu sapien sit amet, aliquam maximus justo. Aenean id mollis velit. Mauris bibendum vulputate arcu a pretium. </p>
+                <div class="container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
+                    <div class="row text-center" style="font-size: 1.3em; color: grey;">
+                        <div class="col-sm toggleOntology" onclick="showGropiusttl()">
+                            <div><i class="bi bi-code fs-1" style="color:#60370e;"></i></div>
+                            <h4 style="color: #60370e;">Turtle Serialization</h4> <!-- #f4623a-->
+                        </div>
+                        <div class="col-sm toggleOntology" onclick="showGropiusgraph()">
+                            <div><i class="bi bi-diagram-3 fs-1" style="color: #60370e;"></i></div>
+                            <h4 style="color: #60370e;">Graph Visualization</h4>
+                        </div>
+                    </div>
+                </div>
+                <span id="GropiusTTL" style="display: none;">
+                    <script src="https://gist.github.com/ManueleVeggi/fc2703931ea8324a3fd1a21f4d52e29f.js"></script>
+                    <p><a href="assets/ontoGropius.owl" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file</p>
+                </span>
+                <span id="GropiusGraph" style="display: none;">
+                    <img src="assets/ontoGropiusVis.png" class="assetimg" style="width: 100%; box-shadow: 10px 10px 5px #874b0f;" onclick="window.open('assets/ontoGropiusVis.png')">
+                    <p style="margin-top: 1.5em;"><a href="assets/ontoGropiusVis.png" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file</p>
+                </span>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center">Copyright &copy; 2022 - KR&#339;PiUS</div>
+        </div>
+        <div class="container px-4 px-lg-5">
+            <p></p>
+            <p class="text-center">
+                KR&#339;PiUS is an end-of-course project for the <a
+                    href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/454463">"Knowledge
+                    Management - Knowledge Representation and Extraction"</a> course (a.y. 2021/2022)<br> held by <a
+                    href="https://www.unibo.it/sitoweb/aldo.gangemi/en">Prof Aldo Gangemi</a> and <a
+                    href="https://www.unibo.it/sitoweb/andrea.nuzzolese2/en">Prof Andrea Nuzzolese</a> within the <a
+                    href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital
+                    Knowledge Master's Degree</a><br> at <a href="https://www.unibo.it/en/homepage">Alma Mater Studiorum
+                    - University of Bologna</a><br>
+                <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+                    <img src="assets/img/creativecommons.jpg" alt="Licence Creative Commons 4.0"
+                        style="width:125px;height:45px;margin:1rem;"></a>
+                <a href="https://github.com/digiMof/keGropius.git">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black" class="bi bi-github"
+                        viewBox="0 -3 30 30">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg></a>
+            </p>
+        </div>
+
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="js/myjs.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
