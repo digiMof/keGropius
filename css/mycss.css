@@ -4,8 +4,9 @@
     text-justify: inter-word;
 }
 
+/* ===== MODELLING ========*/ 
 #intromodel {
-    background-image: linear-gradient(rgba(255, 255, 255, .65), rgba(255, 255, 255, .65)), url('https://www.filippocapurro.it/wp-content/uploads/2021/01/Blau-Kandinsky.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, .65), rgba(255, 255, 255, .65)), url('../assets/img/covermodel.jpg');
     background-size: auto;
 }
 
@@ -35,7 +36,13 @@
     display: none;
 }
 
-
 .toggleOntology:hover {
     color: #f4623a;
+}
+
+/* ==== ALIGNMENT ===== */
+
+#introalign {
+    background-image: linear-gradient(rgba(255, 255, 255, .65), rgba(255, 255, 255, 0.8)), url('../assets/img/coveralign.jpg');
+    background-size: auto;
 }
