@@ -50,6 +50,7 @@ mof:changedInto rdf:type owl:ObjectProperty ;
 ###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#dependsOn
 mof:dependsOn rdf:type owl:ObjectProperty ;
               rdfs:domain mof:Artist ,
+                          mof:Cooperation ,
                           mof:CreativeWork ;
               rdfs:range mof:ArchitectureDesign ,
                          mof:Quality .
