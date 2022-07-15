@@ -150,31 +150,551 @@
                 </span>
         </div>
     </section>
+
     <!-- ONTOLOGY DEVELOPMENT FOR GROPIUS SECTION -->
     <section  class="page-section" id="ontotautsection">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">Ontology development of Gropius' <i>Theory and Organization of the Bauhaus</i></h2>
-                <p class="mypar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod in eros ut facilisis. Praesent nec erat eu nisl rutrum aliquam volutpat non lorem. Pellentesque eu pharetra justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis maximus nunc viverra, dictum leo condimentum, pulvinar lorem. Proin a rhoncus felis, id ultricies nunc. Fusce hendrerit eleifend ligula et auctor. Cras ullamcorper at arcu sed venenatis. Aenean pharetra efficitur varius. Phasellus eleifend congue elit, maximus lacinia dolor faucibus eu. Morbi non orci lobortis, varius neque eget, lacinia arcu. Maecenas semper nibh in mauris posuere, accumsan aliquet justo interdum. Mauris hendrerit consectetur erat, eu eleifend odio ultricies at. Ut velit lacus, pretium eu sapien sit amet, aliquam maximus justo. Aenean id mollis velit. Mauris bibendum vulputate arcu a pretium. </p>
-                <div class="container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
-                    <div class="row text-center" style="font-size: 1.3em; color: grey;">
-                        <div class="col-sm toggleOntology" onclick="showGropiusttl()">
-                            <div><i class="bi bi-code fs-1" style="color:#60370e;"></i></div>
-                            <h4 style="color: #60370e;">Turtle Serialization</h4> <!-- #f4623a-->
+        <div class="container px-2">
+            <h2 class="text-center mb-4">SPARQL Queries</i></h2>
+            <div class="row">
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Bruno Taut</p>
+                                <hr>
+                                <p>What is the main goal?</p>
+                                <p>Unity involving Art and people</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm toggleOntology" onclick="showGropiusgraph()">
-                            <div><i class="bi bi-diagram-3 fs-1" style="color: #60370e;"></i></div>
-                            <h4 style="color: #60370e;">Graph Visualization</h4>
-                        </div>
-                    </div>
+                      </div> 
                 </div>
-                <span id="GropiusTTL" style="display: none;">
-                    <script src="https://gist.github.com/ManueleVeggi/fc2703931ea8324a3fd1a21f4d52e29f.js"></script>
-                    <p><a href="assets/ontoGropius.owl" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file</p>
-                </span>
-                <span id="GropiusGraph" style="display: none;">
-                    <img src="assets/ontoGropiusVis.png" class="assetimg" style="width: 100%; box-shadow: 10px 10px 5px #874b0f;" onclick="window.open('assets/ontoGropiusVis.png')">
-                    <p style="margin-top: 1.5em;"><a href="assets/ontoGropiusVis.png" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file</p>
-                </span>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Bruno Taut</p>
+                                <hr>
+                                <p>Which are the activities whose scope is of public nature?</p>
+                                <p>Building Activity</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Bruno Taut</p>
+                                <hr>
+                                <p>Which are the institutions to be dissolved (in their present form)?</p>
+                                <p>Academies (Royal Academy of Arts, Royal Academy of Architecture, Royal Prussian State Art Commission)</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Bruno Taut</p>
+                                <hr>
+                                <p>What is demanded for all education?</p>
+                                <p>Freedom from government domination</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Bruno Taut</p>
+                                <hr>
+                                <p>How should museums be considered?</p>
+                                <p>Places of education</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Bruno Taut</p>
+                                <hr>
+                                <p>What products need to be dissolved?</p>
+                                <p>Monuments without artistic value</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Bruno Taut</p>
+                                <hr>
+                                <p>What should government institutions guarantee?</p>
+                                <p>Promotion of art</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>How are ideas expressed?</p>
+                                <p>Embodied as form</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>What is caused by the academia?</p>
+                                <p>The isolation of the artist</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>What is Architecture dependant upon?</p>
+                                <p>The cooperation of many individuals</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>Retrieve the main goal of institutions </p>
+                                <p>Union</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>What do buildings reflect? </p>
+                                <p>Zeitgeist</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>How can work be split? </p>
+                                <p>Creative work and Mechanic Work</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>What should each person rethink to change society? </p>
+                                <p>Work</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>What should academies be substituted with? </p>
+                                <p>Newly formed Institution</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>Which qualities are improved by preliminary courses at the Bauhaus?</p>
+                                <p>Creativity, originality, expressivity</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>Who is the person responsible of rethinking architecture?</p>
+                                <p>Journeyman</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>Which courses are included in the Bauhaus courses?</p>
+                                <p><i>Vorlehre</i>, <i>Formlehre</i>, <i>Werklehre</i></p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>What is the main goal of newly-formed institutions?</p>
+                                <p>Cooperation</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>What is included in the new approach in training?</p>
+                                <p>Personal experience, manual training, "vocabulary" (i.e. knowledge of theory)</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Walter Gropius</p>
+                                <hr>
+                                <p>Which kind of work does art education involve?</p>
+                                <p>Arts and crafts</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Comparison</p>
+                                <hr>
+                                <p>What’s the goal of both, the slogan by Taut and the credo of the Bauhaus?</p>
+                                <p>Unification: for Taut, ”Art and people must form a unity”, for Gropius a ”unification in all training and desing” must be achieved</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Comparison</p>
+                                <hr>
+                                <p>What actions should be taken towards academies?</p>
+                                <p>Dissolution or at least changed into newly-formed institution</p>
+                            </div>
+                          <div class="flip-card-back">
+                            <div class="codesection">
+                                <code>
+                                    BASE    &lthttp://example.org/book/&gt <br>
+                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                    SELECT  $title <br>
+                                    WHERE   { &ltbook1&gt  dc:title  ?title }
+                                </code>
+                            </div>
+                        </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="col-3">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>Comparison</p>
+                                <hr>
+                                <p>What is demanded of education programmes?</p>
+                                <p>For Taut the priority is the freedom from government, for Gropius major attention should be paid to personal experience</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        BASE    &lthttp://example.org/book/&gt <br>
+                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
+                                        SELECT  $title <br>
+                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                </div>
+            </div>
         </div>
     </section>
 
