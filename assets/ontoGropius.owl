@@ -444,7 +444,7 @@ mof:IndustrialDesigner rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#IndustrialProduct
 mof:IndustrialProduct rdf:type owl:Class ;
-                      rdfs:subClassOf mof:Product .
+                      rdfs:subClassOf mof:DailyLifeProduct .
 
 
 ###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#Institution
@@ -455,7 +455,7 @@ mof:Institution rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#Instructor
 mof:Instructor rdf:type owl:Class ;
-               rdfs:subClassOf mof:Person .
+               rdfs:subClassOf mof:Artist .
 
 
 ###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#Isolation
@@ -465,7 +465,7 @@ mof:Isolation rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#Journeyman
 mof:Journeyman rdf:type owl:Class ;
-               rdfs:subClassOf mof:Person .
+               rdfs:subClassOf mof:Artist .
 
 
 ###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#Knowledge
@@ -555,7 +555,7 @@ mof:Role rdf:type owl:Class .
 
 ###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#Souveraign
 mof:Souveraign rdf:type owl:Class ;
-               rdfs:subClassOf mof:Person .
+               rdfs:subClassOf mof:NonArtist .
 
 
 ###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#Space
