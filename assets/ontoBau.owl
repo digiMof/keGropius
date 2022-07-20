@@ -362,6 +362,26 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#hasDuration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
