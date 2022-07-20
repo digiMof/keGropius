@@ -553,9 +553,9 @@ mof:Reproduction rdf:type owl:Class ;
 mof:Role rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#Souveraign
-mof:Souveraign rdf:type owl:Class ;
-               rdfs:subClassOf mof:NonArtist .
+###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#Sovereign
+mof:Sovereign rdf:type owl:Class ;
+              rdfs:subClassOf mof:NonArtist .
 
 
 ###  http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#Space
