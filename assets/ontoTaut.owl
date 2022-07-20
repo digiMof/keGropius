@@ -49,7 +49,9 @@
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#pushesForward
 :pushesForward rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf owl:topObjectProperty .
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Goal ;
+               rdfs:range :TextualSection .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replaces
