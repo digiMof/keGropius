@@ -1,0 +1,563 @@
+@prefix : <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau> .
+
+<http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#against
+:against rdf:type owl:ObjectProperty ;
+         rdfs:domain :Aestheticism ,
+                     :Dilettantism ;
+         rdfs:range :Academy ,
+                    :Werklehre .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#hasDuration
+:hasDuration rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Course .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Academy
+:Academy rdf:type owl:Class ;
+         rdfs:subClassOf :ArtisticInstitution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Activity
+:Activity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Aestheticism
+:Aestheticism rdf:type owl:Class ;
+              rdfs:subClassOf :Error .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArchitectureDesign
+:ArchitectureDesign rdf:type owl:Class ;
+                    rdfs:subClassOf :Craft ,
+                                    :FineArt ;
+                    owl:disjointWith :FolkArts .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Artist
+:Artist rdf:type owl:Class ;
+        rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArtisticDesigner
+:ArtisticDesigner rdf:type owl:Class ;
+                  rdfs:subClassOf :Artist .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArtisticInstitution
+:ArtisticInstitution rdf:type owl:Class ;
+                     rdfs:subClassOf :Institution ;
+                     owl:disjointWith :GovernmentInstitution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArtisticMovement
+:ArtisticMovement rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#BauhausCourse
+:BauhausCourse rdf:type owl:Class ;
+               rdfs:subClassOf :Course ;
+               owl:disjointWith :ComplementaryCourse .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#CollaborativeWorkOfArt
+:CollaborativeWorkOfArt rdf:type owl:Class ;
+                        rdfs:subClassOf :DailyLifeProduct ,
+                                        :WorkOfArt ;
+                        owl:disjointWith :Monument .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ComplementaryCourse
+:ComplementaryCourse rdf:type owl:Class ;
+                     rdfs:subClassOf :Course .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Conceptualization
+:Conceptualization rdf:type owl:Class ;
+                   rdfs:subClassOf :Activity ;
+                   owl:disjointWith :Training .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ConventionalApproach
+:ConventionalApproach rdf:type owl:Class ;
+                      rdfs:subClassOf :Training ;
+                      owl:disjointWith :NewApproach .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Cooperation
+:Cooperation rdf:type owl:Class ;
+             rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Coordination
+:Coordination rdf:type owl:Class ;
+              rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Course
+:Course rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Craft
+:Craft rdf:type owl:Class ;
+       rdfs:subClassOf :CreativeWork ;
+       owl:disjointWith :FineArt .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Creation
+:Creation rdf:type owl:Class ;
+          rdfs:subClassOf :ManualTraining ;
+          owl:disjointWith :Reproduction .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#CreativePower
+:CreativePower rdf:type owl:Class ;
+               rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#CreativeWork
+:CreativeWork rdf:type owl:Class ;
+              rdfs:subClassOf :Work ;
+              owl:disjointWith :MechanicWork .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Creativity
+:Creativity rdf:type owl:Class ;
+            rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#DailyLifeProduct
+:DailyLifeProduct rdf:type owl:Class ;
+                  rdfs:subClassOf :Product ;
+                  owl:disjointWith :WorkOfArt .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Death
+:Death rdf:type owl:Class ;
+       rdfs:subClassOf :Effect ;
+       owl:disjointWith :Promotion .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Dilettantism
+:Dilettantism rdf:type owl:Class ;
+              rdfs:subClassOf :Error .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#DispropArtisticValueMon
+:DispropArtisticValueMon rdf:type owl:Class ;
+                         rdfs:subClassOf :Monument ;
+                         owl:disjointWith :NoArtisticValueMon .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Dissolution
+:Dissolution rdf:type owl:Class ;
+             rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Dualism
+:Dualism rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalChange
+:EducationalChange rdf:type owl:Class ;
+                   rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Effect
+:Effect rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Ego
+:Ego rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Error
+:Error rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Exhibit
+:Exhibit rdf:type owl:Class ;
+         rdfs:subClassOf :ArtisticInstitution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Experimentation
+:Experimentation rdf:type owl:Class ;
+                 rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Expressivity
+:Expressivity rdf:type owl:Class ;
+              rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#FineArt
+:FineArt rdf:type owl:Class ;
+         rdfs:subClassOf :CreativeWork .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#FolkArts
+:FolkArts rdf:type owl:Class ;
+          rdfs:subClassOf :FineArt .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Form
+:Form rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Formlehre
+:Formlehre rdf:type owl:Class ;
+           rdfs:subClassOf :BauhausCourse .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Formulae
+:Formulae rdf:type owl:Class ;
+          rdfs:subClassOf :ConventionalApproach .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Goal
+:Goal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#GovernmentInstitution
+:GovernmentInstitution rdf:type owl:Class ;
+                       rdfs:subClassOf :Institution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Idea
+:Idea rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#IndustrialDesigner
+:IndustrialDesigner rdf:type owl:Class ;
+                    rdfs:subClassOf :NonArtist .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#IndustrialProduct
+:IndustrialProduct rdf:type owl:Class ;
+                   rdfs:subClassOf :DailyLifeProduct .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Institution
+:Institution rdf:type owl:Class ;
+             rdfs:subClassOf :Form ;
+             owl:disjointWith :Product .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Instructor
+:Instructor rdf:type owl:Class ;
+            rdfs:subClassOf :Artist .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Isolation
+:Isolation rdf:type owl:Class ;
+           rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Journeyman
+:Journeyman rdf:type owl:Class ;
+            rdfs:subClassOf :Artist .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Knowledge
+:Knowledge rdf:type owl:Class ;
+           rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#KnowledgeOfTheory
+:KnowledgeOfTheory rdf:type owl:Class ;
+                   rdfs:subClassOf :Vocabulary .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Kunstgewerbeschule
+:Kunstgewerbeschule rdf:type owl:Class ;
+                    rdfs:subClassOf :NewlyFormed .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ManualTraining
+:ManualTraining rdf:type owl:Class ;
+                rdfs:subClassOf :PersonalExperience .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#MechanicWork
+:MechanicWork rdf:type owl:Class ;
+              rdfs:subClassOf :Work .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Monument
+:Monument rdf:type owl:Class ;
+          rdfs:subClassOf :DailyLifeProduct ,
+                          :WorkOfArt .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Nation
+:Nation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewApproach
+:NewApproach rdf:type owl:Class ;
+             rdfs:subClassOf :Training .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormed
+:NewlyFormed rdf:type owl:Class ;
+             rdfs:subClassOf :ArtisticInstitution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NoArtisticValueMon
+:NoArtisticValueMon rdf:type owl:Class ;
+                    rdfs:subClassOf :Monument .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NonArtist
+:NonArtist rdf:type owl:Class ;
+           rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NonEgo
+:NonEgo rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Originality
+:Originality rdf:type owl:Class ;
+             rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Outcome
+:Outcome rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#PersonalExperience
+:PersonalExperience rdf:type owl:Class ;
+                    rdfs:subClassOf :NewApproach ;
+                    owl:disjointWith :Vocabulary .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Product
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf :Form .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Promotion
+:Promotion rdf:type owl:Class ;
+           rdfs:subClassOf :Effect ,
+                           :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#PublicNature
+:PublicNature rdf:type owl:Class ;
+              rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Quality
+:Quality rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Reproduction
+:Reproduction rdf:type owl:Class ;
+              rdfs:subClassOf :ManualTraining .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Role
+:Role rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Sovereign
+:Sovereign rdf:type owl:Class ;
+           rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Space
+:Space rdf:type owl:Class ;
+       rdfs:subClassOf :Idea ;
+       owl:disjointWith :Zeitgeist .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Synthesis
+:Synthesis rdf:type owl:Class ;
+           rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Talent
+:Talent rdf:type owl:Class ;
+        rdfs:subClassOf :Quality .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Text
+:Text rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Training
+:Training rdf:type owl:Class ;
+          rdfs:subClassOf :Activity .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Unity
+:Unity rdf:type owl:Class ;
+       rdfs:subClassOf :Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ValueDiscounting
+:ValueDiscounting rdf:type owl:Class ;
+                  rdfs:subClassOf :Error .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Visualization
+:Visualization rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Vocabulary
+:Vocabulary rdf:type owl:Class ;
+            rdfs:subClassOf :NewApproach .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Vorlehre
+:Vorlehre rdf:type owl:Class ;
+          rdfs:subClassOf :BauhausCourse .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Werklehre
+:Werklehre rdf:type owl:Class ;
+           rdfs:subClassOf :BauhausCourse .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Work
+:Work rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#WorkOfArt
+:WorkOfArt rdf:type owl:Class ;
+           rdfs:subClassOf :Product .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Zeitgeist
+:Zeitgeist rdf:type owl:Class ;
+           rdfs:subClassOf :Idea .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Academy
+                :Exhibit
+                :NewlyFormed
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Activity
+                :ArtisticMovement
+                :Course
+                :Dualism
+                :Effect
+                :Ego
+                :Error
+                :Form
+                :Goal
+                :Idea
+                :Nation
+                :NonEgo
+                :Outcome
+                :Person
+                :Quality
+                :Role
+                :Text
+                :Visualization
+                :Work
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Aestheticism
+                :Dilettantism
+                :ValueDiscounting
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Artist
+                :NonArtist
+                :Sovereign
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ArtisticDesigner
+                :Instructor
+                :Journeyman
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CollaborativeWorkOfArt
+                :IndustrialProduct
+                :Monument
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Cooperation
+                :Coordination
+                :CreativePower
+                :Dissolution
+                :EducationalChange
+                :Experimentation
+                :Isolation
+                :Promotion
+                :PublicNature
+                :Synthesis
+                :Unity
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Creativity
+                :Expressivity
+                :Knowledge
+                :Originality
+                :Talent
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Formlehre
+                :Vorlehre
+                :Werklehre
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
