@@ -51,99 +51,36 @@
         </div>
     </nav>
     <section class="page-section" id="introalign">
-        <div class="container px-4 px-lg-5">
+        <div class="container pt-4 pt-lg-5">
             <h1 class="text-center mt-0">Ontologies Alignment</h2>
                 <p class="mypar">The second step of our project consists in the building of a third ontology to compare the two ontologies previously build for Groupius' and Taut's texts. In this third ontologies superclasses, equivalences, relations, ... will be specified for both the classes and the properties.</p>
         </div>
     </section>
-    <!-- COMPETENCY QUESTIONS SECTION -->
-    <section class="page-section" id="cqsection">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">Competency questions? IDK</h2>
-            <div class="container" style="margin-top: 3em;">
-                <div class="row text-center" style="font-size: 1.3em; color: grey;">
-                    <div class="col-sm" id="cqTtxt" onclick="showProT()"><b>Bruno Taut</b></div>
-                    <div class="col-sm" id="cqGtxt" onclick="showProG()"><b>Walter Gropius</b></div>
-                    <div class="col-sm" id="cqCtxt" onclick="showProC()"><b>Compare the texts</b></div>
-                </div>
-            </div>
-            <div class="progress" style="margin-top: 1.2em; height: 0.3em;">
-                <div id="cqbar" class="progress-bar" role="progressbar" style="width: 0%" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-            </div>
-            <div class="container" id="cqtaut">
-                <div class="row">
-                    <ul>
-                        <li><b>What is the main goal?</b> Unity involving Art and people</li>
-                        <li><b>Which are the activities whose scope is of public nature?</b> Building activity</li>
-                        <li><b>Which are the institutions to be dissolved (in their present form)?</b> Academies (Royal Academy of Arts, Royal
-                            Academy of Architecture, Royal Prussian State Art Commission)</li>
-                        <li><b>What is demanded for all education?</b> Freedom from government domination</li>
-                        <li><b>How should museums be considered?</b> Places of education </li>
-                        <li><b>What products need to be dissolved?</b> Monuments without artistic value</li>
-                        <li><b>What should government institutions guarantee?</b> Promotion of art</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container" id="cqgrop">
-                <div class="row">
-                    <div class="col-sm">
-                        <ul>
-                            <li><b>How are ideas expressed?</b> Embodied as form</li>
-                            <li><b>How are artistic movements created?</b> Founded by academies</li>
-                            <li><b>What’s Architecture dependant upon?</b> Artist</li>
-                            <li><b>Which is main goal of institutions?</b> Union</li>
-                            <li><b>What are institutions reflected in?</b> Zeitgeist</li>
-                            <li><b>How can work be split?</b> Creative work and Mechanic Work</li>
-                            <li><b>What must people rethink?</b> Work</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm">
-                        <ul>
-                            <li><b>What should academies be substituted with?</b> Newly formed Institution</li>
-                            <li><b>What qualities are improved by preliminary courses at the Bauhaus?</b> Creativity, originality, expressivity</li>
-                            <li><b>Who is the person responsible of rethinking architecture</b> Journeyman</li>
-                            <li><b>Which courses are included in the Bauhaus courses?</b> Vorlehre, Formlehre, Werklehre</li>
-                            <li><b>What’s the main goal of newly-formed institutions?</b> Cooperation</li>
-                            <li><b>What is included in the new approach in training?</b> Personal experience, manual training, Vocabulary (knowledge of theory)</li>
-                            <li><b>Which kind of work does synthesis involve?</b> Arts and crafts</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="container" id="cqcomp">
-                <div class="row">
-                    <ul>
-                        <li><b>What’s the goal of both, the slogan by Taut and the credo of the Bauhaus?</b> Unification: for Taut, ”Art and people must form a unity”, for Gropius a ”unification in all training and desing” must be achieved</li>
-                        <li><b>What actions should be taken towards academies?</b> Dissolution, changed into newly-formed institution (CONTROLLA!)</li>
-                        <li><b>What is demanded of education programmes?</b> Freedom from government, personal experience</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <hr style="border: solid 0.1px white;">
+
     <!-- ONTOLOGY DEVELOPMENT FOR TAUT SECTION -->
     <section  class="page-section" id="ontotautsection" style="background: #f6d8b9">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">Ontology development of Taut's <i>Program for the Arbeitsrat für Kunst</i></h2>
-                <p class="mypar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod in eros ut facilisis. Praesent nec erat eu nisl rutrum aliquam volutpat non lorem. Pellentesque eu pharetra justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis maximus nunc viverra, dictum leo condimentum, pulvinar lorem. Proin a rhoncus felis, id ultricies nunc. Fusce hendrerit eleifend ligula et auctor. Cras ullamcorper at arcu sed venenatis. Aenean pharetra efficitur varius. Phasellus eleifend congue elit, maximus lacinia dolor faucibus eu. Morbi non orci lobortis, varius neque eget, lacinia arcu. Maecenas semper nibh in mauris posuere, accumsan aliquet justo interdum. Mauris hendrerit consectetur erat, eu eleifend odio ultricies at. Ut velit lacus, pretium eu sapien sit amet, aliquam maximus justo. Aenean id mollis velit. Mauris bibendum vulputate arcu a pretium. </p>
+        <div class="container">
+            <h2 class="text-center mt-0">Ontologies alignment: approach and implementation</h2>
+            <p class="mypar mt-3">An ontologies alignment consists of building a new model starting from two precedent ones. In this new ontology, all classes, objects and data properties are manually aligned, so as to highlight similarities and differences. Significant individuals have been chosen to populate this new model and both declared and inferred axioms are gathered through the Protégé built-in reasoner HermiT 1.4.3.456. After the model is built and populated, competency questions can be answered through SPARQL queries</p>
+            <p><a href="https://drive.google.com/drive/folders/1ihV7nnF87WilASyD7jphSW0KyKbnIOw3?usp=sharing"><i class="bi bi-cloud" style="font-size: 1.1em; font-weight: bolder;"></i></a> The documents used to perform this process are available at this link, redirecting to a shared Google Drive folder</p>
                 <div class="container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
                     <div class="row text-center" style="font-size: 1.3em; color: grey;">
-                        <div class="col-sm toggleOntology" onclick="showTauttl()">
+                        <div class="col-sm toggleOntology" onclick="showTurtle('AligTTL','AligGraph')">
                             <div><i class="bi bi-code fs-1" style="color:#60370e;"></i></div>
                             <h4 style="color: #60370e;">Turtle Serialization</h4> <!-- #f4623a-->
                         </div>
-                        <div class="col-sm toggleOntology" onclick="showTautgraph()">
+                        <div class="col-sm toggleOntology" onclick="showGraph('AligTTL','AligGraph')">
                             <div><i class="bi bi-diagram-3 fs-1" style="color: #60370e;"></i></div>
                             <h4 style="color: #60370e;">Graph Visualization</h4>
                         </div>
                     </div>
                 </div>
-                <span id="TautTTL">
+                <span id="AligTTL"> <!-- Da modificare con i file definitivi -->
                     <script src="https://gist.github.com/ManueleVeggi/fe0a174c5453d43ff534b9e0137fec33.js"></script>
                     <p><a href="assets/ontoTaut.owl" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file</p>
                 </span>
-                <span id="TautGraph">
+                <span id="AligGraph">
                     <img src="assets/ontoTaut.jpg" class="assetimg" style="width: 100%; box-shadow: 10px 10px 5px #874b0f;" onclick="window.open('assets/ontoTaut.jpg')">
                     <p style="margin-top: 1.5em;"><a href="assets/ontoTaut.jpg" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file <br>
                     <a href="assets/ontoTautMap.png" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the conceptual map</p>
@@ -151,8 +88,8 @@
         </div>
     </section>
 
-    <!-- ONTOLOGY DEVELOPMENT FOR GROPIUS SECTION -->
-    <section  class="page-section" id="ontotautsection">
+    <!-- SPARQL SECTION CQs -->
+    <section  class="page-section">
         <div class="container px-2">
             <h2 class="text-center mb-4">SPARQL Queries</i></h2>
             <div class="row">

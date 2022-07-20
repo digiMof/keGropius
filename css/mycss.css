@@ -36,6 +36,22 @@
     display: none;
 }
 
+#TautTTL {
+  display: none;
+}
+
+#TautGraph {
+  display: none;
+}
+
+#AligTTL {
+  display: none;
+}
+
+#AligGraph {
+  display: none;
+}
+
 .toggleOntology:hover {
     color: #f4623a;
 }
@@ -123,4 +139,3 @@
     text-align: justify;
     text-justify: inter-word;
   }
-
