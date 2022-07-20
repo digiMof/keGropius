@@ -15,57 +15,57 @@
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#fosteredBy
 :fosteredBy rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain :GovernmentInstitution ;
-            rdfs:range :Promotion .
+            rdfs:domain :Promotion ;
+            rdfs:range :GovernmentInstitution .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#freeFrom
 :freeFrom rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :GovernmentInstitution ;
-          rdfs:range :EducationalChange .
+          rdfs:domain :EducationalChange ;
+          rdfs:range :GovernmentInstitution .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#hasScope
 :hasScope rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :PublicNature ;
-          rdfs:range :BuldActivity .
+          rdfs:domain :BuldActivity ;
+          rdfs:range :PublicNature .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involves
 :involves rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :Academy ,
-                      :Exhibit ,
-                      :FineArt ,
-                      :Person ,
-                      :Product ;
-          rdfs:range :Dissolution ,
-                     :EducationalChange ,
-                     :Promotion ,
-                     :Unity .
+          rdfs:domain :Dissolution ,
+                      :EducationalChange ,
+                      :Promotion ,
+                      :Unity ;
+          rdfs:range :Academy ,
+                     :Exhibit ,
+                     :FineArt ,
+                     :Person ,
+                     :Product .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#pushesForward
 :pushesForward rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
-               rdfs:domain :Goal ;
-               rdfs:range :TextualSection .
+               rdfs:domain :TextualSection ;
+               rdfs:range :Goal .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replaces
 :replaces rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :Academy ;
-          rdfs:range :NewlyFormed .
+          rdfs:domain :NewlyFormed ;
+          rdfs:range :Academy .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#responsibleFor
 :responsibleFor rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf owl:topObjectProperty ;
-                rdfs:domain :Nation ;
-                rdfs:range :Artist .
+                rdfs:domain :Artist ;
+                rdfs:range :Nation .
 
 
 #################################################################
