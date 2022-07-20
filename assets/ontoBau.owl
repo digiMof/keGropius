@@ -157,6 +157,7 @@
     <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#hasMainGoal -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#hasMainGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#pushesForward"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Unity"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#CreativeWork"/>
     </owl:ObjectProperty>
@@ -239,6 +240,7 @@
     <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#mustFollow -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#mustFollow">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#follows"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewApproach"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArchitectureDesign"/>
     </owl:ObjectProperty>
