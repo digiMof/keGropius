@@ -54,32 +54,24 @@ function showProC() {
 
 // Toggle Ontology Taut
 
-function showTauttl() {
-    var ser = document.getElementById("TautTTL");
-    var graph = document.getElementById("TautGraph");
-    ser.style.display = "block";
+function showTurtle(turtle, graphviz) {
+    var ser = document.getElementById(turtle);
+    var graph = document.getElementById(graphviz);
     graph.style.display = "none";
+    if (ser.style.display === "none" || ser.style.display === "") {
+        ser.style.display = "block";
+    } else {
+        ser.style.display = "none";
+    }
 }
 
-function showTautgraph() {
-    var ser = document.getElementById("TautTTL");
-    var graph = document.getElementById("TautGraph");
+function showGraph(turtle, graphviz) {
+    var ser = document.getElementById(turtle);
+    var graph = document.getElementById(graphviz);
     ser.style.display = "none";
-    graph.style.display = "block";
-}
-
-// Toggle Ontology Gropius
-
-function showGropiusttl() {
-    var ser = document.getElementById("GropiusTTL");
-    var graph = document.getElementById("GropiusGraph");
-    ser.style.display = "block";
-    graph.style.display = "none";
-}
-
-function showGropiusgraph() {
-    var ser = document.getElementById("GropiusTTL");
-    var graph = document.getElementById("GropiusGraph");
-    ser.style.display = "none";
-    graph.style.display = "block";
+    if (graph.style.display === "none" || graph.style.display === "") {
+        graph.style.display = "block";
+    } else {
+        graph.style.display = "none";
+    }
 }
