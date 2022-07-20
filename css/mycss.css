@@ -4,6 +4,10 @@
     text-justify: inter-word;
 }
 
+.workflow:hover{
+  text-shadow: 2px 2px 5px black;
+}
+
 /* ===== MODELLING ========*/ 
 #intromodel {
     background-image: linear-gradient(rgba(255, 255, 255, .65), rgba(255, 255, 255, .65)), url('../assets/img/covermodel.jpg');
