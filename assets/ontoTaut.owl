@@ -15,33 +15,37 @@
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#fosteredBy
 :fosteredBy rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain :Promotion ;
+            owl:inverseOf :hasScope ,
+                          :pushesForward ;
+            rdfs:domain :SecondaryGoal ;
             rdfs:range :GovernmentInstitution .
-
-
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#freeFrom
-:freeFrom rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :EducationalChange ;
-          rdfs:range :GovernmentInstitution .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#hasScope
 :hasScope rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :BuldActivity ;
-          rdfs:range :PublicNature .
+          rdfs:domain :Craft ,
+                      :FineArt ;
+          rdfs:range :SecondaryGoal .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involvedBy
+:involvedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :involves ;
+            rdfs:domain :Academy ,
+                        :FineArt ,
+                        :Person ,
+                        :Product ;
+            rdfs:range :SecondaryGoal ,
+                       :SloganGoal .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involves
 :involves rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :Dissolution ,
-                      :EducationalChange ,
-                      :Promotion ,
-                      :Unity ;
+          rdfs:domain :SecondaryGoal ,
+                      :SloganGoal ;
           rdfs:range :Academy ,
-                     :Exhibit ,
                      :FineArt ,
                      :Person ,
                      :Product .
@@ -54,18 +58,31 @@
                rdfs:range :Goal .
 
 
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replacedBy
+:replacedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :replaces ;
+            rdfs:domain :Academy ,
+                        :Error ;
+            rdfs:range :NewlyFormed ,
+                       :SecondaryGoal .
+
+
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replaces
 :replaces rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :NewlyFormed ;
-          rdfs:range :Academy .
+          rdfs:domain :NewlyFormed ,
+                      :SecondaryGoal ;
+          rdfs:range :Academy ,
+                     :Error .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#responsibleFor
 :responsibleFor rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf owl:topObjectProperty ;
-                rdfs:domain :Artist ;
-                rdfs:range :Nation .
+                rdfs:domain :Artist ,
+                            :GovernmentInstitution ;
+                rdfs:range :Nation ,
+                           :SecondaryGoal .
 
 
 #################################################################
@@ -89,12 +106,6 @@
                      owl:disjointWith :GovernmentInstitution .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#BuldActivity
-:BuldActivity rdf:type owl:Class ;
-              rdfs:subClassOf :Craft ,
-                              :FineArt .
-
-
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Craft
 :Craft rdf:type owl:Class ;
        rdfs:subClassOf :Techne ;
@@ -107,24 +118,8 @@
              owl:disjointWith :WorkOfArt .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#DispropArtisticValueMon
-:DispropArtisticValueMon rdf:type owl:Class ;
-                         rdfs:subClassOf :Monument .
-
-
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Dissolution
-:Dissolution rdf:type owl:Class ;
-             rdfs:subClassOf :SecondaryGoal .
-
-
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#EducationalChange
-:EducationalChange rdf:type owl:Class ;
-                   rdfs:subClassOf :SecondaryGoal .
-
-
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Exhibit
-:Exhibit rdf:type owl:Class ;
-         rdfs:subClassOf :ArtisticInstitution .
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Error
+:Error rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#FineArt
@@ -160,11 +155,6 @@
              rdfs:subClassOf :ArtisticInstitution .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NoArtisticValueMon
-:NoArtisticValueMon rdf:type owl:Class ;
-                    rdfs:subClassOf :Monument .
-
-
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NonArtist
 :NonArtist rdf:type owl:Class ;
            rdfs:subClassOf :Person .
@@ -176,16 +166,6 @@
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Product
 :Product rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Promotion
-:Promotion rdf:type owl:Class ;
-           rdfs:subClassOf :SecondaryGoal .
-
-
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#PublicNature
-:PublicNature rdf:type owl:Class ;
-              rdfs:subClassOf :SecondaryGoal .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal
@@ -207,14 +187,127 @@
 :TextualSection rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Unity
-:Unity rdf:type owl:Class ;
-       rdfs:subClassOf :SloganGoal .
-
-
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#WorkOfArt
 :WorkOfArt rdf:type owl:Class ;
            rdfs:subClassOf :Product .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArbeitsratProgram
+:ArbeitsratProgram rdf:type owl:NamedIndividual ,
+                            :TextualSection ;
+                   :pushesForward :Unity .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArbeitsratfürKunst
+:ArbeitsratfürKunst rdf:type owl:NamedIndividual ,
+                             :NewlyFormed ;
+                    :replaces :RoyalAcademyofArchitecture ,
+                              :RoyalAcademyofArts ,
+                              :RoyalPrussianStateArtCommission .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#BuildActivity
+:BuildActivity rdf:type owl:NamedIndividual ,
+                        :Craft ,
+                        :FineArt ;
+               :hasScope :PublicNature .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Dissolution
+:Dissolution rdf:type owl:NamedIndividual ,
+                      :SecondaryGoal ;
+             :involves :MonumentDispropValue ,
+                       :MonumentNoValue .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#EducationalChange
+:EducationalChange rdf:type owl:NamedIndividual ,
+                            :SecondaryGoal ;
+                   :fosteredBy :Museum .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Freedom
+:Freedom rdf:type owl:NamedIndividual ,
+                  :SecondaryGoal ;
+         :replaces :GovernmentDomination .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentDomination
+:GovernmentDomination rdf:type owl:NamedIndividual ,
+                               :Error ;
+                      :replacedBy :Freedom .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution
+:GovernmentInstitution rdf:type owl:NamedIndividual ,
+                                :GovernmentInstitution ;
+                       :hasScope :Promotion .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#MonumentDispropValue
+:MonumentDispropValue rdf:type owl:NamedIndividual ,
+                               :Monument ;
+                      :involvedBy :Dissolution .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#MonumentNoValue
+:MonumentNoValue rdf:type owl:NamedIndividual ,
+                          :Monument ;
+                 :involvedBy :Dissolution .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Museum
+:Museum rdf:type owl:NamedIndividual ,
+                 :GovernmentInstitution ;
+        :responsibleFor :EducationalChange .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormedInstitutions
+:NewlyFormedInstitutions rdf:type owl:NamedIndividual ,
+                                  :NewlyFormed ;
+                         :replaces :RoyalAcademyofArchitecture ,
+                                   :RoyalAcademyofArts ,
+                                   :RoyalPrussianStateArtCommission .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Promotion
+:Promotion rdf:type owl:NamedIndividual ,
+                    :SecondaryGoal ;
+           :fosteredBy :GovernmentInstitution .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#PublicNature
+:PublicNature rdf:type owl:NamedIndividual ,
+                       :SecondaryGoal ;
+              :fosteredBy :BuildActivity .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArchitecture
+:RoyalAcademyofArchitecture rdf:type owl:NamedIndividual ,
+                                     :Academy ;
+                            :replacedBy :NewlyFormedInstitutions .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArts
+:RoyalAcademyofArts rdf:type owl:NamedIndividual ,
+                             :Academy ;
+                    :replacedBy :NewlyFormedInstitutions .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalPrussianStateArtCommission
+:RoyalPrussianStateArtCommission rdf:type owl:NamedIndividual ,
+                                          :Academy ;
+                                 :replacedBy :NewlyFormedInstitutions .
+
+
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Unity
+:Unity rdf:type owl:NamedIndividual ,
+                :SloganGoal ;
+       :fosteredBy :ArbeitsratProgram .
 
 
 #################################################################
@@ -222,18 +315,14 @@
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Academy
-                :Exhibit
-                :NewlyFormed
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Dissolution
-                :EducationalChange
-                :Promotion
-                :PublicNature
+  owl:members ( :Error
+                :Goal
+                :Institution
+                :Nation
+                :Person
+                :Product
+                :Techne
+                :TextualSection
               )
 ] .
 
