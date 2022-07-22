@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#"
+     xml:base="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut"
+     xmlns:mof="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#aimsAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#aimsAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#fosteredBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Craft"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#FineArt"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#TextualSection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Goal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SloganGoal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#fosteredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#fosteredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Goal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SloganGoal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Craft"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#FineArt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#TextualSection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involvedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involvedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involves"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#FineArt"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SloganGoal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SloganGoal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#FineArt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replacedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replacedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replaces"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Error"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormed"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replaces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replaces">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormed"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Error"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#responsibleFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#responsibleFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Artist"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Nation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArtisticInstitution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Artist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArtisticInstitution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArtisticInstitution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Institution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Craft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Craft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Techne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#DailyObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#DailyObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Error -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Error">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#FineArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#FineArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Techne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Goal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Institution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Institution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Institution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Monument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Monument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#DailyObject"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#WorkOfArt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Nation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Nation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArtisticInstitution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NonArtist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NonArtist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Product">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SloganGoal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SloganGoal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Techne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Techne">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#TextualSection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#TextualSection">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#WorkOfArt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#WorkOfArt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArbeitsratProgram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArbeitsratProgram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#TextualSection"/>
+        <aimsAt rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Unity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArbeitsratfürKunst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArbeitsratfürKunst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormed"/>
+        <replaces rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArchitecture"/>
+        <replaces rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArts"/>
+        <replaces rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalPrussianStateArtCommission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#BuildActivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#BuildActivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Craft"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#FineArt"/>
+        <aimsAt rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#PublicNature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Dissolution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Dissolution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+        <involves rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#MonumentDispropValue"/>
+        <involves rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#MonumentNoValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#EducationalChange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#EducationalChange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+        <fosteredBy rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Museum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Freedom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Freedom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+        <replaces rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentDomination"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentDomination -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentDomination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Error"/>
+        <replacedBy rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Freedom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution"/>
+        <aimsAt rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Promotion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#MonumentDispropValue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#MonumentDispropValue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Monument"/>
+        <involvedBy rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Dissolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#MonumentNoValue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#MonumentNoValue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Monument"/>
+        <involvedBy rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Dissolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Museum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution"/>
+        <responsibleFor rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#EducationalChange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormedInstitutions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormedInstitutions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormed"/>
+        <replaces rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArchitecture"/>
+        <replaces rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArts"/>
+        <replaces rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalPrussianStateArtCommission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Promotion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Promotion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+        <fosteredBy rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#PublicNature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#PublicNature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal"/>
+        <fosteredBy rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#BuildActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArchitecture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArchitecture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy"/>
+        <replacedBy rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormedInstitutions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy"/>
+        <replacedBy rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormedInstitutions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalPrussianStateArtCommission -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalPrussianStateArtCommission">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy"/>
+        <replacedBy rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormedInstitutions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Unity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Unity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SloganGoal"/>
+        <fosteredBy rdf:resource="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArbeitsratProgram"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Error"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Goal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#TextualSection"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
