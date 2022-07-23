@@ -202,7 +202,9 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SecondaryGoal"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SloganGoal"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArtisticMovement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Arts"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Craft"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Crafts"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#FineArt"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#GovernmentInstitution"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Institution"/>
@@ -297,11 +299,15 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewApproach"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NonArtist"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#PersonalExperience"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SecondaryGoal"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Artist"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Dualism"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Effect"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Goal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewApproach"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitution"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SecondaryGoal"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SloganGoal"/>
@@ -315,8 +321,10 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Artist"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Dualism"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Effect"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Goal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewApproach"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitution"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SecondaryGoal"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SloganGoal"/>
@@ -330,7 +338,9 @@
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewApproach"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NonArtist"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#PersonalExperience"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SecondaryGoal"/>
     </owl:ObjectProperty>
     
 
@@ -645,6 +655,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Dualism">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewApproach"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Training"/>
     </owl:Class>
     
 
@@ -988,6 +1007,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Cooperation">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Goal"/>
         <basisOf rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArchitectureDesign"/>
+        <fosteredBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus"/>
+        <fosteredBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Kunstgewerbeschule"/>
     </owl:NamedIndividual>
     
 
@@ -1010,10 +1031,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewApproach"/>
+        <involves rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Freedom"/>
+        <involves rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ManualTraining"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Formlehre -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Formlehre">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#BauhausCourse"/>
+        <involvedBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus"/>
     </owl:NamedIndividual>
     
 
@@ -1022,6 +1055,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Freedom">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SecondaryGoal"/>
+        <involvedBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram"/>
         <replaces rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#GovernmentDomination"/>
     </owl:NamedIndividual>
     
@@ -1066,6 +1100,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#KnowledgeOfTheory">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Vocabulary"/>
+        <involvedBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus"/>
     </owl:NamedIndividual>
     
 
@@ -1083,6 +1118,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ManualTraining">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#PersonalExperience"/>
+        <involvedBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus"/>
+        <involvedBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram"/>
     </owl:NamedIndividual>
     
 
@@ -1110,6 +1147,17 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Museum">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#GovernmentInstitution"/>
         <responsibleFor rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalChange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitutions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitutions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormed"/>
+        <replaces rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalAcademyOfArchitecture"/>
+        <replaces rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalAcademyOfArts"/>
+        <replaces rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalPrussianStateArtCommission"/>
     </owl:NamedIndividual>
     
 
@@ -1144,6 +1192,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#PublicNature">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SecondaryGoal"/>
+        <fosteredBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#BuildActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalAcademyOfArchitecture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalAcademyOfArchitecture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Academy"/>
+        <replacedBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitutions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalAcademyOfArts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalAcademyOfArts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Academy"/>
+        <replacedBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitutions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalPrussianStateArtCommission -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalPrussianStateArtCommission">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Academy"/>
+        <replacedBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitutions"/>
     </owl:NamedIndividual>
     
 
@@ -1162,6 +1238,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Unity">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#MainGoal"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SloganGoal"/>
+        <fosteredBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArbeitsratProgram"/>
         <fosteredBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus"/>
     </owl:NamedIndividual>
     
@@ -1171,6 +1248,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Vorlehre">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#BauhausCourse"/>
+        <involvedBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus"/>
     </owl:NamedIndividual>
     
 
@@ -1179,6 +1257,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Werklehre">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#BauhausCourse"/>
+        <involvedBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus"/>
     </owl:NamedIndividual>
     
 
