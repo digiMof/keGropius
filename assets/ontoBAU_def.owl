@@ -702,7 +702,9 @@
 
     <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Goal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Goal"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Goal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
     
 
 
@@ -716,7 +718,9 @@
 
     <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Idea -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Idea"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Idea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
     
 
 
@@ -805,7 +809,9 @@
 
     <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Outcome -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Outcome"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Outcome">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
     
 
 
