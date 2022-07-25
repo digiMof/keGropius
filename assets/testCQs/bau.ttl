@@ -1,0 +1,896 @@
+@prefix : <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#> .
+@prefix mof: <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau> .
+
+<http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#against
+mof:against rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain mof:Academy ,
+                        mof:BauhausCourse ;
+            rdfs:range mof:Error .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#aimsAt
+mof:aimsAt rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           owl:inverseOf mof:fosteredBy ;
+           rdfs:domain mof:ArtisticMovement ,
+                       mof:Craft ,
+                       mof:FineArt ,
+                       mof:GovernmentInstitution ,
+                       mof:Institution ,
+                       mof:NewlyFormedInstitution ,
+                       mof:TextualSection ;
+           rdfs:range mof:CollaborativeWorkOfArt ,
+                      mof:Goal ,
+                      mof:MainGoal ,
+                      mof:SecondaryGoal ,
+                      mof:SloganGoal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#basisOf
+mof:basisOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            owl:inverseOf mof:dependsOn ;
+            rdfs:domain mof:Artist ,
+                        mof:Conceptualization ,
+                        mof:Course ,
+                        mof:CreativeWork ,
+                        mof:Goal ,
+                        mof:NewlyFormedInstitution ,
+                        mof:Visualization ;
+            rdfs:range mof:Arts ,
+                       mof:Course ,
+                       mof:Crafts ,
+                       mof:CreativeWork ,
+                       mof:Goal ,
+                       mof:NewlyFormedInstitution ,
+                       mof:Quality .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#changedInto
+mof:changedInto rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain mof:Academy ;
+                rdfs:range mof:NewlyFormedInstitution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#dependsOn
+mof:dependsOn rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain mof:Arts ,
+                          mof:BauhausCourse ,
+                          mof:Course ,
+                          mof:Crafts ,
+                          mof:CreativeWork ,
+                          mof:Goal ,
+                          mof:NewlyFormedInstitution ,
+                          mof:Quality ;
+              rdfs:range mof:Artist ,
+                         mof:Conceptualization ,
+                         mof:Course ,
+                         mof:CreativeWork ,
+                         mof:Goal ,
+                         mof:NewlyFormedInstitution ,
+                         mof:Visualization .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#embodiedIn
+mof:embodiedIn rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain mof:Idea ;
+               rdfs:range mof:CollaborativeWorkOfArt ,
+                          mof:Form .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#emphasizedBy
+mof:emphasizedBy rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 owl:inverseOf mof:emphasizes ;
+                 rdfs:domain mof:Arts ,
+                             mof:Crafts ;
+                 rdfs:range mof:NewlyFormedInstitution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#emphasizes
+mof:emphasizes rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain mof:NewlyFormedInstitution ;
+               rdfs:range mof:Arts ,
+                          mof:Crafts .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#failedAt
+mof:failedAt rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain mof:Academy ;
+             rdfs:range mof:Vocabulary .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#followedBy
+mof:followedBy rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf mof:follows ;
+               rdfs:domain mof:ComplementaryCourse ,
+                           mof:ConventionalApproach ,
+                           mof:Error ;
+               rdfs:range mof:Academy ,
+                          mof:Artist .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#follows
+mof:follows rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain mof:Academy ,
+                        mof:Artist ;
+            rdfs:range mof:ComplementaryCourse ,
+                       mof:ConventionalApproach ,
+                       mof:Error .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#formalizes
+mof:formalizes rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain mof:Arts ,
+                           mof:Crafts ;
+               rdfs:range mof:Idea .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#fosteredBy
+mof:fosteredBy rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain mof:CollaborativeWorkOfArt ,
+                           mof:Goal ,
+                           mof:MainGoal ,
+                           mof:SecondaryGoal ,
+                           mof:SloganGoal ;
+               rdfs:range mof:ArtisticMovement ,
+                          mof:Arts ,
+                          mof:Craft ,
+                          mof:Crafts ,
+                          mof:FineArt ,
+                          mof:GovernmentInstitution ,
+                          mof:Institution ,
+                          mof:NewlyFormedInstitution ,
+                          mof:TextualSection .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#founded
+mof:founded rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain mof:NewlyFormedInstitution ;
+            rdfs:range mof:ArtisticMovement .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#freeFrom
+mof:freeFrom rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain mof:Arts ,
+                         mof:BauhausCourse ,
+                         mof:Crafts ;
+             rdfs:range mof:ConventionalApproach ,
+                        mof:Error .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#hasOutcome
+mof:hasOutcome rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain mof:Course ;
+               rdfs:range mof:Outcome .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#hasRole
+mof:hasRole rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain mof:Arts ,
+                        mof:Crafts ;
+            rdfs:range mof:Role .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#improves
+mof:improves rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain mof:BauhausCourse ,
+                         mof:NewlyFormedInstitution ,
+                         mof:Person ;
+             rdfs:range mof:Academy ,
+                        mof:Conceptualization ,
+                        mof:Outcome ,
+                        mof:PersonalExperience ,
+                        mof:Quality .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#influencedBy
+mof:influencedBy rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain mof:BauhausCourse ;
+                 rdfs:range mof:Artist .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#involvedBy
+mof:involvedBy rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf mof:involves ;
+               rdfs:domain mof:Academy ,
+                           mof:Artist ,
+                           mof:Arts ,
+                           mof:BauhausCourse ,
+                           mof:Crafts ,
+                           mof:Effect ,
+                           mof:FineArt ,
+                           mof:NewApproach ,
+                           mof:NonArtist ,
+                           mof:Person ,
+                           mof:PersonalExperience ,
+                           mof:Product ,
+                           mof:SecondaryGoal ;
+               rdfs:range mof:Artist ,
+                          mof:Dualism ,
+                          mof:EducationalProgram ,
+                          mof:Effect ,
+                          mof:Goal ,
+                          mof:NewApproach ,
+                          mof:NewlyFormedInstitution ,
+                          mof:SecondaryGoal ,
+                          mof:SloganGoal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#involves
+mof:involves rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain mof:Artist ,
+                         mof:Dualism ,
+                         mof:EducationalProgram ,
+                         mof:Effect ,
+                         mof:Goal ,
+                         mof:NewApproach ,
+                         mof:NewlyFormedInstitution ,
+                         mof:SecondaryGoal ,
+                         mof:SloganGoal ;
+             rdfs:range mof:Academy ,
+                        mof:Artist ,
+                        mof:Arts ,
+                        mof:BauhausCourse ,
+                        mof:Crafts ,
+                        mof:Effect ,
+                        mof:FineArt ,
+                        mof:NewApproach ,
+                        mof:NonArtist ,
+                        mof:Person ,
+                        mof:PersonalExperience ,
+                        mof:Product ,
+                        mof:SecondaryGoal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#joins
+mof:joins rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain mof:Artist ;
+          rdfs:range mof:ArtisticMovement .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#mustFollow
+mof:mustFollow rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf mof:follows ;
+               rdfs:domain mof:Arts ,
+                           mof:Crafts ;
+               rdfs:range mof:NewApproach .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#mustHaveRole
+mof:mustHaveRole rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf mof:hasRole ;
+                 rdfs:domain mof:CreativeWork ;
+                 rdfs:range mof:Role .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#mustRethink
+mof:mustRethink rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain mof:Artist ,
+                            mof:BauhausCourse ,
+                            mof:Person ;
+                rdfs:range mof:Arts ,
+                           mof:Crafts ,
+                           mof:Vocabulary ,
+                           mof:Work .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#prerequisitFor
+mof:prerequisitFor rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain mof:BauhausCourse ;
+                   rdfs:range mof:Arts ,
+                              mof:Crafts .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#produces
+mof:produces rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain mof:Academy ,
+                         mof:Goal ,
+                         mof:NewApproach ,
+                         mof:PersonalExperience ;
+             rdfs:range mof:Effect ,
+                        mof:Error ,
+                        mof:Goal ,
+                        mof:Quality .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#reflects
+mof:reflects rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain mof:Arts ,
+                         mof:Crafts ;
+             rdfs:range mof:Idea .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#replacedBy
+mof:replacedBy rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf mof:replaces ;
+               rdfs:domain mof:Academy ,
+                           mof:Error ;
+               rdfs:range mof:NewlyFormed ,
+                          mof:SecondaryGoal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#replaces
+mof:replaces rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain mof:NewlyFormed ,
+                         mof:SecondaryGoal ;
+             rdfs:range mof:Academy ,
+                        mof:Error .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#responsibleFor
+mof:responsibleFor rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain mof:Artist ,
+                               mof:GovernmentInstitution ;
+                   rdfs:range mof:Nation ,
+                              mof:SecondaryGoal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#simultaneousTo
+mof:simultaneousTo rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdf:type owl:SymmetricProperty ;
+                   rdfs:domain mof:Conceptualization ,
+                               mof:Visualization ;
+                   rdfs:range mof:Conceptualization ,
+                              mof:Visualization .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#hasDuration
+mof:hasDuration rdf:type owl:DatatypeProperty ;
+                rdfs:domain mof:Course ;
+                rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Academy
+mof:Academy rdf:type owl:Class ;
+            rdfs:subClassOf mof:ArtisticInstitution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Activity
+mof:Activity rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Artist
+mof:Artist rdf:type owl:Class ;
+           rdfs:subClassOf mof:Person .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArtisticInstitution
+mof:ArtisticInstitution rdf:type owl:Class ;
+                        rdfs:subClassOf mof:Institution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArtisticMovement
+mof:ArtisticMovement rdf:type owl:Class ;
+                     rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Arts
+mof:Arts rdf:type owl:Class ;
+         owl:equivalentClass mof:FineArt ;
+         rdfs:subClassOf mof:CreativeWork .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#BauhausCourse
+mof:BauhausCourse rdf:type owl:Class ;
+                  rdfs:subClassOf mof:Course .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#CollaborativeWorkOfArt
+mof:CollaborativeWorkOfArt rdf:type owl:Class ;
+                           rdfs:subClassOf mof:DailyLifeProduct ,
+                                           mof:WorkOfArt .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ComplementaryCourse
+mof:ComplementaryCourse rdf:type owl:Class ;
+                        rdfs:subClassOf mof:Course .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Conceptualization
+mof:Conceptualization rdf:type owl:Class ;
+                      rdfs:subClassOf mof:Activity .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ConventionalApproach
+mof:ConventionalApproach rdf:type owl:Class ;
+                         rdfs:subClassOf mof:Training .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Course
+mof:Course rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Craft
+mof:Craft rdf:type owl:Class ;
+          owl:equivalentClass mof:Crafts ;
+          rdfs:subClassOf mof:Techne .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Crafts
+mof:Crafts rdf:type owl:Class ;
+           rdfs:subClassOf mof:CreativeWork .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#CreativeWork
+mof:CreativeWork rdf:type owl:Class ;
+                 owl:equivalentClass mof:Techne ;
+                 rdfs:subClassOf mof:Work .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#DailyLifeProduct
+mof:DailyLifeProduct rdf:type owl:Class ;
+                     owl:equivalentClass mof:DailyObject ;
+                     rdfs:subClassOf mof:Product .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#DailyObject
+mof:DailyObject rdf:type owl:Class ;
+                rdfs:subClassOf mof:Product .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Dualism
+mof:Dualism rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram
+mof:EducationalProgram rdf:type owl:Class ;
+                       owl:equivalentClass mof:NewApproach ;
+                       rdfs:subClassOf mof:Training .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Effect
+mof:Effect rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Error
+mof:Error rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#FineArt
+mof:FineArt rdf:type owl:Class ;
+            rdfs:subClassOf mof:Techne .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Form
+mof:Form rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Goal
+mof:Goal rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#GovernmentInstitution
+mof:GovernmentInstitution rdf:type owl:Class ;
+                          rdfs:subClassOf mof:Institution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Idea
+mof:Idea rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#IndustrialProduct
+mof:IndustrialProduct rdf:type owl:Class ;
+                      rdfs:subClassOf mof:DailyLifeProduct .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Institution
+mof:Institution rdf:type owl:Class ;
+                rdfs:subClassOf mof:Form .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#MainGoal
+mof:MainGoal rdf:type owl:Class ;
+             owl:equivalentClass mof:SloganGoal ;
+             rdfs:subClassOf mof:Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#MechanicWork
+mof:MechanicWork rdf:type owl:Class ;
+                 rdfs:subClassOf mof:Work .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Monument
+mof:Monument rdf:type owl:Class ;
+             rdfs:subClassOf mof:DailyObject ,
+                             mof:WorkOfArt .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Nation
+mof:Nation rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewApproach
+mof:NewApproach rdf:type owl:Class ;
+                rdfs:subClassOf mof:Training .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormed
+mof:NewlyFormed rdf:type owl:Class ;
+                owl:equivalentClass mof:NewlyFormedInstitution ;
+                rdfs:subClassOf mof:ArtisticInstitution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitution
+mof:NewlyFormedInstitution rdf:type owl:Class ;
+                           rdfs:subClassOf mof:ArtisticInstitution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NonArtist
+mof:NonArtist rdf:type owl:Class ;
+              rdfs:subClassOf mof:Person .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Outcome
+mof:Outcome rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Person
+mof:Person rdf:type owl:Class ;
+           rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#PersonalExperience
+mof:PersonalExperience rdf:type owl:Class ;
+                       rdfs:subClassOf mof:NewApproach .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Product
+mof:Product rdf:type owl:Class ;
+            rdfs:subClassOf mof:Form .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Quality
+mof:Quality rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Role
+mof:Role rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SecondaryGoal
+mof:SecondaryGoal rdf:type owl:Class ;
+                  rdfs:subClassOf mof:Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SloganGoal
+mof:SloganGoal rdf:type owl:Class ;
+               rdfs:subClassOf mof:Goal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Techne
+mof:Techne rdf:type owl:Class ;
+           rdfs:subClassOf mof:Work .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Text
+mof:Text rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#TextualSection
+mof:TextualSection rdf:type owl:Class ;
+                   rdfs:subClassOf mof:Text .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Training
+mof:Training rdf:type owl:Class ;
+             rdfs:subClassOf mof:Activity .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Visualization
+mof:Visualization rdf:type owl:Class ;
+                  rdfs:subClassOf mof:Activity .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Vocabulary
+mof:Vocabulary rdf:type owl:Class ;
+               rdfs:subClassOf mof:NewApproach .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Work
+mof:Work rdf:type owl:Class ;
+         rdfs:subClassOf mof:Activity .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#WorkOfArt
+mof:WorkOfArt rdf:type owl:Class ;
+              rdfs:subClassOf mof:Product .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf owl:Thing .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Academia
+mof:Academia rdf:type owl:NamedIndividual ,
+                      mof:Academy ;
+             mof:changedInto mof:Bauhaus ,
+                             mof:Kunstgewerbeschule ;
+             mof:produces mof:Isolation .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArbeitsratProgram
+mof:ArbeitsratProgram rdf:type owl:NamedIndividual ,
+                               mof:TextualSection ;
+                      mof:aimsAt mof:Unity .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArchitectureDesign
+mof:ArchitectureDesign rdf:type owl:NamedIndividual ,
+                                mof:Arts ,
+                                mof:Crafts ;
+                       mof:dependsOn mof:Cooperation ;
+                       mof:reflects mof:Zeitgeist .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus
+mof:Bauhaus rdf:type owl:NamedIndividual ,
+                     mof:NewlyFormedInstitution ;
+            mof:aimsAt mof:Cooperation ,
+                       mof:Unity ;
+            mof:involves mof:Formlehre ,
+                         mof:KnowledgeOfTheory ,
+                         mof:ManualTraining ,
+                         mof:Vorlehre ,
+                         mof:Werklehre .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#BuildActivity
+mof:BuildActivity rdf:type owl:NamedIndividual ,
+                           mof:Arts ,
+                           mof:Craft ,
+                           mof:Crafts ,
+                           mof:FineArt ;
+                  mof:aimsAt mof:PublicNature .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Cooperation
+mof:Cooperation rdf:type owl:NamedIndividual ,
+                         mof:Goal ;
+                mof:basisOf mof:ArchitectureDesign ;
+                mof:fosteredBy mof:Bauhaus ,
+                               mof:Kunstgewerbeschule .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Dissolution
+mof:Dissolution rdf:type owl:NamedIndividual ,
+                         mof:SecondaryGoal ;
+                mof:involves mof:MonumentDispropValue ,
+                             mof:MonumentNoValue .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalChange
+mof:EducationalChange rdf:type owl:NamedIndividual ,
+                               mof:SecondaryGoal .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalProgram
+mof:EducationalProgram rdf:type owl:NamedIndividual ,
+                                mof:EducationalProgram ,
+                                mof:NewApproach ;
+                       mof:involves mof:Freedom ,
+                                    mof:ManualTraining .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Formlehre
+mof:Formlehre rdf:type owl:NamedIndividual ,
+                       mof:BauhausCourse ;
+              mof:involvedBy mof:Bauhaus .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Freedom
+mof:Freedom rdf:type owl:NamedIndividual ,
+                     mof:SecondaryGoal ;
+            mof:involvedBy mof:EducationalProgram ;
+            mof:replaces mof:GovernmentDomination .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#GovernmentDomination
+mof:GovernmentDomination rdf:type owl:NamedIndividual ,
+                                  mof:Error ;
+                         mof:replacedBy mof:Freedom .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#GovernmentInstitution
+mof:GovernmentInstitution rdf:type owl:NamedIndividual ,
+                                   mof:GovernmentInstitution ;
+                          mof:aimsAt mof:Promotion .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Isolation
+mof:Isolation rdf:type owl:NamedIndividual ,
+                       mof:Effect .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Journeyman
+mof:Journeyman rdf:type owl:NamedIndividual ,
+                        mof:Artist ;
+               mof:mustRethink mof:ArchitectureDesign .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#KnowledgeOfTheory
+mof:KnowledgeOfTheory rdf:type owl:NamedIndividual ,
+                               mof:Vocabulary ;
+                      mof:involvedBy mof:Bauhaus .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Kunstgewerbeschule
+mof:Kunstgewerbeschule rdf:type owl:NamedIndividual ,
+                                mof:NewlyFormedInstitution ;
+                       mof:aimsAt mof:Cooperation .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ManualTraining
+mof:ManualTraining rdf:type owl:NamedIndividual ,
+                            mof:PersonalExperience ;
+                   mof:involvedBy mof:Bauhaus ,
+                                  mof:EducationalProgram .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#MonumentDispropValue
+mof:MonumentDispropValue rdf:type owl:NamedIndividual ,
+                                  mof:Monument ;
+                         mof:involvedBy mof:Dissolution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#MonumentNoValue
+mof:MonumentNoValue rdf:type owl:NamedIndividual ,
+                             mof:Monument ;
+                    mof:involvedBy mof:Dissolution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Museum
+mof:Museum rdf:type owl:NamedIndividual ,
+                    mof:GovernmentInstitution ;
+           mof:responsibleFor mof:EducationalChange .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitutions
+mof:NewlyFormedInstitutions rdf:type owl:NamedIndividual ,
+                                     mof:NewlyFormed ;
+                            mof:replaces mof:RoyalAcademyOfArchitecture ,
+                                         mof:RoyalAcademyOfArts ,
+                                         mof:RoyalPrussianStateArtCommission .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Person
+mof:Person rdf:type owl:NamedIndividual ,
+                    mof:Person ;
+           mof:mustRethink mof:Work .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#PieceOfWork
+mof:PieceOfWork rdf:type owl:NamedIndividual ,
+                         mof:Form .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Promotion
+mof:Promotion rdf:type owl:NamedIndividual ,
+                       mof:SecondaryGoal ;
+              mof:fosteredBy mof:GovernmentInstitution .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#PublicNature
+mof:PublicNature rdf:type owl:NamedIndividual ,
+                          mof:SecondaryGoal ;
+                 mof:fosteredBy mof:BuildActivity .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalAcademyOfArchitecture
+mof:RoyalAcademyOfArchitecture rdf:type owl:NamedIndividual ,
+                                        mof:Academy ;
+                               mof:replacedBy mof:NewlyFormedInstitutions .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalAcademyOfArts
+mof:RoyalAcademyOfArts rdf:type owl:NamedIndividual ,
+                                mof:Academy ;
+                       mof:replacedBy mof:NewlyFormedInstitutions .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#RoyalPrussianStateArtCommission
+mof:RoyalPrussianStateArtCommission rdf:type owl:NamedIndividual ,
+                                             mof:Academy ;
+                                    mof:replacedBy mof:NewlyFormedInstitutions .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Space
+mof:Space rdf:type owl:NamedIndividual ,
+                   mof:Idea ;
+          mof:embodiedIn mof:PieceOfWork .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Unity
+mof:Unity rdf:type owl:NamedIndividual ,
+                   mof:MainGoal ,
+                   mof:SloganGoal ;
+          mof:fosteredBy mof:ArbeitsratProgram ,
+                         mof:Bauhaus .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Vorlehre
+mof:Vorlehre rdf:type owl:NamedIndividual ,
+                      mof:BauhausCourse ;
+             mof:involvedBy mof:Bauhaus .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Werklehre
+mof:Werklehre rdf:type owl:NamedIndividual ,
+                       mof:BauhausCourse ;
+              mof:involvedBy mof:Bauhaus .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Work
+mof:Work rdf:type owl:NamedIndividual ,
+                  mof:Work .
+
+
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Zeitgeist
+mof:Zeitgeist rdf:type owl:NamedIndividual ,
+                       mof:Idea ;
+              mof:embodiedIn mof:PieceOfWork .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
