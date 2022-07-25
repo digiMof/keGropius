@@ -986,7 +986,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus">
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitution"/>
         <aimsAt rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Cooperation"/>
-        <aimsAt rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Unity"/>
+        <aimsAt rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Union"/>
         <involves rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Formlehre"/>
         <involves rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#KnowledgeOfTheory"/>
         <involves rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ManualTraining"/>
@@ -1239,13 +1239,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Union -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Union">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#MainGoal"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Unity"/>
+        <fosteredBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Unity -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Unity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#MainGoal"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#SloganGoal"/>
         <fosteredBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArbeitsratProgram"/>
-        <fosteredBy rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Bauhaus"/>
     </owl:NamedIndividual>
     
 
