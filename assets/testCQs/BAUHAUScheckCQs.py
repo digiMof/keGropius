@@ -3,11 +3,7 @@ import rdflib
 BauhausCqs = rdflib.Graph()
 BauhausCqs.parse("assets/testCQs/bau.ttl", format="ttl")
 
-# in Gropius c'è Union non Unity, mettere entrambi e poi scrivere same as? e poi magari dire se goal1 (union) same as goal2 (unity) return True o qualcosa del genere
-# come scrivere il o questa o quest'altra classe, o se sono equivalenti basta metterne una sola?
-
 # cq1) What is the main goal of newly formed institutions?
-# Domanda -> nella query non bisognerebbe mettere anche che ?institution rdf:type mof:NewlyFormed ????
 cq1 = '''
 PREFIX mof: <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
