@@ -12,12 +12,14 @@ PREFIX xml: <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?institution ?mainGoal
+SELECT DISTINCT ?institution ?goal
 WHERE {
-?institution mof:aimsAt ?mainGoal .
-?institution rdf:type mof:NewlyFormedInstitution .
-?mainGoal rdf:type mof:SloganGoal
+    ?institution mof:aimsAt ?goal .
+    {?goal rdf:type mof:MainGoal}
+    UNION
+    {?goal rdf:type mof:SloganGoal}
 }
+
 '''
 
 # cq2) What different actions should be taken towards academies by different newly formed institutions?
