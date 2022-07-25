@@ -1,3 +1,4 @@
+@prefix : <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#> .
 @prefix mof: <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -688,7 +689,7 @@ mof:ArchitectureDesign rdf:type owl:NamedIndividual ,
 mof:Bauhaus rdf:type owl:NamedIndividual ,
                      mof:NewlyFormedInstitution ;
             mof:aimsAt mof:Cooperation ,
-                       mof:Unity ;
+                       mof:Union ;
             mof:involves mof:Formlehre ,
                          mof:KnowledgeOfTheory ,
                          mof:ManualTraining ,
@@ -861,12 +862,17 @@ mof:Space rdf:type owl:NamedIndividual ,
           mof:embodiedIn mof:PieceOfWork .
 
 
+###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Union
+mof:Union rdf:type owl:NamedIndividual ,
+                   mof:MainGoal ;
+          owl:sameAs mof:Unity ;
+          mof:fosteredBy mof:Bauhaus .
+
+
 ###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Unity
 mof:Unity rdf:type owl:NamedIndividual ,
-                   mof:MainGoal ,
                    mof:SloganGoal ;
-          mof:fosteredBy mof:ArbeitsratProgram ,
-                         mof:Bauhaus .
+          mof:fosteredBy mof:ArbeitsratProgram .
 
 
 ###  http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Vorlehre
