@@ -52,27 +52,19 @@
     <section class="page-section" id="introalign">
         <div class="container pt-4 pt-lg-5">
             <h1 class="text-center mt-0">Ontologies Alignment</h2>
-                <p class="mypar">The second step of our project consists in the building of a third ontology to compare
-                    the two ontologies previously build for Groupius' and Taut's texts. In this third ontologies
-                    superclasses, equivalences, relations, ... will be specified for both the classes and the
-                    properties.</p>
+                <p class="mypar">An ontologies alignment consists of building a new model starting from two precedent
+                    ones. In this new ontology, all classes, objects and data properties are manually aligned, so as to
+                    highlight similarities and differences. Significant individuals have been chosen to populate this new
+                    model and both declared and inferred axioms are gathered through the Protégé built-in reasoner HermiT
+                    1.4.3.456. After the model is built and populated, competency questions can be answered through SPARQL
+                    queries</p>
         </div>
     </section>
     <!--<hr style="border: solid 0.1px white;">-->
-
-    <!-- ONTOLOGY DEVELOPMENT FOR TAUT SECTION -->
     <section class="page-section" id="ontotautsection" style="background: #f6d8b9">
         <div class="container">
-            <h2 class="text-center mt-0">Ontologies alignment: approach and implementation</h2>
-            <p class="mypar mt-3">An ontologies alignment consists of building a new model starting from two precedent
-                ones. In this new ontology, all classes, objects and data properties are manually aligned, so as to
-                highlight similarities and differences. Significant individuals have been chosen to populate this new
-                model and both declared and inferred axioms are gathered through the Protégé built-in reasoner HermiT
-                1.4.3.456. After the model is built and populated, competency questions can be answered through SPARQL
-                queries</p>
-            <p><a href="https://drive.google.com/drive/folders/1ihV7nnF87WilASyD7jphSW0KyKbnIOw3?usp=sharing"><i
-                        class="bi bi-cloud" style="font-size: 1.1em; font-weight: bolder;"></i></a> The documents used
-                to perform this process are available at this link, redirecting to a shared Google Drive folder</p>
+            <h2 class="text-center mt-0">Ontologies alignment implementation</h2>
+            <p class="mypar mt-3">For what concerns the development of the new model, it has been built starting from the two previous ontologies: the different classes were added to the new third ontology and, when necessary, defined as "equivalent" to classes belonging to the other ontology but with similar or identical meaning. The same was done for what concerns the object properties. Finally, the third ontology was populated with the individuals necessary to answer the queries.</p>
             <div class="container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
                 <div class="row text-center" style="font-size: 1.3em; color: grey;">
                     <div class="col-sm toggleOntology" onclick="showTurtle('AligTTL','AligGraph')">
@@ -107,8 +99,8 @@
     <section class="page-section">
         <div class="container px-2">
             <h2 class="text-center mb-4">SPARQL Queries</i></h2>
-            <p class="mypar mt-3">For readability reasons, the PREFIX part of all these queries has not been included in the body of the queries.<br>
-            For Bruno Taut's Manifest queries we have these prefixes:<br>
+            <p class="mypar mt-3">For readability reasons, the PREFIX part of all these SPARQL queries has not been included in the body of the queries. Most of this PREFIX section is exactly the same between the queries and the three different ontologies, what changes is the ontology's prefix.</p>
+            <p>For Bruno Taut's Manifest queries we have these prefixes:<br>
             <code>
                 PREFIX mof: &lthttp://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#&gt<br> 
                 PREFIX owl: &lthttp://www.w3.org/2002/07/owl#&gt<br> 
@@ -117,6 +109,8 @@
                 PREFIX xsd: &lthttp://www.w3.org/2001/XMLSchema#&gt<br>
                 PREFIX rdfs: &lthttp://www.w3.org/2000/01/rdf-schema#&gt<br>
             </code>
+            </p>
+            <p>
             For Walter Gropius's Manifest queries we have these prefixes:<br>
             <code>
                 PREFIX mof: &lthttp://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#&gt<br> 
@@ -126,6 +120,8 @@
                 PREFIX xsd: &lthttp://www.w3.org/2001/XMLSchema#&gt<br>
                 PREFIX rdfs: &lthttp://www.w3.org/2000/01/rdf-schema#&gt<br>
             </code>
+            </p>
+            <p>
             For the queries concerning the third ontology, we have the following prefixes:<br>
             <code>
                 PREFIX mof: &lthttp://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#&gt<br> 
