@@ -13,14 +13,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-        rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,200" />
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet"/>
-    <!-- Personal Stylesheets -->
-    <link href="css/mycss.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/mycss.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -53,46 +52,95 @@
     <section class="page-section" id="introalign">
         <div class="container pt-4 pt-lg-5">
             <h1 class="text-center mt-0">Ontologies Alignment</h2>
-                <p class="mypar">The second step of our project consists in the building of a third ontology to compare the two ontologies previously build for Groupius' and Taut's texts. In this third ontologies superclasses, equivalences, relations, ... will be specified for both the classes and the properties.</p>
+                <p class="mypar">The second step of our project consists in the building of a third ontology to compare
+                    the two ontologies previously build for Groupius' and Taut's texts. In this third ontologies
+                    superclasses, equivalences, relations, ... will be specified for both the classes and the
+                    properties.</p>
         </div>
     </section>
     <!--<hr style="border: solid 0.1px white;">-->
 
     <!-- ONTOLOGY DEVELOPMENT FOR TAUT SECTION -->
-    <section  class="page-section" id="ontotautsection" style="background: #f6d8b9">
+    <section class="page-section" id="ontotautsection" style="background: #f6d8b9">
         <div class="container">
             <h2 class="text-center mt-0">Ontologies alignment: approach and implementation</h2>
-            <p class="mypar mt-3">An ontologies alignment consists of building a new model starting from two precedent ones. In this new ontology, all classes, objects and data properties are manually aligned, so as to highlight similarities and differences. Significant individuals have been chosen to populate this new model and both declared and inferred axioms are gathered through the Protégé built-in reasoner HermiT 1.4.3.456. After the model is built and populated, competency questions can be answered through SPARQL queries</p>
-            <p><a href="https://drive.google.com/drive/folders/1ihV7nnF87WilASyD7jphSW0KyKbnIOw3?usp=sharing"><i class="bi bi-cloud" style="font-size: 1.1em; font-weight: bolder;"></i></a> The documents used to perform this process are available at this link, redirecting to a shared Google Drive folder</p>
-                <div class="container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
-                    <div class="row text-center" style="font-size: 1.3em; color: grey;">
-                        <div class="col-sm toggleOntology" onclick="showTurtle('AligTTL','AligGraph')">
-                            <div><i class="bi bi-code fs-1" style="color:#60370e;"></i></div>
-                            <h4 style="color: #60370e;">Turtle Serialization</h4> <!-- #f4623a-->
-                        </div>
-                        <div class="col-sm toggleOntology" onclick="showGraph('AligTTL','AligGraph')">
-                            <div><i class="bi bi-diagram-3 fs-1" style="color: #60370e;"></i></div>
-                            <h4 style="color: #60370e;">Graph Visualization</h4>
-                        </div>
+            <p class="mypar mt-3">An ontologies alignment consists of building a new model starting from two precedent
+                ones. In this new ontology, all classes, objects and data properties are manually aligned, so as to
+                highlight similarities and differences. Significant individuals have been chosen to populate this new
+                model and both declared and inferred axioms are gathered through the Protégé built-in reasoner HermiT
+                1.4.3.456. After the model is built and populated, competency questions can be answered through SPARQL
+                queries</p>
+            <p><a href="https://drive.google.com/drive/folders/1ihV7nnF87WilASyD7jphSW0KyKbnIOw3?usp=sharing"><i
+                        class="bi bi-cloud" style="font-size: 1.1em; font-weight: bolder;"></i></a> The documents used
+                to perform this process are available at this link, redirecting to a shared Google Drive folder</p>
+            <div class="container" style="margin-top: 1.5em; margin-bottom: 1.5em;">
+                <div class="row text-center" style="font-size: 1.3em; color: grey;">
+                    <div class="col-sm toggleOntology" onclick="showTurtle('AligTTL','AligGraph')">
+                        <div><i class="bi bi-code fs-1" style="color:#60370e;"></i></div>
+                        <h4 style="color: #60370e;">Turtle Serialization</h4> <!-- #f4623a-->
+                    </div>
+                    <div class="col-sm toggleOntology" onclick="showGraph('AligTTL','AligGraph')">
+                        <div><i class="bi bi-diagram-3 fs-1" style="color: #60370e;"></i></div>
+                        <h4 style="color: #60370e;">Graph Visualization</h4>
                     </div>
                 </div>
-                <span id="AligTTL"> <!-- Da modificare con i file definitivi -->
-                    <script src="https://gist.github.com/ManueleVeggi/fe0a174c5453d43ff534b9e0137fec33.js"></script>
-                    <p><a href="assets/ontoTaut.owl" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file</p>
-                </span>
-                <span id="AligGraph">
-                    <img src="assets/ontoTaut.jpg" class="assetimg" style="width: 100%; box-shadow: 10px 10px 5px #874b0f;" onclick="window.open('assets/ontoTaut.jpg')">
-                    <p style="margin-top: 1.5em;"><a href="assets/ontoTaut.jpg" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the source file <br>
-                    <a href="assets/ontoTautMap.png" download style="font-size: bold;"><i class="bi bi-download" style="color: #60370e;"></i></a> Download the conceptual map</p>
-                </span>
+            </div>
+            <span id="AligTTL">
+                <!-- Da modificare con i file definitivi -->
+                <script src="https://gist.github.com/ManueleVeggi/fe0a174c5453d43ff534b9e0137fec33.js"></script>
+                <p><a href="assets/ontoTaut.owl" download style="font-size: bold;"><i class="bi bi-download"
+                            style="color: #60370e;"></i></a> Download the source file</p>
+            </span>
+            <span id="AligGraph">
+                <img src="assets/ontoTaut.jpg" class="assetimg" style="width: 100%; box-shadow: 10px 10px 5px #874b0f;"
+                    onclick="window.open('assets/ontoTaut.jpg')">
+                <p style="margin-top: 1.5em;"><a href="assets/ontoTaut.jpg" download style="font-size: bold;"><i
+                            class="bi bi-download" style="color: #60370e;"></i></a> Download the source file <br>
+                    <a href="assets/ontoTautMap.png" download style="font-size: bold;"><i class="bi bi-download"
+                            style="color: #60370e;"></i></a> Download the conceptual map
+                </p>
+            </span>
         </div>
     </section>
 
     <!-- SPARQL SECTION CQs -->
-    <section  class="page-section">
+    <section class="page-section">
         <div class="container px-2">
             <h2 class="text-center mb-4">SPARQL Queries</i></h2>
+            <p class="mypar mt-3">For readability reasons, the PREFIX part of all these queries has not been included in the body of the queries.<br>
+            For Bruno Taut's Manifest queries we have these prefixes:<br>
+            <code>
+                PREFIX mof: &lthttp://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#&gt<br> 
+                PREFIX owl: &lthttp://www.w3.org/2002/07/owl#&gt<br> 
+                PREFIX rdf: &lthttp://www.w3.org/1999/02/22-rdf-syntax-ns#&gt<br>
+                PREFIX xml: &lthttp://www.w3.org/XML/1998/namespace&gt<br>
+                PREFIX xsd: &lthttp://www.w3.org/2001/XMLSchema#&gt<br>
+                PREFIX rdfs: &lthttp://www.w3.org/2000/01/rdf-schema#&gt<br>
+            </code>
+            For Walter Gropius's Manifest queries we have these prefixes:<br>
+            <code>
+                PREFIX mof: &lthttp://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#&gt<br> 
+                PREFIX owl: &lthttp://www.w3.org/2002/07/owl#&gt<br> 
+                PREFIX rdf: &lthttp://www.w3.org/1999/02/22-rdf-syntax-ns#&gt<br>
+                PREFIX xml: &lthttp://www.w3.org/XML/1998/namespace&gt<br>
+                PREFIX xsd: &lthttp://www.w3.org/2001/XMLSchema#&gt<br>
+                PREFIX rdfs: &lthttp://www.w3.org/2000/01/rdf-schema#&gt<br>
+            </code>
+            For the queries concerning the third ontology, we have the following prefixes:<br>
+            <code>
+                PREFIX mof: &lthttp://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#&gt<br> 
+                PREFIX owl: &lthttp://www.w3.org/2002/07/owl#&gt<br> 
+                PREFIX rdf: &lthttp://www.w3.org/1999/02/22-rdf-syntax-ns#&gt<br>
+                PREFIX xml: &lthttp://www.w3.org/XML/1998/namespace&gt<br>
+                PREFIX xsd: &lthttp://www.w3.org/2001/XMLSchema#&gt<br>
+                PREFIX rdfs: &lthttp://www.w3.org/2000/01/rdf-schema#&gt<br>
+            </code>
+            </p>
+            <p>
+                <span class="material-symbols-outlined" style="color: #60370e;"><a href="assets/testCQs.rar" download style="font-size: bold;">folder_zip</a></span> All the queries can be tested with the Python files specially developed.
+            </p>
             <div class="row">
+                <!-- Taut queries -->
                 <div class="col-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
@@ -100,20 +148,20 @@
                                 <p>Bruno Taut</p>
                                 <hr>
                                 <p>What is the main goal?</p>
-                                <p>Unity involving Art and people</p>
+                                <p>Unity (involving Art and people)</p>
                             </div>
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?maingoal<br>
+                                        WHERE {<br>
+                                            ?maingoal rdf:type mof:SloganGoal<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -124,18 +172,18 @@
                                 <p>Which are the activities whose scope is of public nature?</p>
                                 <p>Building Activity</p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?activity<br>
+                                        WHERE {<br>
+                                            ?activity mof:aimsAt mof:PublicNature<br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -146,18 +194,19 @@
                                 <p>Which are the institutions to be dissolved (in their present form)?</p>
                                 <p>Academies (Royal Academy of Arts, Royal Academy of Architecture, Royal Prussian State Art Commission)</p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?institutions ?type<br>
+                                        WHERE {<br>
+                                            ?institutions mof:replacedBy mof:NewlyFormedInstitutions .<br>
+                                            ?institutions rdf:type ?type<br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -165,21 +214,21 @@
                             <div class="flip-card-front">
                                 <p>Bruno Taut</p>
                                 <hr>
-                                <p>What is demanded for all education?</p>
-                                <p>Freedom from government domination</p>
+                                <p>What error should be replaced by freedom?</p>
+                                <p>Government domination</p>
                             </div>
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?error<br>
+                                        WHERE {<br>
+                                            ?error mof:replacedBy mof:Freedom<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
             </div>
             <div class="row mt-1">
@@ -189,21 +238,21 @@
                             <div class="flip-card-front">
                                 <p>Bruno Taut</p>
                                 <hr>
-                                <p>How should museums be considered?</p>
-                                <p>Places of education</p>
+                                <p>What is responsible for education?</p>
+                                <p>Museums</p>
                             </div>
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?institution<br>
+                                        WHERE {<br>
+                                            ?institution mof:responsibleFor mof:EducationalChange<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -214,18 +263,19 @@
                                 <p>What products need to be dissolved?</p>
                                 <p>Monuments without artistic value</p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?product<br>
+                                        WHERE {<br>
+                                            ?product rdf:type mof:Monument .<br>
+                                            mof:Dissolution mof:involves ?product<br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -236,19 +286,20 @@
                                 <p>What should government institutions guarantee?</p>
                                 <p>Promotion of art</p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?goal<br>
+                                        WHERE {<br>
+                                            ?goal mof:fosteredBy mof:GovernmentInstitution<br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
+                <!-- Gropius queries -->
                 <div class="col-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
@@ -261,15 +312,16 @@
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?expression<br>
+                                        WHERE {<br>
+                                            ?ideas rdf:type mof:Idea .<br>
+                                            ?ideas mof:embodiedIn ?expression<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
             </div>
             <div class="row mt-1">
@@ -285,15 +337,16 @@
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?effect<br>
+                                        WHERE {<br>
+                                            mof:Academia mof:produces ?effect .<br>
+                                            ?effect rdf:type mof:Effect<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -304,18 +357,19 @@
                                 <p>What is Architecture dependant upon?</p>
                                 <p>The cooperation of many individuals</p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?dependance<br>
+                                        WHERE {<br>
+                                            mof:ArchitectureDesign mof:dependsOn ?dependance .<br>
+                                            ?dependance rdf:type mof:Goal<br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -323,21 +377,23 @@
                             <div class="flip-card-front">
                                 <p>Walter Gropius</p>
                                 <hr>
-                                <p>Retrieve the main goal of institutions </p>
+                                <p>What is the main goal of Bauhaus?</p>
                                 <p>Union</p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?mainGoal<br>
+                                        WHERE {<br>
+                                            mof:Bauhaus mof:aimsAt ?mainGoal .<br>
+                                            ?mainGoal rdf:type mof:MainGoal
+                                            <br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -351,15 +407,15 @@
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?expression<br>
+                                        WHERE {<br>
+                                            mof:ArchitectureDesign mof:reflects ?expression<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
             </div>
             <div class="row mt-1">
@@ -375,15 +431,15 @@
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?subclasses<br>
+                                        WHERE {<br>
+                                            ?subclasses rdf:subClassOf mof:Work<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -391,21 +447,21 @@
                             <div class="flip-card-front">
                                 <p>Walter Gropius</p>
                                 <hr>
-                                <p>What should each person rethink to change society? </p>
+                                <p>What should each person rethink in order to change society?</p>
                                 <p>Work</p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?object<br>
+                                        WHERE {<br>
+                                            mof:Person mof:mustRethink ?object<br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -414,20 +470,21 @@
                                 <p>Walter Gropius</p>
                                 <hr>
                                 <p>What should academies be substituted with? </p>
-                                <p>Newly formed Institution</p>
+                                <p>Newly formed Institutions</p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?substitutes<br>
+                                        WHERE {<br>
+                                            ?academies rdf:type mof:Academy .<br>
+                                            ?academies mof:changedInto ?substitutes<br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -435,21 +492,21 @@
                             <div class="flip-card-front">
                                 <p>Walter Gropius</p>
                                 <hr>
-                                <p>Which qualities are improved by preliminary courses at the Bauhaus?</p>
+                                <p> What does the preliminary course at Bauhaus improve?</p>
                                 <p>Creativity, originality, expressivity</p>
                             </div>
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?quality<br>
+                                        WHERE {<br>
+                                            mof:Vorlehre mof:improves ?quality<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
             </div>
             <div class="row mt-1">
@@ -459,21 +516,21 @@
                             <div class="flip-card-front">
                                 <p>Walter Gropius</p>
                                 <hr>
-                                <p>Who is the person responsible of rethinking architecture?</p>
+                                <p>Who is the most suitable individual for rethinking architecture?</p>
                                 <p>Journeyman</p>
                             </div>
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?person<br>
+                                        WHERE {<br>
+                                            ?person mof:mustRethink mof:ArchitectureDesign<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -481,21 +538,22 @@
                             <div class="flip-card-front">
                                 <p>Walter Gropius</p>
                                 <hr>
-                                <p>Which courses are included in the Bauhaus courses?</p>
+                                <p>Which courses are involved in the Bauhaus?</p>
                                 <p><i>Vorlehre</i>, <i>Formlehre</i>, <i>Werklehre</i></p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?course<br>
+                                        WHERE {<br>
+                                            mof:Bauhaus mof:involves ?course .<br>
+                                            ?course rdf:type mof:BauhausCourse<br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -503,21 +561,23 @@
                             <div class="flip-card-front">
                                 <p>Walter Gropius</p>
                                 <hr>
-                                <p>What is the main goal of newly-formed institutions?</p>
+                                <p>What is the goal of newly formed institutions?</p>
                                 <p>Cooperation</p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?goal<br>
+                                        WHERE {<br>
+                                            ?institution rdf:type mof:NewlyFormedInstitution .<br>
+                                            ?institution mof:aimsAt ?goal .<br>
+                                            ?goal rdf:type mof:Goal<br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -531,39 +591,45 @@
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?approach<br>
+                                        WHERE {<br>
+                                            ?institution rdf:type mof:NewlyFormedInstitution .<br>
+                                            ?institution mof:involves ?approach .<br>
+                                            ?approach rdf:type ?methods .<br>
+                                            ?methods rdfs:subClassOf mof:NewApproach<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
             </div>
+            <!-- Comparative queries -->
             <div class="row mt-1">
                 <div class="col-3">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <p>Walter Gropius</p>
+                                <p>Comparison</p>
                                 <hr>
-                                <p>Which kind of work does art education involve?</p>
-                                <p>Arts and crafts</p>
+                                <p>What is the main goal of newly formed institutions?</p>
+                                <p>Unification: for Taut, "Art and people must form a <b>unity</b>", for Gropius a "<b>unification</b> in all training and desing" must be achieved</p>
                             </div>
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?institution ?mainGoal<br>
+                                        WHERE {<br>
+                                            ?institution mof:aimsAt ?mainGoal .<br>
+                                            ?institution rdf:type mof:NewlyFormedInstitution .<br>
+                                            ?mainGoal rdf:type mof:SloganGoal<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -571,43 +637,26 @@
                             <div class="flip-card-front">
                                 <p>Comparison</p>
                                 <hr>
-                                <p>What’s the goal of both, the slogan by Taut and the credo of the Bauhaus?</p>
-                                <p>Unification: for Taut, ”Art and people must form a unity”, for Gropius a ”unification in all training and desing” must be achieved</p>
+                                <p>What different actions should be taken towards academies by different newly formed institutions?</p>
+                                <p><b>Dissolution</b> of academies, or at least <b>change</b> them into newly-formed institutions</p>
                             </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
-                            </div>
-                        </div>
-                        </div>
-                      </div> 
-                </div>
-                <div class="col-3">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <p>Comparison</p>
-                                <hr>
-                                <p>What actions should be taken towards academies?</p>
-                                <p>Dissolution or at least changed into newly-formed institution</p>
-                            </div>
-                          <div class="flip-card-back">
-                            <div class="codesection">
-                                <code>
-                                    BASE    &lthttp://example.org/book/&gt <br>
-                                    PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                    SELECT  $title <br>
-                                    WHERE   { &ltbook1&gt  dc:title  ?title }
-                                </code>
+                            <div class="flip-card-back">
+                                <div class="codesection">
+                                    <code>
+                                        SELECT DISTINCT ?action ?newlyformed<br>
+                                        WHERE {<br>
+                                            ?academy rdf:type mof:Academy .<br>
+                                            {?academy ?action ?newlyformed .<br>
+                                                ?newlyformed rdf:type mof:NewlyFormedInstitution}<br>
+                                            UNION<br>
+                                            {?academy ?action ?newlyformed .<br>
+                                                ?newlyformed rdf:type mof:NewlyFormed}<br>
+                                        }
+                                    </code>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                      </div> 
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="flip-card">
@@ -616,20 +665,23 @@
                                 <p>Comparison</p>
                                 <hr>
                                 <p>What is demanded of education programmes?</p>
-                                <p>For Taut the priority is the freedom from government, for Gropius major attention should be paid to personal experience</p>
+                                <p>For Taut the priority is the <b>freedom</b> from government, for Gropius major attention should be paid to <b>personal experience</b></p>
                             </div>
                             <div class="flip-card-back">
                                 <div class="codesection">
                                     <code>
-                                        BASE    &lthttp://example.org/book/&gt <br>
-                                        PREFIX  dc: &lthttp://purl.org/dc/elements/1.1/&gt <br>
-                                        SELECT  $title <br>
-                                        WHERE   { &ltbook1&gt  dc:title  ?title }
+                                        SELECT DISTINCT ?demand<br>
+                                        WHERE {<br>
+                                            ?demand mof:involvedBy ?education .<br>
+                                            {?education rdf:type mof:EducationalProgram}<br>
+                                            UNION<br>
+                                            {?education rdf:type mof:NewApproach}<br>
+                                        }
                                     </code>
                                 </div>
                             </div>
                         </div>
-                      </div> 
+                    </div>
                 </div>
             </div>
         </div>
