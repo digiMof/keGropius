@@ -44,7 +44,6 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#GovernmentInstitution"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Institution"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitution"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#TextualSection"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#CollaborativeWorkOfArt"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Goal"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#MainGoal"/>
@@ -209,7 +208,6 @@
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#GovernmentInstitution"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Institution"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#NewlyFormedInstitution"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#TextualSection"/>
     </owl:ObjectProperty>
     
 
@@ -883,14 +881,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#TextualSection -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#TextualSection">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Text"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Training -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Training">
@@ -964,7 +954,7 @@
     <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArbeitsratProgram -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArbeitsratProgram">
-        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#TextualSection"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Text"/>
         <aimsAt rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Unity"/>
     </owl:NamedIndividual>
     
@@ -1151,6 +1141,7 @@
     <!-- http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Museum -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#Museum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#ArtisticInstitution"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#GovernmentInstitution"/>
         <responsibleFor rdf:resource="http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#EducationalChange"/>
     </owl:NamedIndividual>
