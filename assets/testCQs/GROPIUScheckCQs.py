@@ -95,7 +95,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?subclasses
 WHERE {
-    ?subclasses rdf:subClassOf mof:Work
+    ?subclasses rdfs:subClassOf mof:Work
 }
 '''
 

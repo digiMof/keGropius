@@ -1,3 +1,4 @@
+@prefix : <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> .
 @prefix mof: <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -19,7 +20,7 @@ mof:aimsAt rdf:type owl:ObjectProperty ;
            rdfs:domain mof:Craft ,
                        mof:FineArt ,
                        mof:GovernmentInstitution ,
-                       mof:TextualSection ;
+                       mof:Text ;
            rdfs:range mof:Goal ,
                       mof:SecondaryGoal ,
                       mof:SloganGoal .
@@ -34,7 +35,7 @@ mof:fosteredBy rdf:type owl:ObjectProperty ;
                rdfs:range mof:Craft ,
                           mof:FineArt ,
                           mof:GovernmentInstitution ,
-                          mof:TextualSection .
+                          mof:Text .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involvedBy
@@ -196,9 +197,9 @@ mof:Techne rdf:type owl:Class ;
            rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#TextualSection
-mof:TextualSection rdf:type owl:Class ;
-                   rdfs:subClassOf owl:Thing .
+###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Text
+mof:Text rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing .
 
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#WorkOfArt
@@ -212,7 +213,7 @@ mof:WorkOfArt rdf:type owl:Class ;
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArbeitsratProgram
 mof:ArbeitsratProgram rdf:type owl:NamedIndividual ,
-                               mof:TextualSection ;
+                               mof:Text ;
                       mof:aimsAt mof:Unity .
 
 
@@ -276,6 +277,7 @@ mof:MonumentNoValue rdf:type owl:NamedIndividual ,
 
 ###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Museum
 mof:Museum rdf:type owl:NamedIndividual ,
+                    mof:ArtisticInstitution ,
                     mof:GovernmentInstitution ;
            mof:responsibleFor mof:EducationalChange .
 
@@ -331,7 +333,7 @@ mof:Unity rdf:type owl:NamedIndividual ,
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( mof:Error
                 mof:Goal
-                mof:TextualSection
+                mof:Text
               )
 ] .
 
