@@ -1,866 +1,1310 @@
-@prefix : <https://digimof.github.io/keGropius/ontoGropius#> .
-@prefix mof: <https://digimof.github.io/keGropius/ontoGropius> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://digimof.github.io/keGropius/ontoGropius> .
-
-<https://digimof.github.io/keGropius/ontoGropius> rdf:type owl:Ontology .
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  https://digimof.github.io/keGropius/ontoGropius#against
-:against rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( :Academy
-                                     :BauhausCourse
-                                   )
-                     ] ;
-         rdfs:range :Error .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#aimsAt
-:aimsAt rdf:type owl:ObjectProperty ;
-        rdfs:subPropertyOf owl:topObjectProperty ;
-        rdfs:domain [ rdf:type owl:Class ;
-                      owl:unionOf ( :ArtisticMovement
-                                    :Institution
-                                  )
-                    ] ;
-        rdfs:range [ rdf:type owl:Class ;
-                     owl:unionOf ( :CollaborativeWorkOfArt
-                                   :Goal
-                                 )
-                   ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#basisOf
-:basisOf rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf owl:topObjectProperty ;
-         owl:inverseOf :dependsOn ;
-         rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( :Artist
-                                     :Conceptualization
-                                     :Course
-                                     :CreativeWork
-                                     :Goal
-                                     :NewlyFormedInstitution
-                                     :Visualization
-                                   )
-                     ] ;
-         rdfs:range [ rdf:type owl:Class ;
-                      owl:unionOf ( :Course
-                                    :CreativeWork
-                                    :Goal
-                                    :NewlyFormedInstitution
-                                    :Quality
-                                  )
-                    ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#changedInto
-:changedInto rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain :Academy ;
-             rdfs:range :NewlyFormedInstitution .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#dependsOn
-:dependsOn rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( :Course
-                                       :CreativeWork
-                                       :Goal
-                                       :NewlyFormedInstitution
-                                       :Quality
-                                     )
-                       ] ;
-           rdfs:range [ rdf:type owl:Class ;
-                        owl:unionOf ( :Artist
-                                      :Conceptualization
-                                      :Course
-                                      :CreativeWork
-                                      :Goal
-                                      :NewlyFormedInstitution
-                                      :Visualization
-                                    )
-                      ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#embodiedIn
-:embodiedIn rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain :Idea ;
-            rdfs:range [ rdf:type owl:Class ;
-                         owl:unionOf ( :CollaborativeWorkOfArt
-                                       :Form
-                                     )
-                       ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#emphasizedBy
-:emphasizedBy rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
-              owl:inverseOf :emphasizes ;
-              rdfs:domain [ rdf:type owl:Class ;
-                            owl:unionOf ( :Arts
-                                          :Crafts
-                                        )
-                          ] ;
-              rdfs:range :NewlyFormedInstitution .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#emphasizes
-:emphasizes rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain :NewlyFormedInstitution ;
-            rdfs:range [ rdf:type owl:Class ;
-                         owl:unionOf ( :Arts
-                                       :Crafts
-                                     )
-                       ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#failedAt
-:failedAt rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain :Academy ;
-          rdfs:range :Vocabulary .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#followedBy
-:followedBy rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            owl:inverseOf :follows ;
-            rdfs:domain [ rdf:type owl:Class ;
-                          owl:unionOf ( :ComplementaryCourse
-                                        :ConventionalApproach
-                                        :Error
-                                      )
-                        ] ;
-            rdfs:range [ rdf:type owl:Class ;
-                         owl:unionOf ( :Academy
-                                       :Artist
-                                     )
-                       ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#follows
-:follows rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( :Academy
-                                     :Artist
-                                   )
-                     ] ;
-         rdfs:range [ rdf:type owl:Class ;
-                      owl:unionOf ( :ComplementaryCourse
-                                    :ConventionalApproach
-                                    :Error
-                                  )
-                    ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#formalizes
-:formalizes rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain [ rdf:type owl:Class ;
-                          owl:unionOf ( :Arts
-                                        :Crafts
-                                      )
-                        ] ;
-            rdfs:range :Idea .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#founded
-:founded rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain :NewlyFormedInstitution ;
-         rdfs:range :ArtisticMovement .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#freeFrom
-:freeFrom rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :Arts
-                                      :BauhausCourse
-                                      :Crafts
-                                    )
-                      ] ;
-          rdfs:range [ rdf:type owl:Class ;
-                       owl:unionOf ( :ConventionalApproach
-                                     :Error
-                                   )
-                     ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#hasOutcome
-:hasOutcome rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf owl:topObjectProperty ;
-            rdfs:domain :Course ;
-            rdfs:range :Outcome .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#hasRole
-:hasRole rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf owl:topObjectProperty ;
-         rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( :Arts
-                                     :Crafts
-                                   )
-                     ] ;
-         rdfs:range :Role .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#improves
-:improves rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :BauhausCourse
-                                      :NewlyFormedInstitution
-                                      :Person
-                                    )
-                      ] ;
-          rdfs:range [ rdf:type owl:Class ;
-                       owl:unionOf ( :Academy
-                                     :Conceptualization
-                                     :Outcome
-                                     :PersonalExperience
-                                     :Quality
-                                   )
-                     ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#influencedBy
-:influencedBy rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
-              rdfs:domain :BauhausCourse ;
-              rdfs:range :Artist .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#involves
-:involves rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :Artist
-                                      :Dualism
-                                      :Effect
-                                      :Goal
-                                      :NewlyFormedInstitution
-                                    )
-                      ] ;
-          rdfs:range [ rdf:type owl:Class ;
-                       owl:unionOf ( :Artist
-                                     :Arts
-                                     :BauhausCourse
-                                     :Crafts
-                                     :Effect
-                                     :NewApproach
-                                     :NonArtist
-                                   )
-                     ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#joins
-:joins rdf:type owl:ObjectProperty ;
-       rdfs:subPropertyOf owl:topObjectProperty ;
-       rdfs:domain :Artist ;
-       rdfs:range :ArtisticMovement .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#mustFollow
-:mustFollow rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf :follows ;
-            rdfs:domain [ rdf:type owl:Class ;
-                          owl:unionOf ( :Arts
-                                        :Crafts
-                                      )
-                        ] ;
-            rdfs:range :NewApproach .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#mustHaveRole
-:mustHaveRole rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :hasRole ;
-              rdfs:domain :CreativeWork ;
-              rdfs:range :Role .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#mustRethink
-:mustRethink rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain [ rdf:type owl:Class ;
-                           owl:unionOf ( :BauhausCourse
-                                         :Person
-                                       )
-                         ] ;
-             rdfs:range [ rdf:type owl:Class ;
-                          owl:unionOf ( :Vocabulary
-                                        :Work
-                                      )
-                        ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#prerequisitFor
-:prerequisitFor rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf owl:topObjectProperty ;
-                rdfs:domain :BauhausCourse ;
-                rdfs:range [ rdf:type owl:Class ;
-                             owl:unionOf ( :Arts
-                                           :Crafts
-                                         )
-                           ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#produces
-:produces rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :Academy
-                                      :Goal
-                                      :NewApproach
-                                    )
-                      ] ;
-          rdfs:range [ rdf:type owl:Class ;
-                       owl:unionOf ( :Effect
-                                     :Error
-                                     :Goal
-                                     :Quality
-                                   )
-                     ] .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#reflects
-:reflects rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :Arts
-                                      :Crafts
-                                    )
-                      ] ;
-          rdfs:range :Idea .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#simultaneousTo
-:simultaneousTo rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf owl:topObjectProperty ;
-                rdf:type owl:SymmetricProperty ;
-                rdfs:domain [ rdf:type owl:Class ;
-                              owl:unionOf ( :Conceptualization
-                                            :Visualization
-                                          )
-                            ] ;
-                rdfs:range [ rdf:type owl:Class ;
-                             owl:unionOf ( :Conceptualization
-                                           :Visualization
-                                         )
-                           ] .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  https://digimof.github.io/keGropius/ontoGropius#hasDuration
-:hasDuration rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Course ;
-             rdfs:range xsd:int .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  https://digimof.github.io/keGropius/ontoGropius#Academy
-:Academy rdf:type owl:Class ;
-         rdfs:subClassOf :Institution ;
-         owl:disjointWith :NewlyFormedInstitution .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#Acitivity
-:Acitivity rdf:type owl:Class ;
-           rdfs:subClassOf owl:Thing .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#Artist
-:Artist rdf:type owl:Class ;
-        rdfs:subClassOf :Person ;
-        owl:disjointWith :NonArtist .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement
-:ArtisticMovement rdf:type owl:Class ;
-                  rdfs:subClassOf owl:Thing .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#Arts
-:Arts rdf:type owl:Class ;
-      rdfs:subClassOf :CreativeWork .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#BauhausCourse
-:BauhausCourse rdf:type owl:Class ;
-               rdfs:subClassOf :Course ;
-               owl:disjointWith :ComplementaryCourse .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt
-:CollaborativeWorkOfArt rdf:type owl:Class ;
-                        rdfs:subClassOf :DailyLifeProduct ,
-                                        :WorkOfArt ;
-                        owl:disjointWith :IndustrialProduct .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse
-:ComplementaryCourse rdf:type owl:Class ;
-                     rdfs:subClassOf :Course .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#Conceptualization
-:Conceptualization rdf:type owl:Class ;
-                   rdfs:subClassOf :Acitivity .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach
-:ConventionalApproach rdf:type owl:Class ;
-                      rdfs:subClassOf :Training ;
-                      owl:disjointWith :NewApproach .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#Course
-:Course rdf:type owl:Class ;
-        rdfs:subClassOf owl:Thing .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#Crafts
-:Crafts rdf:type owl:Class ;
-        rdfs:subClassOf :CreativeWork .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#CreativeWork
-:CreativeWork rdf:type owl:Class ;
-              rdfs:subClassOf :Work ;
-              owl:disjointWith :MechanicWork .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct
-:DailyLifeProduct rdf:type owl:Class ;
-                  rdfs:subClassOf :Product .
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://digimof.github.io/keGropius/ontoGropius#"
+     xml:base="https://digimof.github.io/keGropius/ontoGropius"
+     xmlns:mof="https://digimof.github.io/keGropius/ontoGropius"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://digimof.github.io/keGropius/ontoGropius"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#against -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#against">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Academy"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Error"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#aimsAt -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#aimsAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Institution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#basisOf -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#basisOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#dependsOn"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Conceptualization"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Course"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#CreativeWork"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Visualization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Course"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#CreativeWork"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Quality"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#changedInto -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#changedInto">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Academy"/>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#dependsOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Course"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#CreativeWork"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Quality"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Conceptualization"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Course"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#CreativeWork"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Visualization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#embodiedIn -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#embodiedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Idea"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Form"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#emphasizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#emphasizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#emphasizes"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Crafts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#emphasizes -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#emphasizes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Crafts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#failedAt -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#failedAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Academy"/>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Vocabulary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#followedBy -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#followedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#follows"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Error"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Academy"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#follows -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#follows">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Academy"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Error"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#formalizes -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#formalizes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Crafts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Idea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#founded -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#founded">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#freeFrom -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#freeFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Crafts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Error"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#hasOutcome -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#hasOutcome">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Course"/>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#hasRole">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Crafts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#improves -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#improves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Academy"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Conceptualization"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Outcome"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#PersonalExperience"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Quality"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#influencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"/>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#involves -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#involves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Dualism"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Effect"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Crafts"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Effect"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewApproach"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#NonArtist"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#joins -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#joins">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#mustFollow -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#mustFollow">
+        <rdfs:subPropertyOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#follows"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Crafts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewApproach"/>
+        <rdfs:comment>Qua le proposte del reasoner le ignorerei tutte (far partire il reasoner per verificare)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#mustHaveRole -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#mustHaveRole">
+        <rdfs:subPropertyOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#hasRole"/>
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#CreativeWork"/>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#mustRethink -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#mustRethink">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Vocabulary"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Work"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#prerequisitFor -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#prerequisitFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Crafts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#produces -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#produces">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Academy"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewApproach"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Effect"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Error"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Quality"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#reflects -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#reflects">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Crafts"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Idea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#simultaneousTo -->
+
+    <owl:ObjectProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#simultaneousTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#simultaneousTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Conceptualization"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Visualization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Conceptualization"/>
+                    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Visualization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Qua il reasoner ha proposto di aggiungere InverseOf simultaneousTo, l&apos;ho aggiunto perché mi sembra abbia senso (domains e ranges sono incrociati: conceptualization è simultaneousTo visualization e viceversa), inoltre la proprietà è simmetrica quindi ci sta</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="https://digimof.github.io/keGropius/ontoGropius#hasDuration">
+        <rdfs:domain rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Academy -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Academy">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Institution"/>
+        <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Acitivity -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Acitivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Artist -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Artist">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Person"/>
+        <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NonArtist"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Arts -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Arts">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#BauhausCourse -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Course"/>
+        <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct"/>
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#WorkOfArt"/>
+        <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Conceptualization -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Conceptualization">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Acitivity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Training"/>
+        <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewApproach"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Course -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Course">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Crafts -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Crafts">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#CreativeWork -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#CreativeWork">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Work"/>
+        <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#MechanicWork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Dualism -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Dualism">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Effect -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Effect">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Error -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Error">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Form -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Form">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Goal -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Idea -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Idea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Institution -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Institution">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Form"/>
+        <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#MainGoal -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#MainGoal">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#MechanicWork -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#MechanicWork">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#NewApproach -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewApproach">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Training"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Institution"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#NonArtist -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#NonArtist">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Outcome -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Outcome">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Person -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#PersonalExperience -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#PersonalExperience">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewApproach"/>
+        <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Vocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Product -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Product">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Form"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Quality -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Quality">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Role -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Role">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Training -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Training">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Acitivity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Visualization -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Visualization">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Acitivity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Vocabulary -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Vocabulary">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewApproach"/>
+    </owl:Class>
+    
+
+
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Work -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Work">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Acitivity"/>
+    </owl:Class>
+    
+
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#WorkOfArt -->
+
+    <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#WorkOfArt">
+        <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Product"/>
+    </owl:Class>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Dualism
-:Dualism rdf:type owl:Class ;
-         rdfs:subClassOf owl:Thing .
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Effect
-:Effect rdf:type owl:Class ;
-        rdfs:subClassOf owl:Thing .
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Error
-:Error rdf:type owl:Class ;
-       rdfs:subClassOf owl:Thing .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Academia -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Academia">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Academy"/>
+        <changedInto rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Bauhaus"/>
+        <changedInto rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Kunstgewerbeschule"/>
+        <produces rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Isolation"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Form
-:Form rdf:type owl:Class ;
-      rdfs:subClassOf owl:Thing .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Aestheticism -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Goal
-:Goal rdf:type owl:Class ;
-      rdfs:subClassOf owl:Thing .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Aestheticism">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Error"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Idea
-:Idea rdf:type owl:Class ;
-      rdfs:subClassOf owl:Thing .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Crafts"/>
+        <dependsOn rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Cooperation"/>
+        <reflects rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Zeitgeist"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct
-:IndustrialProduct rdf:type owl:Class ;
-                   rdfs:subClassOf :DailyLifeProduct .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#ArtisticDesigner -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Institution
-:Institution rdf:type owl:Class ;
-             rdfs:subClassOf :Form ;
-             owl:disjointWith :Product .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#ArtisticDesigner">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#MainGoal
-:MainGoal rdf:type owl:Class ;
-          rdfs:subClassOf :Goal .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Bauhaus -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Bauhaus">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+        <aimsAt rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Cooperation"/>
+        <aimsAt rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Union"/>
+        <involves rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Formlehre"/>
+        <involves rdf:resource="https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory"/>
+        <involves rdf:resource="https://digimof.github.io/keGropius/ontoGropius#ManualTraining"/>
+        <involves rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Vorlehre"/>
+        <involves rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Werklehre"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#MechanicWork
-:MechanicWork rdf:type owl:Class ;
-              rdfs:subClassOf :Work .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#BuildingActivity -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#NewApproach
-:NewApproach rdf:type owl:Class ;
-             rdfs:subClassOf :Training .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#BuildingActivity">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution
-:NewlyFormedInstitution rdf:type owl:Class ;
-                        rdfs:subClassOf :Institution .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Cooperation -->
 
-
-###  https://digimof.github.io/keGropius/ontoGropius#NonArtist
-:NonArtist rdf:type owl:Class ;
-           rdfs:subClassOf :Person .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Cooperation">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+        <basisOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Outcome
-:Outcome rdf:type owl:Class ;
-         rdfs:subClassOf owl:Thing .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Coordination -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Coordination">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Person
-:Person rdf:type owl:Class ;
-        rdfs:subClassOf owl:Thing .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#CreativePower -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#PersonalExperience
-:PersonalExperience rdf:type owl:Class ;
-                    rdfs:subClassOf :NewApproach ;
-                    owl:disjointWith :Vocabulary .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#CreativePower">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Product
-:Product rdf:type owl:Class ;
-         rdfs:subClassOf :Form .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Creativity -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Creativity">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Quality"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Quality
-:Quality rdf:type owl:Class ;
-         rdfs:subClassOf owl:Thing .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Death -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Role
-:Role rdf:type owl:Class ;
-      rdfs:subClassOf owl:Thing .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Death">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Effect"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Training
-:Training rdf:type owl:Class ;
-          rdfs:subClassOf :Acitivity .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Dilettantism -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Dilettantism">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Error"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Visualization
-:Visualization rdf:type owl:Class ;
-               rdfs:subClassOf :Acitivity .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Experimentation -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Vocabulary
-:Vocabulary rdf:type owl:Class ;
-            rdfs:subClassOf :NewApproach .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Experimentation">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Work
-:Work rdf:type owl:Class ;
-      rdfs:subClassOf :Acitivity .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Expressivity -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Expressivity">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Quality"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#WorkOfArt
-:WorkOfArt rdf:type owl:Class ;
-           rdfs:subClassOf :Product .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#FolkArts -->
 
-#################################################################
-#    Individuals
-#################################################################
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#FolkArts">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Arts"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Academia
-:Academia rdf:type owl:NamedIndividual ,
-                   :Academy ;
-          :against :Dilettantism ;
-          :changedInto :Bauhaus ,
-                       :Kunstgewerbeschule ;
-          :failedAt :KnowledgeOfTheory ;
-          :follows :Aestheticism ;
-          :produces :Isolation ,
-                    :ValueDiscounting .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Formlehre -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Aestheticism
-:Aestheticism rdf:type owl:NamedIndividual ,
-                       :Error ;
-              :followedBy :Academia .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Formlehre">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign
-:ArchitectureDesign rdf:type owl:NamedIndividual ,
-                             :Arts ,
-                             :Crafts ;
-                    :dependsOn :ArtisticDesigner ,
-                               :Cooperation ,
-                               :Instructor ,
-                               :Journeyman ;
-                    :emphasizedBy :Bauhaus ,
-                                  :Kunstgewerbeschule ;
-                    :formalizes :Space ,
-                                :Zeitgeist ;
-                    :freeFrom :Aestheticism ;
-                    :mustFollow :KnowledgeOfTheory ,
-                                :ManualTraining ;
-                    :reflects :Zeitgeist .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Formulae -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Formulae">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#ArtisticDesigner
-:ArtisticDesigner rdf:type owl:NamedIndividual ,
-                           :Artist .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForArtsAndCrafts -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Bauhaus
-:Bauhaus rdf:type owl:NamedIndividual ,
-                  :NewlyFormedInstitution ;
-         :aimsAt :Cooperation ,
-                 :Union ;
-         :involves :Formlehre ,
-                   :KnowledgeOfTheory ,
-                   :ManualTraining ,
-                   :Vorlehre ,
-                   :Werklehre .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForArtsAndCrafts">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Academy"/>
+        <changedInto rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Bauhaus"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#BuildingActivity
-:BuildingActivity rdf:type owl:NamedIndividual ,
-                           :CollaborativeWorkOfArt .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForPictorialArt -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForPictorialArt">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Academy"/>
+        <changedInto rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Bauhaus"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Cooperation
-:Cooperation rdf:type owl:NamedIndividual ,
-                      :Goal ;
-             :basisOf :ArchitectureDesign .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#IndustrialDesigner -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Coordination
-:Coordination rdf:type owl:NamedIndividual ,
-                       :Goal .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#IndustrialDesigner">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NonArtist"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#CreativePower
-:CreativePower rdf:type owl:NamedIndividual ,
-                        :Goal .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Creativity
-:Creativity rdf:type owl:NamedIndividual ,
-                     :Quality .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Instructor -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Death
-:Death rdf:type owl:NamedIndividual ,
-                :Effect .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Instructor">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Dilettantism
-:Dilettantism rdf:type owl:NamedIndividual ,
-                       :Error .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Isolation -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Isolation">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Effect"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Experimentation
-:Experimentation rdf:type owl:NamedIndividual ,
-                          :Goal .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Journeyman -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Expressivity
-:Expressivity rdf:type owl:NamedIndividual ,
-                       :Quality .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Journeyman">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Artist"/>
+        <mustRethink rdf:resource="https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#FolkArts
-:FolkArts rdf:type owl:NamedIndividual ,
-                   :Arts .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Knowledge -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Knowledge">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Quality"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Formlehre
-:Formlehre rdf:type owl:NamedIndividual ,
-                    :BauhausCourse .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Formulae
-:Formulae rdf:type owl:NamedIndividual ,
-                   :ConventionalApproach .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Vocabulary"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForArtsAndCrafts
-:GrandDucalSaxonAcademyForArtsAndCrafts rdf:type owl:NamedIndividual ,
-                                                 :Academy ;
-                                        :changedInto :Bauhaus .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Kunstgewerbeschule -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Kunstgewerbeschule">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+        <aimsAt rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Cooperation"/>
+        <involves rdf:resource="https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory"/>
+        <involves rdf:resource="https://digimof.github.io/keGropius/ontoGropius#ManualTraining"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForPictorialArt
-:GrandDucalSaxonAcademyForPictorialArt rdf:type owl:NamedIndividual ,
-                                                :Academy ;
-                                       :changedInto :Bauhaus .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#ManualTraining -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#IndustrialDesigner
-:IndustrialDesigner rdf:type owl:NamedIndividual ,
-                             :NonArtist .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#ManualTraining">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#PersonalExperience"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct
-:IndustrialProduct rdf:type owl:NamedIndividual ,
-                            :IndustrialProduct .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Originality -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Originality">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Quality"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Instructor
-:Instructor rdf:type owl:NamedIndividual ,
-                     :Artist .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Person -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Isolation
-:Isolation rdf:type owl:NamedIndividual ,
-                    :Effect .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Person">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Person"/>
+        <mustRethink rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Work"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Journeyman
-:Journeyman rdf:type owl:NamedIndividual ,
-                     :Artist ;
-            :mustRethink :ArchitectureDesign .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#PieceOfWork -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#PieceOfWork">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Form"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Knowledge
-:Knowledge rdf:type owl:NamedIndividual ,
-                    :Quality .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Promotion -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory
-:KnowledgeOfTheory rdf:type owl:NamedIndividual ,
-                            :Vocabulary .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Promotion">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Effect"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Kunstgewerbeschule
-:Kunstgewerbeschule rdf:type owl:NamedIndividual ,
-                             :NewlyFormedInstitution ;
-                    :aimsAt :Cooperation ;
-                    :involves :KnowledgeOfTheory ,
-                              :ManualTraining .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Sovereign -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Sovereign">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NonArtist"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#ManualTraining
-:ManualTraining rdf:type owl:NamedIndividual ,
-                         :PersonalExperience .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Space -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Originality
-:Originality rdf:type owl:NamedIndividual ,
-                      :Quality .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Space">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Idea"/>
+        <embodiedIn rdf:resource="https://digimof.github.io/keGropius/ontoGropius#PieceOfWork"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Person
-:Person rdf:type owl:NamedIndividual ,
-                 :Person ;
-        :mustRethink :Work .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Synthesis -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Synthesis">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#PieceOfWork
-:PieceOfWork rdf:type owl:NamedIndividual ,
-                      :Form .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Talent -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Promotion
-:Promotion rdf:type owl:NamedIndividual ,
-                    :Effect .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Talent">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Quality"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Sovereign
-:Sovereign rdf:type owl:NamedIndividual ,
-                    :NonArtist .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Union -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Union">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#MainGoal"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Space
-:Space rdf:type owl:NamedIndividual ,
-                :Idea ;
-       :embodiedIn :PieceOfWork .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#ValueDiscounting -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Synthesis
-:Synthesis rdf:type owl:NamedIndividual ,
-                    :Goal .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#ValueDiscounting">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Error"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Talent
-:Talent rdf:type owl:NamedIndividual ,
-                 :Quality .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Vorlehre -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Vorlehre">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"/>
+        <improves rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Creativity"/>
+        <improves rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Expressivity"/>
+        <improves rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Originality"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Union
-:Union rdf:type owl:NamedIndividual ,
-                :MainGoal .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Werklehre -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#ValueDiscounting
-:ValueDiscounting rdf:type owl:NamedIndividual ,
-                           :Error .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Werklehre">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Vorlehre
-:Vorlehre rdf:type owl:NamedIndividual ,
-                   :BauhausCourse ;
-          :improves :Creativity ,
-                    :Expressivity ,
-                    :Originality .
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Work -->
 
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Work">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Work"/>
+    </owl:NamedIndividual>
+    
 
-###  https://digimof.github.io/keGropius/ontoGropius#Werklehre
-:Werklehre rdf:type owl:NamedIndividual ,
-                    :BauhausCourse .
 
+    <!-- https://digimof.github.io/keGropius/ontoGropius#Zeitgeist -->
 
-###  https://digimof.github.io/keGropius/ontoGropius#Work
-:Work rdf:type owl:NamedIndividual ,
-               :Work .
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoGropius#Zeitgeist">
+        <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Idea"/>
+        <embodiedIn rdf:resource="https://digimof.github.io/keGropius/ontoGropius#PieceOfWork"/>
+    </owl:NamedIndividual>
+    
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Zeitgeist
-:Zeitgeist rdf:type owl:NamedIndividual ,
-                    :Idea ;
-           :embodiedIn :PieceOfWork .
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Acitivity"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Course"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Dualism"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Effect"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Error"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Form"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Idea"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Outcome"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Person"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Quality"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Role"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Conceptualization"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Training"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Visualization"/>
+            <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Work"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
 
-#################################################################
-#    General axioms
-#################################################################
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Acitivity
-                :ArtisticMovement
-                :Course
-                :Dualism
-                :Effect
-                :Error
-                :Form
-                :Goal
-                :Idea
-                :Outcome
-                :Person
-                :Quality
-                :Role
-              )
-] .
 
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :Conceptualization
-                :Training
-                :Visualization
-                :Work
-              )
-] .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

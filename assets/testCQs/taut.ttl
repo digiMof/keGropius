@@ -1,208 +1,243 @@
-@prefix : <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> .
-@prefix mof: <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> .
+@prefix : <https://digimof.github.io/keGropius/ontoTaut#> .
+@prefix mof: <https://digimof.github.io/keGropius/ontoTaut#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut> .
+@base <https://digimof.github.io/keGropius/ontoTaut> .
 
-<http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut> rdf:type owl:Ontology .
+<https://digimof.github.io/keGropius/ontoTaut> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#aimsAt
+###  https://digimof.github.io/keGropius/ontoTaut#aimsAt
 mof:aimsAt rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
            owl:inverseOf mof:fosteredBy ;
-           rdfs:domain mof:Craft ,
-                       mof:FineArt ,
-                       mof:GovernmentInstitution ,
-                       mof:Text ;
-           rdfs:range mof:Goal ,
-                      mof:SecondaryGoal ,
-                      mof:SloganGoal .
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( mof:Craft
+                                       mof:FineArt
+                                       mof:GovernmentInstitution
+                                       mof:Text
+                                     )
+                       ] ;
+           rdfs:range mof:Goal .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#fosteredBy
+###  https://digimof.github.io/keGropius/ontoTaut#fosteredBy
 mof:fosteredBy rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
-               rdfs:domain mof:Goal ,
-                           mof:SecondaryGoal ,
-                           mof:SloganGoal ;
-               rdfs:range mof:Craft ,
-                          mof:FineArt ,
-                          mof:GovernmentInstitution ,
-                          mof:Text .
+               rdfs:domain mof:Goal ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( mof:Craft
+                                          mof:FineArt
+                                          mof:GovernmentInstitution
+                                          mof:Text
+                                        )
+                          ] .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involvedBy
+###  https://digimof.github.io/keGropius/ontoTaut#involvedBy
 mof:involvedBy rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                owl:inverseOf mof:involves ;
-               rdfs:domain mof:Academy ,
-                           mof:FineArt ,
-                           mof:Person ,
-                           mof:Product ,
-                           mof:SecondaryGoal ;
-               rdfs:range mof:EducationalProgram ,
-                          mof:SecondaryGoal ,
-                          mof:SloganGoal .
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( mof:Academy
+                                           mof:FineArt
+                                           mof:Person
+                                           mof:Product
+                                           mof:SecondaryGoal
+                                         )
+                           ] ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( mof:EducationalProgram
+                                          mof:SecondaryGoal
+                                          mof:SloganGoal
+                                        )
+                          ] .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#involves
+###  https://digimof.github.io/keGropius/ontoTaut#involves
 mof:involves rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain mof:EducationalProgram ,
-                         mof:SecondaryGoal ,
-                         mof:SloganGoal ;
-             rdfs:range mof:Academy ,
-                        mof:FineArt ,
-                        mof:Person ,
-                        mof:Product ,
-                        mof:SecondaryGoal .
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( mof:EducationalProgram
+                                         mof:SecondaryGoal
+                                         mof:SloganGoal
+                                       )
+                         ] ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( mof:Academy
+                                        mof:FineArt
+                                        mof:Person
+                                        mof:Product
+                                        mof:SecondaryGoal
+                                      )
+                        ] .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replacedBy
+###  https://digimof.github.io/keGropius/ontoTaut#replacedBy
 mof:replacedBy rdf:type owl:ObjectProperty ;
                owl:inverseOf mof:replaces ;
-               rdfs:domain mof:Academy ,
-                           mof:Error ;
-               rdfs:range mof:NewlyFormed ,
-                          mof:SecondaryGoal .
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( mof:Academy
+                                           mof:Error
+                                         )
+                           ] ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( mof:NewlyFormed
+                                          mof:SecondaryGoal
+                                        )
+                          ] .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#replaces
+###  https://digimof.github.io/keGropius/ontoTaut#replaces
 mof:replaces rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain mof:NewlyFormed ,
-                         mof:SecondaryGoal ;
-             rdfs:range mof:Academy ,
-                        mof:Error .
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( mof:NewlyFormed
+                                         mof:SecondaryGoal
+                                       )
+                         ] ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( mof:Academy
+                                        mof:Error
+                                      )
+                        ] .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#responsibleFor
+###  https://digimof.github.io/keGropius/ontoTaut#responsibleFor
 mof:responsibleFor rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf owl:topObjectProperty ;
-                   rdfs:domain mof:Artist ,
-                               mof:GovernmentInstitution ;
-                   rdfs:range mof:Nation ,
-                              mof:SecondaryGoal .
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( mof:Artist
+                                               mof:GovernmentInstitution
+                                             )
+                               ] ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( mof:Nation
+                                              mof:SecondaryGoal
+                                            )
+                              ] .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Academy
+###  https://digimof.github.io/keGropius/ontoTaut#Academy
 mof:Academy rdf:type owl:Class ;
-            rdfs:subClassOf mof:ArtisticInstitution .
+            rdfs:subClassOf mof:ArtisticInstitution ;
+            owl:disjointWith mof:NewlyFormed .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Artist
+###  https://digimof.github.io/keGropius/ontoTaut#Artist
 mof:Artist rdf:type owl:Class ;
-           rdfs:subClassOf mof:Person .
+           rdfs:subClassOf mof:Person ;
+           owl:disjointWith mof:NonArtist .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArtisticInstitution
+###  https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution
 mof:ArtisticInstitution rdf:type owl:Class ;
                         rdfs:subClassOf mof:Institution .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Craft
+###  https://digimof.github.io/keGropius/ontoTaut#Craft
 mof:Craft rdf:type owl:Class ;
           rdfs:subClassOf mof:Techne .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#DailyObject
+###  https://digimof.github.io/keGropius/ontoTaut#DailyObject
 mof:DailyObject rdf:type owl:Class ;
                 rdfs:subClassOf mof:Product .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#EducationalProgram
+###  https://digimof.github.io/keGropius/ontoTaut#EducationalProgram
 mof:EducationalProgram rdf:type owl:Class ;
                        rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Error
+###  https://digimof.github.io/keGropius/ontoTaut#Error
 mof:Error rdf:type owl:Class ;
           rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#FineArt
+###  https://digimof.github.io/keGropius/ontoTaut#FineArt
 mof:FineArt rdf:type owl:Class ;
             rdfs:subClassOf mof:Techne .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Goal
+###  https://digimof.github.io/keGropius/ontoTaut#Goal
 mof:Goal rdf:type owl:Class ;
          rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution
+###  https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution
 mof:GovernmentInstitution rdf:type owl:Class ;
                           rdfs:subClassOf mof:Institution .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Institution
+###  https://digimof.github.io/keGropius/ontoTaut#Institution
 mof:Institution rdf:type owl:Class ;
                 rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Monument
+###  https://digimof.github.io/keGropius/ontoTaut#Monument
 mof:Monument rdf:type owl:Class ;
              rdfs:subClassOf mof:DailyObject ,
                              mof:WorkOfArt .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Nation
+###  https://digimof.github.io/keGropius/ontoTaut#Nation
 mof:Nation rdf:type owl:Class ;
            rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormed
+###  https://digimof.github.io/keGropius/ontoTaut#NewlyFormed
 mof:NewlyFormed rdf:type owl:Class ;
                 rdfs:subClassOf mof:ArtisticInstitution .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NonArtist
+###  https://digimof.github.io/keGropius/ontoTaut#NonArtist
 mof:NonArtist rdf:type owl:Class ;
               rdfs:subClassOf mof:Person .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Person
+###  https://digimof.github.io/keGropius/ontoTaut#Person
 mof:Person rdf:type owl:Class ;
            rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Product
+###  https://digimof.github.io/keGropius/ontoTaut#Product
 mof:Product rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SecondaryGoal
+###  https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal
 mof:SecondaryGoal rdf:type owl:Class ;
-                  rdfs:subClassOf mof:Goal .
+                  rdfs:subClassOf mof:Goal ;
+                  owl:disjointWith mof:SloganGoal .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#SloganGoal
+###  https://digimof.github.io/keGropius/ontoTaut#SloganGoal
 mof:SloganGoal rdf:type owl:Class ;
                rdfs:subClassOf mof:Goal .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Techne
+###  https://digimof.github.io/keGropius/ontoTaut#Techne
 mof:Techne rdf:type owl:Class ;
            rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Text
+###  https://digimof.github.io/keGropius/ontoTaut#Text
 mof:Text rdf:type owl:Class ;
          rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#WorkOfArt
+###  https://digimof.github.io/keGropius/ontoTaut#WorkOfArt
 mof:WorkOfArt rdf:type owl:Class ;
               rdfs:subClassOf mof:Product .
 
@@ -211,13 +246,13 @@ mof:WorkOfArt rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArbeitsratProgram
+###  https://digimof.github.io/keGropius/ontoTaut#ArbeitsratProgram
 mof:ArbeitsratProgram rdf:type owl:NamedIndividual ,
                                mof:Text ;
                       mof:aimsAt mof:Unity .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#ArbeitsratfürKunst
+###  https://digimof.github.io/keGropius/ontoTaut#ArbeitsratfürKunst
 mof:ArbeitsratfürKunst rdf:type owl:NamedIndividual ,
                                 mof:NewlyFormed ;
                        mof:replaces mof:RoyalAcademyofArchitecture ,
@@ -225,64 +260,65 @@ mof:ArbeitsratfürKunst rdf:type owl:NamedIndividual ,
                                     mof:RoyalPrussianStateArtCommission .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#BuildActivity
+###  https://digimof.github.io/keGropius/ontoTaut#BuildActivity
 mof:BuildActivity rdf:type owl:NamedIndividual ,
                            mof:Craft ,
                            mof:FineArt ;
                   mof:aimsAt mof:PublicNature .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Dissolution
+###  https://digimof.github.io/keGropius/ontoTaut#Dissolution
 mof:Dissolution rdf:type owl:NamedIndividual ,
                          mof:SecondaryGoal ;
                 mof:involves mof:MonumentDispropValue ,
                              mof:MonumentNoValue .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#EducationalChange
+###  https://digimof.github.io/keGropius/ontoTaut#EducationalChange
 mof:EducationalChange rdf:type owl:NamedIndividual ,
                                mof:SecondaryGoal ;
                       mof:fosteredBy mof:Museum .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Freedom
+###  https://digimof.github.io/keGropius/ontoTaut#Freedom
 mof:Freedom rdf:type owl:NamedIndividual ,
                      mof:SecondaryGoal ;
             mof:replaces mof:GovernmentDomination .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentDomination
+###  https://digimof.github.io/keGropius/ontoTaut#GovernmentDomination
 mof:GovernmentDomination rdf:type owl:NamedIndividual ,
                                   mof:Error ;
                          mof:replacedBy mof:Freedom .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#GovernmentInstitution
+###  https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution
 mof:GovernmentInstitution rdf:type owl:NamedIndividual ,
                                    mof:GovernmentInstitution ;
                           mof:aimsAt mof:Promotion .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#MonumentDispropValue
+###  https://digimof.github.io/keGropius/ontoTaut#MonumentDispropValue
 mof:MonumentDispropValue rdf:type owl:NamedIndividual ,
                                   mof:Monument ;
                          mof:involvedBy mof:Dissolution .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#MonumentNoValue
+###  https://digimof.github.io/keGropius/ontoTaut#MonumentNoValue
 mof:MonumentNoValue rdf:type owl:NamedIndividual ,
                              mof:Monument ;
                     mof:involvedBy mof:Dissolution .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Museum
+###  https://digimof.github.io/keGropius/ontoTaut#Museum
 mof:Museum rdf:type owl:NamedIndividual ,
                     mof:ArtisticInstitution ,
                     mof:GovernmentInstitution ;
-           mof:responsibleFor mof:EducationalChange .
+           mof:responsibleFor mof:EducationalChange ;
+           rdfs:comment "Allora qua ho una questione da sottoporvi: Museum è responsibleFor EducationalChange e ok, però nell'individual EducationalChange c'è fosteredBy Museum, quindi qua (nell'individuo Museum) il reasoner ha aggiunto automaticamente aimsAt EducationalChange... io ce lo lascerei anche perché ci sta mantenere il collegamento in entrambi i sensi tra Museum e EducationalChange, però mi rendo anche conto che responsibleFor è più adatto di aimsAt (almeno credo) -> allora però bisognerebbe modificate un attimo le object properties aggiungendo responsibleFor tra gli opposti di fosteredBy (e a questo punto aggiungere le classi mancanti tra i Range e i domains delle due object properties)" .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#NewlyFormedInstitutions
+###  https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions
 mof:NewlyFormedInstitutions rdf:type owl:NamedIndividual ,
                                      mof:NewlyFormed ;
                             mof:replaces mof:RoyalAcademyofArchitecture ,
@@ -290,37 +326,40 @@ mof:NewlyFormedInstitutions rdf:type owl:NamedIndividual ,
                                          mof:RoyalPrussianStateArtCommission .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Promotion
+###  https://digimof.github.io/keGropius/ontoTaut#Promotion
 mof:Promotion rdf:type owl:NamedIndividual ,
                        mof:SecondaryGoal ;
               mof:fosteredBy mof:GovernmentInstitution .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#PublicNature
+###  https://digimof.github.io/keGropius/ontoTaut#PublicNature
 mof:PublicNature rdf:type owl:NamedIndividual ,
                           mof:SecondaryGoal ;
                  mof:fosteredBy mof:BuildActivity .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArchitecture
+###  https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArchitecture
 mof:RoyalAcademyofArchitecture rdf:type owl:NamedIndividual ,
                                         mof:Academy ;
-                               mof:replacedBy mof:NewlyFormedInstitutions .
+                               mof:replacedBy mof:NewlyFormedInstitutions ;
+                               rdfs:comment "Il reasoner ha aggiunto replacedBy ArbeitsratfurKunst... io ce lo lascerei (e lascerei anche replacedBy NewlyFormedInstitution) perché alla fine si tratta solo di una cosa più specifica che ci sta come cosa..." .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalAcademyofArts
+###  https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArts
 mof:RoyalAcademyofArts rdf:type owl:NamedIndividual ,
                                 mof:Academy ;
-                       mof:replacedBy mof:NewlyFormedInstitutions .
+                       mof:replacedBy mof:NewlyFormedInstitutions ;
+                       rdfs:comment "vedi commento RoyalAcademyofArchitecture" .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#RoyalPrussianStateArtCommission
+###  https://digimof.github.io/keGropius/ontoTaut#RoyalPrussianStateArtCommission
 mof:RoyalPrussianStateArtCommission rdf:type owl:NamedIndividual ,
                                              mof:Academy ;
-                                    mof:replacedBy mof:NewlyFormedInstitutions .
+                                    mof:replacedBy mof:NewlyFormedInstitutions ;
+                                    rdfs:comment "vedi commento RoyalAcademyofArchitecture" .
 
 
-###  http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#Unity
+###  https://digimof.github.io/keGropius/ontoTaut#Unity
 mof:Unity rdf:type owl:NamedIndividual ,
                    mof:SloganGoal ;
           mof:fosteredBy mof:ArbeitsratProgram .
@@ -331,8 +370,14 @@ mof:Unity rdf:type owl:NamedIndividual ,
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( mof:Error
+  owl:members ( mof:EducationalProgram
+                mof:Error
                 mof:Goal
+                mof:Institution
+                mof:Nation
+                mof:Person
+                mof:Product
+                mof:Techne
                 mof:Text
               )
 ] .
