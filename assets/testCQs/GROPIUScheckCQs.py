@@ -5,7 +5,7 @@ gropiusCqs.parse("assets/testCQs/gropius.ttl",format="ttl")
 
 #cq1) How are ideas expressed?
 cq1 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -21,7 +21,7 @@ WHERE {
 
 #cq2) What is caused by academia?
 cq2 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -38,7 +38,7 @@ WHERE {
 
 #cq3) What is Architecture dependant upon?
 cq3 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -55,7 +55,7 @@ WHERE {
 
 #cq4) What is the main goal of Bauhaus?
 cq4 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -71,7 +71,7 @@ WHERE {
 
 #c5) What do buildings reflect?
 cq5 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -86,7 +86,7 @@ WHERE {
 
 #cq6) How can work be split? 
 cq6 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -101,7 +101,7 @@ WHERE {
 
 #cq7) What should each person rethink in order to change society?
 cq7 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -116,7 +116,7 @@ WHERE {
 
 #cq8) What should academies be substituted with?
 cq8 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -132,7 +132,7 @@ WHERE {
 
 #cq9) What does the preliminary course at Bauhaus improve?
 cq9 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -147,7 +147,7 @@ WHERE {
 
 #cq10) Who is the most suitable individual for rethinking architecture?
 cq10 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -162,7 +162,7 @@ WHERE {
 
 #cq11) Which courses are involved in the Bauhaus?
 cq11 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -178,7 +178,7 @@ WHERE {
 
 #cq12) What is the goal of newly formed institutions?
 cq12 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -195,7 +195,7 @@ WHERE {
 
 #cq13) What is included in the new approach in training?
 cq13 = '''
-PREFIX mof: <http://www.semanticweb.org/bonif/ontologies/2022/5/ontoGropius#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoGropius#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 

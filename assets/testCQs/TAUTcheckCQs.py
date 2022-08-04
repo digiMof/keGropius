@@ -5,7 +5,7 @@ tautCqs.parse("assets/testCQs/taut.ttl",format="ttl")
 
 # cq1) What is the main goal?
 cq1 = '''
-PREFIX mof: <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoTaut#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -20,7 +20,7 @@ WHERE {
 
 # cq2) Which are the activities whose scope is of public nature?
 cq2 = '''
-PREFIX mof: <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoTaut#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -36,7 +36,7 @@ WHERE {
 
 # cq3) Which are the institutions to be dissolved?
 cq3 = '''
-PREFIX mof: <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoTaut#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -53,7 +53,7 @@ WHERE {
 
 #cq4)  What error should be replaced by freedom?
 cq4 = '''
-PREFIX mof: <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoTaut#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -68,7 +68,7 @@ WHERE {
 
 #cq5) What is responsible for education?
 cq5 = '''
-PREFIX mof: <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoTaut#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -84,7 +84,7 @@ WHERE {
 
 #cq6) What products need to be dissolved?
 cq6 = '''
-PREFIX mof: <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoTaut#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -100,7 +100,7 @@ WHERE {
 
 #cq7) What should government institutions guarantee?
 cq7 = '''
-PREFIX mof: <http://www.semanticweb.org/manuele/ontologies/2022/5/18/ontoTaut#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoTaut#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 

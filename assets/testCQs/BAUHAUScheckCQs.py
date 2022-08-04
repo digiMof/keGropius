@@ -5,7 +5,7 @@ BauhausCqs.parse("assets/testCQs/bau.ttl", format="ttl")
 
 # cq1) What is the main goal of newly formed institutions?
 cq1 = '''
-PREFIX mof: <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoBau#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -24,7 +24,7 @@ WHERE {
 
 # cq2) What different actions should be taken towards academies by different newly formed institutions?
 cq2 = '''
-PREFIX mof: <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoBau#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
@@ -42,7 +42,7 @@ UNION
 
 # cq3) What is demanded of education programmes?
 cq3 = '''
-PREFIX mof: <http://www.semanticweb.org/orsola/ontologies/2022/6/ontoBau#> 
+PREFIX mof: <https://digimof.github.io/keGropius/ontoBau#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX xml: <http://www.w3.org/XML/1998/namespace> 
