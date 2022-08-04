@@ -15,183 +15,262 @@
 
 ###  https://digimof.github.io/keGropius/ontoGropius#against
 :against rdf:type owl:ObjectProperty ;
-         rdfs:domain :Academy ,
-                     :BauhausCourse ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Academy
+                                     :BauhausCourse
+                                   )
+                     ] ;
          rdfs:range :Error .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#aimsAt
 :aimsAt rdf:type owl:ObjectProperty ;
-        rdfs:domain :ArtisticMovement ,
-                    :Institution ,
-                    :NewlyFormedInstitution ;
-        rdfs:range :CollaborativeWorkOfArt ,
-                   :Goal ,
-                   :MainGoal .
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( :ArtisticMovement
+                                    :Institution
+                                  )
+                    ] ;
+        rdfs:range [ rdf:type owl:Class ;
+                     owl:unionOf ( :CollaborativeWorkOfArt
+                                   :Goal
+                                 )
+                   ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#basisOf
 :basisOf rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
          owl:inverseOf :dependsOn ;
-         rdfs:domain :Artist ,
-                     :Conceptualization ,
-                     :Course ,
-                     :CreativeWork ,
-                     :Goal ,
-                     :NewlyFormedInstitution ,
-                     :Visualization ;
-         rdfs:range :Arts ,
-                    :Course ,
-                    :Crafts ,
-                    :CreativeWork ,
-                    :Goal ,
-                    :NewlyFormedInstitution ,
-                    :Quality .
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Artist
+                                     :Conceptualization
+                                     :Course
+                                     :CreativeWork
+                                     :Goal
+                                     :NewlyFormedInstitution
+                                     :Visualization
+                                   )
+                     ] ;
+         rdfs:range [ rdf:type owl:Class ;
+                      owl:unionOf ( :Course
+                                    :CreativeWork
+                                    :Goal
+                                    :NewlyFormedInstitution
+                                    :Quality
+                                  )
+                    ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#changedInto
 :changedInto rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
              rdfs:domain :Academy ;
              rdfs:range :NewlyFormedInstitution .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#dependsOn
 :dependsOn rdf:type owl:ObjectProperty ;
-           rdfs:domain :Arts ,
-                       :BauhausCourse ,
-                       :Course ,
-                       :Crafts ,
-                       :CreativeWork ,
-                       :Goal ,
-                       :NewlyFormedInstitution ,
-                       :Quality ;
-           rdfs:range :Artist ,
-                      :Conceptualization ,
-                      :Course ,
-                      :CreativeWork ,
-                      :Goal ,
-                      :NewlyFormedInstitution ,
-                      :Visualization .
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Course
+                                       :CreativeWork
+                                       :Goal
+                                       :NewlyFormedInstitution
+                                       :Quality
+                                     )
+                       ] ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( :Artist
+                                      :Conceptualization
+                                      :Course
+                                      :CreativeWork
+                                      :Goal
+                                      :NewlyFormedInstitution
+                                      :Visualization
+                                    )
+                      ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#embodiedIn
 :embodiedIn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :Idea ;
-            rdfs:range :CollaborativeWorkOfArt ,
-                       :Form .
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :CollaborativeWorkOfArt
+                                       :Form
+                                     )
+                       ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#emphasizedBy
 :emphasizedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
               owl:inverseOf :emphasizes ;
-              rdfs:domain :Arts ,
-                          :Crafts ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( :Arts
+                                          :Crafts
+                                        )
+                          ] ;
               rdfs:range :NewlyFormedInstitution .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#emphasizes
 :emphasizes rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :NewlyFormedInstitution ;
-            rdfs:range :Arts ,
-                       :Crafts .
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :Arts
+                                       :Crafts
+                                     )
+                       ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#failedAt
 :failedAt rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
           rdfs:domain :Academy ;
           rdfs:range :Vocabulary .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#followedBy
 :followedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
             owl:inverseOf :follows ;
-            rdfs:domain :ComplementaryCourse ,
-                        :ConventionalApproach ,
-                        :Error ;
-            rdfs:range :Academy ,
-                       :Artist .
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :ComplementaryCourse
+                                        :ConventionalApproach
+                                        :Error
+                                      )
+                        ] ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :Academy
+                                       :Artist
+                                     )
+                       ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#follows
 :follows rdf:type owl:ObjectProperty ;
-         rdfs:domain :Academy ,
-                     :Artist ;
-         rdfs:range :ComplementaryCourse ,
-                    :ConventionalApproach ,
-                    :Error .
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Academy
+                                     :Artist
+                                   )
+                     ] ;
+         rdfs:range [ rdf:type owl:Class ;
+                      owl:unionOf ( :ComplementaryCourse
+                                    :ConventionalApproach
+                                    :Error
+                                  )
+                    ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#formalizes
 :formalizes rdf:type owl:ObjectProperty ;
-            rdfs:domain :Arts ,
-                        :Crafts ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Arts
+                                        :Crafts
+                                      )
+                        ] ;
             rdfs:range :Idea .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#founded
 :founded rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
          rdfs:domain :NewlyFormedInstitution ;
          rdfs:range :ArtisticMovement .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#freeFrom
 :freeFrom rdf:type owl:ObjectProperty ;
-          rdfs:domain :Arts ,
-                      :BauhausCourse ,
-                      :Crafts ;
-          rdfs:range :ConventionalApproach ,
-                     :Error .
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Arts
+                                      :BauhausCourse
+                                      :Crafts
+                                    )
+                      ] ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :ConventionalApproach
+                                     :Error
+                                   )
+                     ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#hasOutcome
 :hasOutcome rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :Course ;
             rdfs:range :Outcome .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#hasRole
 :hasRole rdf:type owl:ObjectProperty ;
-         rdfs:domain :Arts ,
-                     :Crafts ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Arts
+                                     :Crafts
+                                   )
+                     ] ;
          rdfs:range :Role .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#improves
 :improves rdf:type owl:ObjectProperty ;
-          rdfs:domain :BauhausCourse ,
-                      :NewlyFormedInstitution ,
-                      :Person ;
-          rdfs:range :Academy ,
-                     :Conceptualization ,
-                     :Outcome ,
-                     :PersonalExperience ,
-                     :Quality .
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :BauhausCourse
+                                      :NewlyFormedInstitution
+                                      :Person
+                                    )
+                      ] ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Academy
+                                     :Conceptualization
+                                     :Outcome
+                                     :PersonalExperience
+                                     :Quality
+                                   )
+                     ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#influencedBy
 :influencedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :BauhausCourse ;
               rdfs:range :Artist .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#involves
 :involves rdf:type owl:ObjectProperty ;
-          rdfs:domain :Artist ,
-                      :Dualism ,
-                      :Effect ,
-                      :Goal ,
-                      :NewlyFormedInstitution ;
-          rdfs:range :Artist ,
-                     :Arts ,
-                     :BauhausCourse ,
-                     :Crafts ,
-                     :Effect ,
-                     :NewApproach ,
-                     :NonArtist .
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Artist
+                                      :Dualism
+                                      :Effect
+                                      :Goal
+                                      :NewlyFormedInstitution
+                                    )
+                      ] ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Artist
+                                     :Arts
+                                     :BauhausCourse
+                                     :Crafts
+                                     :Effect
+                                     :NewApproach
+                                     :NonArtist
+                                   )
+                     ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#joins
 :joins rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty ;
        rdfs:domain :Artist ;
        rdfs:range :ArtisticMovement .
 
@@ -199,8 +278,11 @@
 ###  https://digimof.github.io/keGropius/ontoGropius#mustFollow
 :mustFollow rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :follows ;
-            rdfs:domain :Arts ,
-                        :Crafts ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Arts
+                                        :Crafts
+                                      )
+                        ] ;
             rdfs:range :NewApproach .
 
 
@@ -213,48 +295,73 @@
 
 ###  https://digimof.github.io/keGropius/ontoGropius#mustRethink
 :mustRethink rdf:type owl:ObjectProperty ;
-             rdfs:domain :Artist ,
-                         :BauhausCourse ,
-                         :Person ;
-             rdfs:range :Arts ,
-                        :Crafts ,
-                        :Vocabulary ,
-                        :Work .
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :BauhausCourse
+                                         :Person
+                                       )
+                         ] ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( :Vocabulary
+                                        :Work
+                                      )
+                        ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#prerequisitFor
 :prerequisitFor rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
                 rdfs:domain :BauhausCourse ;
-                rdfs:range :Arts ,
-                           :Crafts .
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( :Arts
+                                           :Crafts
+                                         )
+                           ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#produces
 :produces rdf:type owl:ObjectProperty ;
-          rdfs:domain :Academy ,
-                      :Goal ,
-                      :NewApproach ,
-                      :PersonalExperience ;
-          rdfs:range :Effect ,
-                     :Error ,
-                     :Goal ,
-                     :Quality .
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Academy
+                                      :Goal
+                                      :NewApproach
+                                    )
+                      ] ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Effect
+                                     :Error
+                                     :Goal
+                                     :Quality
+                                   )
+                     ] .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#reflects
 :reflects rdf:type owl:ObjectProperty ;
-          rdfs:domain :Arts ,
-                      :Crafts ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Arts
+                                      :Crafts
+                                    )
+                      ] ;
           rdfs:range :Idea .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#simultaneousTo
-:simultaneousTo rdf:type owl:ObjectProperty ,
-                         owl:SymmetricProperty ;
-                rdfs:domain :Conceptualization ,
-                            :Visualization ;
-                rdfs:range :Conceptualization ,
-                           :Visualization .
+:simultaneousTo rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdf:type owl:SymmetricProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :Conceptualization
+                                            :Visualization
+                                          )
+                            ] ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( :Conceptualization
+                                           :Visualization
+                                         )
+                           ] .
 
 
 #################################################################
@@ -273,7 +380,8 @@
 
 ###  https://digimof.github.io/keGropius/ontoGropius#Academy
 :Academy rdf:type owl:Class ;
-         rdfs:subClassOf :Institution .
+         rdfs:subClassOf :Institution ;
+         owl:disjointWith :NewlyFormedInstitution .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#Acitivity
@@ -299,13 +407,15 @@
 
 ###  https://digimof.github.io/keGropius/ontoGropius#BauhausCourse
 :BauhausCourse rdf:type owl:Class ;
-               rdfs:subClassOf :Course .
+               rdfs:subClassOf :Course ;
+               owl:disjointWith :ComplementaryCourse .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt
 :CollaborativeWorkOfArt rdf:type owl:Class ;
                         rdfs:subClassOf :DailyLifeProduct ,
-                                        :WorkOfArt .
+                                        :WorkOfArt ;
+                        owl:disjointWith :IndustrialProduct .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse
@@ -320,7 +430,8 @@
 
 ###  https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach
 :ConventionalApproach rdf:type owl:Class ;
-                      rdfs:subClassOf :Training .
+                      rdfs:subClassOf :Training ;
+                      owl:disjointWith :NewApproach .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#Course
@@ -335,7 +446,8 @@
 
 ###  https://digimof.github.io/keGropius/ontoGropius#CreativeWork
 :CreativeWork rdf:type owl:Class ;
-              rdfs:subClassOf :Work .
+              rdfs:subClassOf :Work ;
+              owl:disjointWith :MechanicWork .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct
@@ -380,7 +492,8 @@
 
 ###  https://digimof.github.io/keGropius/ontoGropius#Institution
 :Institution rdf:type owl:Class ;
-             rdfs:subClassOf :Form .
+             rdfs:subClassOf :Form ;
+             owl:disjointWith :Product .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#MainGoal
@@ -420,7 +533,8 @@
 
 ###  https://digimof.github.io/keGropius/ontoGropius#PersonalExperience
 :PersonalExperience rdf:type owl:Class ;
-                    rdfs:subClassOf :NewApproach .
+                    rdfs:subClassOf :NewApproach ;
+                    owl:disjointWith :Vocabulary .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#Product
@@ -736,6 +850,15 @@
                 :Person
                 :Quality
                 :Role
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Conceptualization
+                :Training
+                :Visualization
+                :Work
               )
 ] .
 
