@@ -206,6 +206,7 @@
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Academy">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution"/>
         <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoTaut#NewlyFormed"/>
+        <rdfs:comment xml:lang="en">This class identifies an artistic institution with follows the model of 19th century&apos;s academies, i.e. a clear separation between fine arts and crafts</rdfs:comment>
     </owl:Class>
     
 
@@ -215,6 +216,7 @@
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Artist">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Person"/>
         <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoTaut#NonArtist"/>
+        <rdfs:comment xml:lang="en">This class identifies a person who deals with art in his professional life</rdfs:comment>
     </owl:Class>
     
 
@@ -223,6 +225,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Institution"/>
+        <rdfs:comment xml:lang="en">This class identifies an institution which as the consvervation, training and appreciation of arts as main vocation</rdfs:comment>
     </owl:Class>
     
 
@@ -231,6 +234,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Craft">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Techne"/>
+        <rdfs:comment xml:lang="en">This class identifies a technique which usually does not produce work of art but object used in every-day life</rdfs:comment>
     </owl:Class>
     
 
@@ -239,6 +243,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#DailyObject">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Product"/>
+        <rdfs:comment xml:lang="en">This class identifies any product built without any artistic intent and used  by people in their ordinary life</rdfs:comment>
     </owl:Class>
     
 
@@ -247,6 +252,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#EducationalProgram">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies the formative path followed by artists during their education. It is usually provided by an authoritative institution</rdfs:comment>
     </owl:Class>
     
 
@@ -255,6 +261,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Error">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies an invalid approach or misconception. In this ontology it usually involves an institution and a process (e.g. education)</rdfs:comment>
     </owl:Class>
     
 
@@ -263,6 +270,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#FineArt">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Techne"/>
+        <rdfs:comment xml:lang="en">This class identifies a technique which allows to create a work of art</rdfs:comment>
     </owl:Class>
     
 
@@ -271,6 +279,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Goal">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies the goals stated by the manifesto</rdfs:comment>
     </owl:Class>
     
 
@@ -279,6 +288,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Institution"/>
+        <rdfs:comment xml:lang="en">This class identifies an institution founded to organize, rule or manage people living in a society and their activities</rdfs:comment>
     </owl:Class>
     
 
@@ -287,6 +297,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Institution">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies any insitituiton. Its individuals and subclasses are of different nature and pursue different goals</rdfs:comment>
     </owl:Class>
     
 
@@ -296,6 +307,7 @@
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Monument">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#DailyObject"/>
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#WorkOfArt"/>
+        <rdfs:comment xml:lang="en">This class identifies identifies a building, experienced every day by people but also product of architecture, one of the &quot;major arts&quot;</rdfs:comment>
     </owl:Class>
     
 
@@ -304,6 +316,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Nation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies a group of people considering himself as belonging to the same country</rdfs:comment>
     </owl:Class>
     
 
@@ -312,6 +325,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#NewlyFormed">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution"/>
+        <rdfs:comment xml:lang="en">This class identifies an artistic institution which has been recently founded and usually does not recognize as valid the distinction between fine arts and crafts</rdfs:comment>
     </owl:Class>
     
 
@@ -320,6 +334,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#NonArtist">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Person"/>
+        <rdfs:comment xml:lang="en">This class identifies a person who does not deal with art in his professional life</rdfs:comment>
     </owl:Class>
     
 
@@ -328,6 +343,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Person">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies a generic human being</rdfs:comment>
     </owl:Class>
     
 
@@ -336,6 +352,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Product">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies any object used and produced by a person or machine</rdfs:comment>
     </owl:Class>
     
 
@@ -345,6 +362,7 @@
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Goal"/>
         <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoTaut#SloganGoal"/>
+        <rdfs:comment xml:lang="en">This class identifies a second-level goal: it is not the main aim of the text, but it is necessary condition to achieve the &quot;SloganGoal&quot;</rdfs:comment>
     </owl:Class>
     
 
@@ -353,6 +371,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#SloganGoal">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Goal"/>
+        <rdfs:comment xml:lang="en">This class identifies the main goal of the manifesto</rdfs:comment>
     </owl:Class>
     
 
@@ -361,6 +380,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Techne">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies any activity where a technique is applied to produce an object</rdfs:comment>
     </owl:Class>
     
 
@@ -369,6 +389,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#Text">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies any documents. In this ontology, each text is analyzed from a pragmatical point of view, i.e. the effect he wants to achieve</rdfs:comment>
     </owl:Class>
     
 
@@ -377,6 +398,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoTaut#WorkOfArt">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Product"/>
+        <rdfs:comment xml:lang="en">This class identifies an object created with a specific artistic intent</rdfs:comment>
     </owl:Class>
     
 
@@ -459,9 +481,9 @@
     
 
 
-    <!-- https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution -->
+    <!-- https://digimof.github.io/keGropius/ontoTaut#GovernmentalInstitution -->
 
-    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution">
+    <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoTaut#GovernmentalInstitution">
         <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution"/>
         <aimsAt rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Promotion"/>
     </owl:NamedIndividual>
@@ -512,7 +534,7 @@
 
     <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoTaut#Promotion">
         <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"/>
-        <fosteredBy rdf:resource="https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution"/>
+        <fosteredBy rdf:resource="https://digimof.github.io/keGropius/ontoTaut#GovernmentalInstitution"/>
     </owl:NamedIndividual>
     
 
@@ -531,7 +553,6 @@
     <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArchitecture">
         <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Academy"/>
         <replacedBy rdf:resource="https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions"/>
-        <rdfs:comment>Il reasoner ha aggiunto replacedBy ArbeitsratfurKunst... io ce lo lascerei (e lascerei anche replacedBy NewlyFormedInstitution) perché alla fine si tratta solo di una cosa più specifica che ci sta come cosa...</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -541,7 +562,6 @@
     <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArts">
         <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Academy"/>
         <replacedBy rdf:resource="https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions"/>
-        <rdfs:comment>vedi commento RoyalAcademyofArchitecture</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -551,7 +571,6 @@
     <owl:NamedIndividual rdf:about="https://digimof.github.io/keGropius/ontoTaut#RoyalPrussianStateArtCommission">
         <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoTaut#Academy"/>
         <replacedBy rdf:resource="https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions"/>
-        <rdfs:comment>vedi commento RoyalAcademyofArchitecture</rdfs:comment>
     </owl:NamedIndividual>
     
 
