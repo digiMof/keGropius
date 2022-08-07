@@ -586,6 +586,7 @@
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Academy">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Institution"/>
         <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"/>
+        <rdfs:comment xml:lang="en">This class identifies an institution aimed at the education in the fine arts</rdfs:comment>
     </owl:Class>
     
 
@@ -594,6 +595,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Acitivity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies any kind of activity performed by an individual</rdfs:comment>
     </owl:Class>
     
 
@@ -603,6 +605,7 @@
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Artist">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Person"/>
         <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NonArtist"/>
+        <rdfs:comment xml:lang="en">This class identifies who is directly involved in the Arts from a professional points of view</rdfs:comment>
     </owl:Class>
     
 
@@ -611,6 +614,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies a group of artist sharing similar ideas concerning the role e and the nature of Art</rdfs:comment>
     </owl:Class>
     
 
@@ -628,6 +632,7 @@
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#BauhausCourse">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Course"/>
         <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse"/>
+        <rdfs:comment xml:lang="en">This class identifies the courses held at the Bauhaus</rdfs:comment>
     </owl:Class>
     
 
@@ -638,6 +643,7 @@
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct"/>
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#WorkOfArt"/>
         <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct"/>
+        <rdfs:comment xml:lang="en">This class identifies a work of art in which no barriers exist between the structural and the decorative arts</rdfs:comment>
     </owl:Class>
     
 
@@ -646,6 +652,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Course"/>
+        <rdfs:comment xml:lang="en">This class identifies additional courses that enhance the preparation of students</rdfs:comment>
     </owl:Class>
     
 
@@ -654,6 +661,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Conceptualization">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Acitivity"/>
+        <rdfs:comment xml:lang="en">This class identifies the act or process of forming an idea or principle in own&apos;s mind</rdfs:comment>
     </owl:Class>
     
 
@@ -663,6 +671,8 @@
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Training"/>
         <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#NewApproach"/>
+        <rdfs:comment xml:lang="en">This class identifies a training method which follows the out-of-date guidelines of fine arts 
+academies</rdfs:comment>
     </owl:Class>
     
 
@@ -671,6 +681,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Course">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies a didacitic activity held by a teacher and attended by students</rdfs:comment>
     </owl:Class>
     
 
@@ -688,6 +699,7 @@
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#CreativeWork">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Work"/>
         <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#MechanicWork"/>
+        <rdfs:comment xml:lang="en">This class identifies a work which emphasizes the mental quality of the worker (creativity, culture etc)</rdfs:comment>
     </owl:Class>
     
 
@@ -696,6 +708,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Product"/>
+        <rdfs:comment xml:lang="en">This class identifies an object produced to answer to daily-life needs</rdfs:comment>
     </owl:Class>
     
 
@@ -704,6 +717,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Dualism">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies believes that things are divided into two often very different or opposing parts</rdfs:comment>
     </owl:Class>
     
 
@@ -712,6 +726,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Effect">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies the consequences of a pecualiar cause</rdfs:comment>
     </owl:Class>
     
 
@@ -720,6 +735,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Error">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies different kinds of mistake (in this ontology, mainly at a theoritical level)</rdfs:comment>
     </owl:Class>
     
 
@@ -728,6 +744,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Form">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies the shape or appearance of something</rdfs:comment>
     </owl:Class>
     
 
@@ -736,6 +753,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Goal">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies aims pursued by specific actors (individuals, institution) with different means</rdfs:comment>
     </owl:Class>
     
 
@@ -744,6 +762,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Idea">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies beliefs or opinions concerning a specific field of knowledge. It is usually considered as opposed to form</rdfs:comment>
     </owl:Class>
     
 
@@ -761,6 +780,7 @@
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Institution">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Form"/>
         <owl:disjointWith rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Product"/>
+        <rdfs:comment xml:lang="en">This class identifies a peculiar kind of form, coinciding with an organization pursuing a specific aim</rdfs:comment>
     </owl:Class>
     
 
@@ -769,6 +789,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#MainGoal">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Goal"/>
+        <rdfs:comment xml:lang="en">This class identifies the principal goal. it allows to create a hierarchy between the aims pursued by an actor</rdfs:comment>
     </owl:Class>
     
 
@@ -777,6 +798,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#MechanicWork">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Work"/>
+        <rdfs:comment xml:lang="en">This class identifies a work which emphasizes the manual qualities of the worker</rdfs:comment>
     </owl:Class>
     
 
@@ -785,6 +807,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewApproach">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Training"/>
+        <rdfs:comment xml:lang="en">This class identifies new training methods, aimed at improving academic education</rdfs:comment>
     </owl:Class>
     
 
@@ -793,6 +816,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Institution"/>
+        <rdfs:comment xml:lang="en">This class identifies an institution working in the art education fielding which refuses the division between fine arts and crafts</rdfs:comment>
     </owl:Class>
     
 
@@ -801,6 +825,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#NonArtist">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Person"/>
+        <rdfs:comment xml:lang="en">This class identifies who is not involved in the Arts from a professional points of view</rdfs:comment>
     </owl:Class>
     
 
@@ -809,6 +834,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Outcome">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies the results of a process</rdfs:comment>
     </owl:Class>
     
 
@@ -834,6 +860,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Product">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Form"/>
+        <rdfs:comment xml:lang="en">This class identifies any object that is the result of a specific work</rdfs:comment>
     </owl:Class>
     
 
@@ -842,6 +869,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Quality">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies positive features of individuals, which are useful to pursue goals or accomplish tasks in a specific field</rdfs:comment>
     </owl:Class>
     
 
@@ -850,6 +878,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Role">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">This class identifies the position or purpose of a thing in a specific context</rdfs:comment>
     </owl:Class>
     
 
@@ -858,6 +887,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Training">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Acitivity"/>
+        <rdfs:comment xml:lang="en">This class identifies any form of educational activity</rdfs:comment>
     </owl:Class>
     
 
@@ -866,6 +896,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#Visualization">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Acitivity"/>
+        <rdfs:comment xml:lang="en">This class identifies all the acts of visualizing something (or also someone)</rdfs:comment>
     </owl:Class>
     
 
@@ -890,6 +921,7 @@
 
     <owl:Class rdf:about="https://digimof.github.io/keGropius/ontoGropius#WorkOfArt">
         <rdfs:subClassOf rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Product"/>
+        <rdfs:comment xml:lang="en">This class identifies an object which is the result of an artistic process</rdfs:comment>
     </owl:Class>
     
 
@@ -1264,6 +1296,26 @@
         <rdf:type rdf:resource="https://digimof.github.io/keGropius/ontoGropius#Idea"/>
         <embodiedIn rdf:resource="https://digimof.github.io/keGropius/ontoGropius#PieceOfWork"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct">
+        <rdfs:comment xml:lang="en">This class identifies a dialy-life product which is the result of an industrial process</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Person">
+        <rdfs:comment xml:lang="en">This class identifies generic individuals</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://digimof.github.io/keGropius/ontoGropius#Work">
+        <rdfs:comment xml:lang="en">This class identifies any activity performed with a mental or manual effort. Usually people rely on it for their own survival</rdfs:comment>
+    </rdf:Description>
     
 
 
