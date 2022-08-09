@@ -1,7 +1,7 @@
 import rdflib
 
 gropiusCqs = rdflib.Graph()
-gropiusCqs.parse("assets/testCQs/gropius.ttl",format="ttl")
+gropiusCqs.parse("gropius.ttl",format="ttl")
 
 #cq1) How are ideas expressed?
 cq1 = '''

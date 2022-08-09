@@ -1,4 +1,4 @@
-@prefix : <https://digimof.github.io/keGropius/ontoBau#> .
+@prefix : <https://digimof.github.io/keGropius/ontoBau> .
 @prefix mof: <https://digimof.github.io/keGropius/ontoBau#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -454,8 +454,7 @@ mof:simultaneousTo rdf:type owl:ObjectProperty ;
                                 owl:unionOf ( mof:Conceptualization
                                               mof:Visualization
                                             )
-                              ] ;
-                   rdfs:comment "Qua ho aggiunto inverse Of simultaneousTo (la object property stessa) perché lo ha aggiunto il reasoner e mi sembra abbia senso (funziona in entrambi i versi)" .
+                              ] .
 
 
 #################################################################
@@ -480,41 +479,47 @@ owl:Thing rdfs:subClassOf owl:Thing .
 mof:Academy rdf:type owl:Class ;
             rdfs:subClassOf mof:ArtisticInstitution ;
             owl:disjointWith mof:NewlyFormed ,
-                             mof:NewlyFormedInstitution .
+                             mof:NewlyFormedInstitution ;
+            rdfs:comment "This class identifies an artistic institution with follows the model of 19th century's academies, i.e. a clear separation between fine arts and crafts"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Activity
 mof:Activity rdf:type owl:Class ;
-             rdfs:subClassOf owl:Thing .
+             rdfs:subClassOf owl:Thing ;
+             rdfs:comment "This class identifies any kind of activity performed by an individual"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Artist
 mof:Artist rdf:type owl:Class ;
            rdfs:subClassOf mof:Person ;
-           owl:disjointWith mof:NonArtist .
+           owl:disjointWith mof:NonArtist ;
+           rdfs:comment "This class identifies who is directly involved in the Arts from a professional points of view"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#ArtisticInstitution
 mof:ArtisticInstitution rdf:type owl:Class ;
-                        rdfs:subClassOf mof:Institution .
+                        rdfs:subClassOf mof:Institution ;
+                        rdfs:comment "This class identifies an institution aimed at the education in the fine arts that has conservation, training and appreciation of arts as main vocation"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#ArtisticMovement
 mof:ArtisticMovement rdf:type owl:Class ;
-                     rdfs:subClassOf owl:Thing .
+                     rdfs:subClassOf owl:Thing ;
+                     rdfs:comment "This class identifies a group of artist sharing similar ideas concerning the role e and the nature of Art"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Arts
 mof:Arts rdf:type owl:Class ;
          owl:equivalentClass mof:FineArt ;
          rdfs:subClassOf mof:CreativeWork ;
-         rdfs:comment "Qua proporrebbe di mettere che è subClassOf Techne (perché Techne e CreativeWork sono equivalent), però qua forse si perderebbe la distinzione Gropius e Taut che volevamo fare quindi lo eviterei" .
+         rdfs:comment "This class identifies a technique which allows to create a work of art"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#BauhausCourse
 mof:BauhausCourse rdf:type owl:Class ;
                   rdfs:subClassOf mof:Course ;
-                  owl:disjointWith mof:ComplementaryCourse .
+                  owl:disjointWith mof:ComplementaryCourse ;
+                  rdfs:comment "This class identifies the courses held at the Bauhaus"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#CollaborativeWorkOfArt
@@ -523,66 +528,73 @@ mof:CollaborativeWorkOfArt rdf:type owl:Class ;
                                            mof:WorkOfArt ;
                            owl:disjointWith mof:IndustrialProduct ,
                                             mof:Monument ;
-                           rdfs:comment "Qua proporrebbe di mettere che è subClassOf DailyObject, però qua forse torna il discorso della distinzione Taut e Gropius che dicevo prima" .
+                           rdfs:comment "This class identifies a work of art in which no barriers exist between the structural and the decorative arts"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#ComplementaryCourse
 mof:ComplementaryCourse rdf:type owl:Class ;
-                        rdfs:subClassOf mof:Course .
+                        rdfs:subClassOf mof:Course ;
+                        rdfs:comment "This class identifies additional courses that enhance the preparation of students"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Conceptualization
 mof:Conceptualization rdf:type owl:Class ;
-                      rdfs:subClassOf mof:Activity .
+                      rdfs:subClassOf mof:Activity ;
+                      rdfs:comment "This class identifies the act or process of forming an idea or principle in own's mind"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#ConventionalApproach
 mof:ConventionalApproach rdf:type owl:Class ;
                          rdfs:subClassOf mof:Training ;
                          owl:disjointWith mof:EducationalProgram ,
-                                          mof:NewApproach .
+                                          mof:NewApproach ;
+                         rdfs:comment "This class identifies a training method which follows the out-of-date guidelines of fine arts' academies"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Course
 mof:Course rdf:type owl:Class ;
-           rdfs:subClassOf owl:Thing .
+           rdfs:subClassOf owl:Thing ;
+           rdfs:comment "This class identifies a didacitic activity held by a teacher and attended by students"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Craft
 mof:Craft rdf:type owl:Class ;
           owl:equivalentClass mof:Crafts ;
           rdfs:subClassOf mof:Techne ;
-          rdfs:comment "Qua propone di aggiungere Instance ArchitectureDesign (in quanto è type Crafts e Crafts e Craft sono equivalenti), però io eviterei appunto per il discorso Taut e Gropius" ,
-                       "Qua proporrebbe di mettere che è subClassOf CreativeWork (perché Techne e CreativeWork sono equivalent), però qua forse si perderebbe la distinzione Gropius e Taut che volevamo fare quindi lo eviterei" .
+          rdfs:comment "This class identifies a technique which usually does not produce work of art but object used in every-day life"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Crafts
 mof:Crafts rdf:type owl:Class ;
            rdfs:subClassOf mof:CreativeWork ;
-           rdfs:comment "Qua proporrebbe di mettere che è subClassOf Techne (perché Techne e CreativeWork sono equivalent), però qua forse si perderebbe la distinzione Gropius e Taut che volevamo fare quindi lo eviterei" .
+           rdfs:comment "This class identifies a technique which usually does not produce work of art but object used in every-day life"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#CreativeWork
 mof:CreativeWork rdf:type owl:Class ;
                  owl:equivalentClass mof:Techne ;
                  rdfs:subClassOf mof:Work ;
-                 owl:disjointWith mof:MechanicWork .
+                 owl:disjointWith mof:MechanicWork ;
+                 rdfs:comment "This class identifies a work which emphasizes the mental quality of the worker (creativity, culture etc)"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#DailyLifeProduct
 mof:DailyLifeProduct rdf:type owl:Class ;
                      owl:equivalentClass mof:DailyObject ;
-                     rdfs:subClassOf mof:Product .
+                     rdfs:subClassOf mof:Product ;
+                     rdfs:comment "This class identifies an object produced to answer to daily-life needs"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#DailyObject
 mof:DailyObject rdf:type owl:Class ;
-                rdfs:subClassOf mof:Product .
+                rdfs:subClassOf mof:Product ;
+                rdfs:comment "This class identifies any product built without any artistic intent and used  by people in their ordinary life"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Dualism
 mof:Dualism rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing .
+            rdfs:subClassOf owl:Thing ;
+            rdfs:comment "This class identifies believes that things are divided into two often very different or opposing parts"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#EducationalProgram
@@ -593,29 +605,32 @@ mof:EducationalProgram rdf:type owl:Class ;
 
 ###  https://digimof.github.io/keGropius/ontoBau#Effect
 mof:Effect rdf:type owl:Class ;
-           rdfs:subClassOf owl:Thing .
+           rdfs:subClassOf owl:Thing ;
+           rdfs:comment "This class identifies the consequences of a pecualiar cause"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Error
 mof:Error rdf:type owl:Class ;
-          rdfs:subClassOf owl:Thing .
+          rdfs:subClassOf owl:Thing ;
+          rdfs:comment "This class identifies different kinds of mistake (in this ontology, mainly at a theoritical level)"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#FineArt
 mof:FineArt rdf:type owl:Class ;
             rdfs:subClassOf mof:Techne ;
-            rdfs:comment "Qua propone di aggiungere Instance ArchitectureDesign (in quanto è type Crafts e Crafts e Craft sono equivalenti), però io eviterei appunto per il discorso Taut e Gropius" ,
-                         "Qua proporrebbe di mettere che è subClassOf CreativeWork (perché Techne e CreativeWork sono equivalent), però qua forse si perderebbe la distinzione Gropius e Taut che volevamo fare quindi lo eviterei" .
+            rdfs:comment "This class identifies a technique which allows to create a work of art"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Form
 mof:Form rdf:type owl:Class ;
-         rdfs:subClassOf owl:Thing .
+         rdfs:subClassOf owl:Thing ;
+         rdfs:comment "This class identifies the shape or appearance of something"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Goal
 mof:Goal rdf:type owl:Class ;
-         rdfs:subClassOf owl:Thing .
+         rdfs:subClassOf owl:Thing ;
+         rdfs:comment "This class identifies aims pursued by specific actors (individuals, institution) with different means"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#GovernmentInstitution
@@ -625,19 +640,21 @@ mof:GovernmentInstitution rdf:type owl:Class ;
 
 ###  https://digimof.github.io/keGropius/ontoBau#Idea
 mof:Idea rdf:type owl:Class ;
-         rdfs:subClassOf owl:Thing .
+         rdfs:subClassOf owl:Thing ;
+         rdfs:comment "This class identifies beliefs or opinions concerning a specific field of knowledge. It is usually considered as opposed to form"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#IndustrialProduct
 mof:IndustrialProduct rdf:type owl:Class ;
                       rdfs:subClassOf mof:DailyLifeProduct ;
-                      rdfs:comment "vedi commento per CollaborativeWorkOfArt" .
+                      rdfs:comment "This class identifies a dialy-life product which is the result of an industrial process"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Institution
 mof:Institution rdf:type owl:Class ;
                 rdfs:subClassOf mof:Form ;
-                owl:disjointWith mof:Product .
+                owl:disjointWith mof:Product ;
+                rdfs:comment "This class identifies a peculiar kind of form, coinciding with an organization pursuing a specific aim"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#MainGoal
@@ -645,53 +662,58 @@ mof:MainGoal rdf:type owl:Class ;
              owl:equivalentClass mof:SloganGoal ;
              rdfs:subClassOf mof:Goal ;
              owl:disjointWith mof:SecondaryGoal ;
-             rdfs:comment "Qua propone di aggiungere Instances Unity, però torna il discorso della distinzione Taut e Gropius" .
+             rdfs:comment "This class identifies the principal goal. it allows to create a hierarchy between the aims pursued by an actor"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#MechanicWork
 mof:MechanicWork rdf:type owl:Class ;
                  rdfs:subClassOf mof:Work ;
-                 owl:disjointWith mof:Techne .
+                 owl:disjointWith mof:Techne ;
+                 rdfs:comment "This class identifies a work which emphasizes the manual qualities of the worker"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Monument
 mof:Monument rdf:type owl:Class ;
              rdfs:subClassOf mof:DailyObject ,
                              mof:WorkOfArt ;
-             rdfs:comment "Qua proporrebbe di mettere che è subClassOf DailyLifeOProduct, però qua forse torna il discorso della distinzione Taut e Gropius che dicevo prima" .
+             rdfs:comment "This class identifies identifies a building, experienced every day by people but also product of architecture, one of the \"major arts\""@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Nation
 mof:Nation rdf:type owl:Class ;
-           rdfs:subClassOf owl:Thing .
+           rdfs:subClassOf owl:Thing ;
+           rdfs:comment "This class identifies a group of people considering himself as belonging to the same country"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#NewApproach
 mof:NewApproach rdf:type owl:Class ;
-                rdfs:subClassOf mof:Training .
+                rdfs:subClassOf mof:Training ;
+                rdfs:comment "This class identifies new training methods, aimed at improving academic education.  In this ontology specifically it is described by Gropius as the program that should be followed by newly formed institution to train new artists, therefore it is equivalent to what Taut describes as \"Educational Program\" (see class EducationalProgram)."@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#NewlyFormed
 mof:NewlyFormed rdf:type owl:Class ;
                 owl:equivalentClass mof:NewlyFormedInstitution ;
                 rdfs:subClassOf mof:ArtisticInstitution ;
-                rdfs:comment "Qua il reasoner suggerisce di agigungere come instances anche Bauhaus e Kunstgewerbeschule, però secondo me non ha molto senso, dato che volevamo fare la distinzione tra Taut e Gropius (ed infatti queste aggiunte sarebbero in NewlyFormedInstitution, la classe presa da Gropius)" .
+                rdfs:comment "This class identifies an artistic institution which has been recently founded and usually does not recognize as valid the distinction between fine arts and crafts"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#NewlyFormedInstitution
 mof:NewlyFormedInstitution rdf:type owl:Class ;
                            rdfs:subClassOf mof:ArtisticInstitution ;
-                           rdfs:comment "Vedi commento di sopra (in NewlyFormed)" .
+                           rdfs:comment "This class identifies an institution working in the art education fielding which refuses the division between fine arts and crafts"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#NonArtist
 mof:NonArtist rdf:type owl:Class ;
-              rdfs:subClassOf mof:Person .
+              rdfs:subClassOf mof:Person ;
+              rdfs:comment "This class identifies who is not involved in the Arts from a professional points of view"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Outcome
 mof:Outcome rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing .
+            rdfs:subClassOf owl:Thing ;
+            rdfs:comment "This class identifies the results of a process"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Person
@@ -703,58 +725,66 @@ mof:Person rdf:type owl:Class ;
 mof:PersonalExperience rdf:type owl:Class ;
                        rdfs:subClassOf mof:NewApproach ;
                        owl:disjointWith mof:Vocabulary ;
-                       rdfs:comment "Qua proporrebbe di mettere che è subClassOf EducayionalProgram, però qua forse si perderebbe la distinzione Gropius e Taut che volevamo fare quindi lo eviterei" .
+                       rdfs:comment "This class identifies all the manual activities included in the Bauhaus' educational program aimed at training new students" .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Product
 mof:Product rdf:type owl:Class ;
-            rdfs:subClassOf mof:Form .
+            rdfs:subClassOf mof:Form ;
+            rdfs:comment "This class identifies any object that is the result of a specific work"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Quality
-mof:Quality rdf:type owl:Class .
+mof:Quality rdf:type owl:Class ;
+            rdfs:comment "This class identifies positive features of individuals, which are useful to pursue goals or accomplish tasks in a specific field"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Role
-mof:Role rdf:type owl:Class .
+mof:Role rdf:type owl:Class ;
+         rdfs:comment "This class identifies the position or purpose of a thing in a specific context"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#SecondaryGoal
 mof:SecondaryGoal rdf:type owl:Class ;
                   rdfs:subClassOf mof:Goal ;
-                  owl:disjointWith mof:SloganGoal .
+                  owl:disjointWith mof:SloganGoal ;
+                  rdfs:comment "This class identifies a second-level goal: it is not the main aim of the text, but it is necessary condition to achieve the primary goal described in Taut and Gropius respectively in the classes \"SloganGoal\" and \"Main Goal\""@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#SloganGoal
 mof:SloganGoal rdf:type owl:Class ;
                rdfs:subClassOf mof:Goal ;
-               rdfs:comment "Vedi commento per MainGoal" .
+               rdfs:comment "This class identifies the main goal of Taut's manifesto"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Techne
 mof:Techne rdf:type owl:Class ;
-           rdfs:subClassOf mof:Work .
+           rdfs:subClassOf mof:Work ;
+           rdfs:comment "This class identifies any activity where a technique is applied to produce an object"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Text
 mof:Text rdf:type owl:Class ;
-         rdfs:subClassOf owl:Thing .
+         rdfs:subClassOf owl:Thing ;
+         rdfs:comment "This class identifies any documents. In this ontology, each text is analyzed from a pragmatical point of view, i.e. the effect he wants to achieve"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Training
 mof:Training rdf:type owl:Class ;
-             rdfs:subClassOf mof:Activity .
+             rdfs:subClassOf mof:Activity ;
+             rdfs:comment "This class identifies any form of educational activity"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Visualization
 mof:Visualization rdf:type owl:Class ;
-                  rdfs:subClassOf mof:Activity .
+                  rdfs:subClassOf mof:Activity ;
+                  rdfs:comment "This class identifies all the acts of visualizing something (or also someone)"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Vocabulary
 mof:Vocabulary rdf:type owl:Class ;
                rdfs:subClassOf mof:NewApproach ;
-               rdfs:comment "Qua proporrebbe di mettere che è subClassOf EducationalProgram, però qua forse si perderebbe la distinzione Gropius e Taut che volevamo fare quindi lo eviterei" .
+               rdfs:comment "This class identifies the elements of form and colors and their structural laws needed to create a specific language of construction" .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Work
@@ -764,7 +794,8 @@ mof:Work rdf:type owl:Class ;
 
 ###  https://digimof.github.io/keGropius/ontoBau#WorkOfArt
 mof:WorkOfArt rdf:type owl:Class ;
-              rdfs:subClassOf mof:Product .
+              rdfs:subClassOf mof:Product ;
+              rdfs:comment "This class identifies an object which is the result of an artistic process"@en .
 
 
 #################################################################
@@ -782,12 +813,7 @@ mof:Academia rdf:type owl:NamedIndividual ,
 ###  https://digimof.github.io/keGropius/ontoBau#ArbeitsratProgram
 mof:ArbeitsratProgram rdf:type owl:NamedIndividual ,
                                mof:Text ;
-                      mof:aimsAt mof:Unity ;
-                      rdfs:comment """COMMENTO CHE VALE PER TUTTE LE AGGIUNTE DEL REASONER QUA NEGLI INDIVIDUALS
-
-==================================
-
-io le ignorerei tutte perché ignorano la differenza che vogliamo fare tra Taut e Bauhaus (che non so/penso si possa implementare nel programma in quanto è una cosa più semantica/teorica nostra)""" .
+                      mof:aimsAt mof:Unity .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#ArchitectureDesign
@@ -1010,6 +1036,22 @@ mof:Work rdf:type owl:NamedIndividual ,
 mof:Zeitgeist rdf:type owl:NamedIndividual ,
                        mof:Idea ;
               mof:embodiedIn mof:PieceOfWork .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+mof:EducationalProgram rdfs:comment "This class identifies the formative path followed by artists during their education. It is usually provided by an authoritative institution. In this ontology specifically it is described by Taut as the program that should be followed by newly formed institution to train new artists, therefore it is equivalent to what Gropius describes as \"New Approach\" (see class NewApproach)."@en .
+
+
+mof:GovernmentInstitution rdfs:comment "This class identifies an institution founded to organize, rule or manage people living in a society and their activities"@en .
+
+
+mof:Person rdfs:comment "This class identifies generic individuals"@en .
+
+
+mof:Work rdfs:comment "This class identifies any activity performed with a mental or manual effort. Usually people rely on it for their own survival"@en .
 
 
 #################################################################

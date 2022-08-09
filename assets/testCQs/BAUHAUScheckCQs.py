@@ -1,7 +1,7 @@
 import rdflib
 
 BauhausCqs = rdflib.Graph()
-BauhausCqs.parse("assets/testCQs/bau.ttl", format="ttl")
+BauhausCqs.parse("bau.ttl", format="ttl")
 
 # cq1) What is the main goal of newly formed institutions?
 cq1 = '''

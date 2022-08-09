@@ -1,7 +1,7 @@
 import rdflib
 
 tautCqs = rdflib.Graph()
-tautCqs.parse("assets/testCQs/taut.ttl",format="ttl")
+tautCqs.parse("taut.ttl",format="ttl")
 
 # cq1) What is the main goal?
 cq1 = '''
@@ -109,7 +109,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?goal
 WHERE {
-    ?goal mof:fosteredBy mof:GovernmentInstitution
+    ?goal mof:fosteredBy mof:GovernmentalInstitution
 }
 
 '''

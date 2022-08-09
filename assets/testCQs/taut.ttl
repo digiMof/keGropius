@@ -1,4 +1,4 @@
-@prefix : <https://digimof.github.io/keGropius/ontoTaut#> .
+@prefix : <https://digimof.github.io/keGropius/ontoTaut> .
 @prefix mof: <https://digimof.github.io/keGropius/ontoTaut#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -131,115 +131,137 @@ mof:responsibleFor rdf:type owl:ObjectProperty ;
 ###  https://digimof.github.io/keGropius/ontoTaut#Academy
 mof:Academy rdf:type owl:Class ;
             rdfs:subClassOf mof:ArtisticInstitution ;
-            owl:disjointWith mof:NewlyFormed .
+            owl:disjointWith mof:NewlyFormed ;
+            rdfs:comment "This class identifies an artistic institution with follows the model of 19th century's academies, i.e. a clear separation between fine arts and crafts"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Artist
 mof:Artist rdf:type owl:Class ;
            rdfs:subClassOf mof:Person ;
-           owl:disjointWith mof:NonArtist .
+           owl:disjointWith mof:NonArtist ;
+           rdfs:comment "This class identifies a person who deals with art in his professional life"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution
 mof:ArtisticInstitution rdf:type owl:Class ;
-                        rdfs:subClassOf mof:Institution .
+                        rdfs:subClassOf mof:Institution ;
+                        rdfs:comment "This class identifies an institution which has the conservation, training and appreciation of arts as main vocation"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Craft
 mof:Craft rdf:type owl:Class ;
-          rdfs:subClassOf mof:Techne .
+          rdfs:subClassOf mof:Techne ;
+          rdfs:comment "This class identifies a technique which usually does not produce work of art but object used in every-day life"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#DailyObject
 mof:DailyObject rdf:type owl:Class ;
-                rdfs:subClassOf mof:Product .
+                rdfs:subClassOf mof:Product ;
+                rdfs:comment "This class identifies any product built without any artistic intent and used  by people in their ordinary life"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#EducationalProgram
 mof:EducationalProgram rdf:type owl:Class ;
-                       rdfs:subClassOf owl:Thing .
+                       rdfs:subClassOf owl:Thing ;
+                       rdfs:comment "This class identifies the formative path followed by artists during their education. It is usually provided by an authoritative institution"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Error
 mof:Error rdf:type owl:Class ;
-          rdfs:subClassOf owl:Thing .
+          rdfs:subClassOf owl:Thing ;
+          rdfs:comment "This class identifies an invalid approach or misconception. In this ontology it usually involves an institution and a process (e.g. education)"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#FineArt
 mof:FineArt rdf:type owl:Class ;
-            rdfs:subClassOf mof:Techne .
+            rdfs:subClassOf mof:Techne ;
+            rdfs:comment "This class identifies a technique which allows to create a work of art"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Goal
 mof:Goal rdf:type owl:Class ;
-         rdfs:subClassOf owl:Thing .
+         rdfs:subClassOf owl:Thing ;
+         rdfs:comment "This class identifies the goals stated by the manifesto"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution
 mof:GovernmentInstitution rdf:type owl:Class ;
-                          rdfs:subClassOf mof:Institution .
+                          rdfs:subClassOf mof:Institution ;
+                          rdfs:comment "This class identifies an institution founded to organize, rule or manage people living in a society and their activities"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Institution
 mof:Institution rdf:type owl:Class ;
-                rdfs:subClassOf owl:Thing .
+                rdfs:subClassOf owl:Thing ;
+                rdfs:comment "This class identifies any insitituiton. Its individuals and subclasses are of different nature and pursue different goals"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Monument
 mof:Monument rdf:type owl:Class ;
              rdfs:subClassOf mof:DailyObject ,
-                             mof:WorkOfArt .
+                             mof:WorkOfArt ;
+             rdfs:comment "This class identifies identifies a building, experienced every day by people but also product of architecture, one of the \"major arts\""@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Nation
 mof:Nation rdf:type owl:Class ;
-           rdfs:subClassOf owl:Thing .
+           rdfs:subClassOf owl:Thing ;
+           rdfs:comment "This class identifies a group of people considering himself as belonging to the same country"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#NewlyFormed
 mof:NewlyFormed rdf:type owl:Class ;
-                rdfs:subClassOf mof:ArtisticInstitution .
+                rdfs:subClassOf mof:ArtisticInstitution ;
+                rdfs:comment "This class identifies an artistic institution which has been recently founded and usually does not recognize as valid the distinction between fine arts and crafts"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#NonArtist
 mof:NonArtist rdf:type owl:Class ;
-              rdfs:subClassOf mof:Person .
+              rdfs:subClassOf mof:Person ;
+              rdfs:comment "This class identifies a person who does not deal with art in his professional life"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Person
 mof:Person rdf:type owl:Class ;
-           rdfs:subClassOf owl:Thing .
+           rdfs:subClassOf owl:Thing ;
+           rdfs:comment "This class identifies a generic human being"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Product
 mof:Product rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing .
+            rdfs:subClassOf owl:Thing ;
+            rdfs:comment "This class identifies any object used and produced by a person or machine"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal
 mof:SecondaryGoal rdf:type owl:Class ;
                   rdfs:subClassOf mof:Goal ;
-                  owl:disjointWith mof:SloganGoal .
+                  owl:disjointWith mof:SloganGoal ;
+                  rdfs:comment "This class identifies a second-level goal: it is not the main aim of the text, but it is necessary condition to achieve the \"SloganGoal\""@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#SloganGoal
 mof:SloganGoal rdf:type owl:Class ;
-               rdfs:subClassOf mof:Goal .
+               rdfs:subClassOf mof:Goal ;
+               rdfs:comment "This class identifies the main goal of the manifesto"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Techne
 mof:Techne rdf:type owl:Class ;
-           rdfs:subClassOf owl:Thing .
+           rdfs:subClassOf owl:Thing ;
+           rdfs:comment "This class identifies any activity where a technique is applied to produce an object"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Text
 mof:Text rdf:type owl:Class ;
-         rdfs:subClassOf owl:Thing .
+         rdfs:subClassOf owl:Thing ;
+         rdfs:comment "This class identifies any documents. In this ontology, each text is analyzed from a pragmatical point of view, i.e. the effect he wants to achieve"@en .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#WorkOfArt
 mof:WorkOfArt rdf:type owl:Class ;
-              rdfs:subClassOf mof:Product .
+              rdfs:subClassOf mof:Product ;
+              rdfs:comment "This class identifies an object created with a specific artistic intent"@en .
 
 
 #################################################################
@@ -292,10 +314,10 @@ mof:GovernmentDomination rdf:type owl:NamedIndividual ,
                          mof:replacedBy mof:Freedom .
 
 
-###  https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution
-mof:GovernmentInstitution rdf:type owl:NamedIndividual ,
-                                   mof:GovernmentInstitution ;
-                          mof:aimsAt mof:Promotion .
+###  https://digimof.github.io/keGropius/ontoTaut#GovernmentalInstitution
+mof:GovernmentalInstitution rdf:type owl:NamedIndividual ,
+                                     mof:GovernmentInstitution ;
+                            mof:aimsAt mof:Promotion .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#MonumentDispropValue
@@ -314,8 +336,7 @@ mof:MonumentNoValue rdf:type owl:NamedIndividual ,
 mof:Museum rdf:type owl:NamedIndividual ,
                     mof:ArtisticInstitution ,
                     mof:GovernmentInstitution ;
-           mof:responsibleFor mof:EducationalChange ;
-           rdfs:comment "Allora qua ho una questione da sottoporvi: Museum è responsibleFor EducationalChange e ok, però nell'individual EducationalChange c'è fosteredBy Museum, quindi qua (nell'individuo Museum) il reasoner ha aggiunto automaticamente aimsAt EducationalChange... io ce lo lascerei anche perché ci sta mantenere il collegamento in entrambi i sensi tra Museum e EducationalChange, però mi rendo anche conto che responsibleFor è più adatto di aimsAt (almeno credo) -> allora però bisognerebbe modificate un attimo le object properties aggiungendo responsibleFor tra gli opposti di fosteredBy (e a questo punto aggiungere le classi mancanti tra i Range e i domains delle due object properties)" .
+           mof:responsibleFor mof:EducationalChange .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions
@@ -329,7 +350,7 @@ mof:NewlyFormedInstitutions rdf:type owl:NamedIndividual ,
 ###  https://digimof.github.io/keGropius/ontoTaut#Promotion
 mof:Promotion rdf:type owl:NamedIndividual ,
                        mof:SecondaryGoal ;
-              mof:fosteredBy mof:GovernmentInstitution .
+              mof:fosteredBy mof:GovernmentalInstitution .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#PublicNature
@@ -341,22 +362,19 @@ mof:PublicNature rdf:type owl:NamedIndividual ,
 ###  https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArchitecture
 mof:RoyalAcademyofArchitecture rdf:type owl:NamedIndividual ,
                                         mof:Academy ;
-                               mof:replacedBy mof:NewlyFormedInstitutions ;
-                               rdfs:comment "Il reasoner ha aggiunto replacedBy ArbeitsratfurKunst... io ce lo lascerei (e lascerei anche replacedBy NewlyFormedInstitution) perché alla fine si tratta solo di una cosa più specifica che ci sta come cosa..." .
+                               mof:replacedBy mof:NewlyFormedInstitutions .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArts
 mof:RoyalAcademyofArts rdf:type owl:NamedIndividual ,
                                 mof:Academy ;
-                       mof:replacedBy mof:NewlyFormedInstitutions ;
-                       rdfs:comment "vedi commento RoyalAcademyofArchitecture" .
+                       mof:replacedBy mof:NewlyFormedInstitutions .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#RoyalPrussianStateArtCommission
 mof:RoyalPrussianStateArtCommission rdf:type owl:NamedIndividual ,
                                              mof:Academy ;
-                                    mof:replacedBy mof:NewlyFormedInstitutions ;
-                                    rdfs:comment "vedi commento RoyalAcademyofArchitecture" .
+                                    mof:replacedBy mof:NewlyFormedInstitutions .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Unity
