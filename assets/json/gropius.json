@@ -2,7 +2,6 @@
   "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
   "header": {
     "languages": [
-      "undefined",
       "en"
     ],
     "baseIris": [
@@ -26,10 +25,10 @@
   "namespace": [],
   "settings": {
     "global": {
-      "zoom": "0.12",
+      "zoom": "0.18",
       "translation": [
-        595.55,
-        359.86
+        461.04,
+        285.03
       ],
       "paused": false
     },
@@ -250,7 +249,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "106",
+      "id": "103",
       "type": "owl:Class"
     },
     {
@@ -258,7 +257,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "98",
+      "id": "102",
       "type": "owl:Class"
     },
     {
@@ -274,7 +273,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "124",
+      "id": "121",
       "type": "owl:Class"
     },
     {
@@ -282,11 +281,11 @@
       "type": "owl:unionOf"
     },
     {
-      "id": "125",
+      "id": "122",
       "type": "owl:unionOf"
     },
     {
-      "id": "126",
+      "id": "123",
       "type": "owl:unionOf"
     },
     {
@@ -358,7 +357,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "132",
+      "id": "129",
       "type": "owl:unionOf"
     },
     {
@@ -378,8 +377,8 @@
         "union"
       ],
       "pos": [
-        -258.06,
-        -966.72
+        1095.33,
+        1847.99
       ]
     },
     {
@@ -389,8 +388,8 @@
         "union"
       ],
       "pos": [
-        325.55,
-        1168.59
+        1244.92,
+        -458.26
       ]
     },
     {
@@ -400,8 +399,8 @@
         "union"
       ],
       "pos": [
-        1708.51,
-        1276.87
+        591.1,
+        -896.52
       ]
     },
     {
@@ -411,8 +410,8 @@
         "union"
       ],
       "pos": [
-        -841.62,
-        811.44
+        -148.74,
+        -4.39
       ]
     },
     {
@@ -422,8 +421,8 @@
         "union"
       ],
       "pos": [
-        514.05,
-        -473.95
+        1288.78,
+        1032.11
       ]
     },
     {
@@ -433,8 +432,8 @@
         "union"
       ],
       "pos": [
-        841.64,
-        -59.78
+        138.94,
+        395.43
       ]
     },
     {
@@ -444,8 +443,8 @@
         "union"
       ],
       "pos": [
-        689.86,
-        -42.46
+        425.95,
+        563.36
       ]
     },
     {
@@ -455,8 +454,8 @@
         "union"
       ],
       "pos": [
-        -493.97,
-        976.79
+        214.79,
+        -883.01
       ]
     },
     {
@@ -502,8 +501,8 @@
         }
       ],
       "pos": [
-        324.44,
-        426.89
+        591.29,
+        -23.2
       ]
     },
     {
@@ -517,8 +516,8 @@
         "en": "This class identifies any form of educational activity"
       },
       "pos": [
-        1786.45,
-        230.75
+        266.82,
+        -13.79
       ]
     },
     {
@@ -540,8 +539,8 @@
         }
       ],
       "pos": [
-        -240.09,
-        486.52
+        668.04,
+        -578.93
       ]
     },
     {
@@ -551,8 +550,8 @@
         "union"
       ],
       "pos": [
-        1142.35,
-        619.64
+        1352.36,
+        749.48
       ]
     },
     {
@@ -562,8 +561,8 @@
         "union"
       ],
       "pos": [
-        -495.15,
-        -436.83
+        1299.69,
+        1335.47
       ]
     },
     {
@@ -577,8 +576,8 @@
         "en": "This class identifies a peculiar kind of form, coinciding with an organization pursuing a specific aim"
       },
       "pos": [
-        -29.1,
-        1025.02
+        132.07,
+        -478.99
       ]
     },
     {
@@ -588,8 +587,8 @@
         "union"
       ],
       "pos": [
-        212.48,
-        72.8
+        1419.16,
+        760.48
       ]
     },
     {
@@ -599,8 +598,8 @@
         "union"
       ],
       "pos": [
-        456.09,
-        -151.31
+        1031,
+        891.66
       ]
     },
     {
@@ -610,8 +609,8 @@
         "union"
       ],
       "pos": [
-        1184.43,
-        676.67
+        943.17,
+        -79.56
       ]
     },
     {
@@ -621,12 +620,17 @@
       "label": {
         "IRI-based": "Work"
       },
-      "comment": {
-        "en": "This class identifies any activity performed with a mental or manual effort. Usually people rely on it for their own survival"
-      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#WorkActivity",
+          "labels": {
+            "IRI-based": "WorkActivity"
+          }
+        }
+      ],
       "pos": [
-        1403.99,
-        -713.49
+        -61.18,
+        982.03
       ]
     },
     {
@@ -636,8 +640,8 @@
         "union"
       ],
       "pos": [
-        390.36,
-        -382.47
+        1350.1,
+        1189.54
       ]
     },
     {
@@ -647,8 +651,8 @@
         "union"
       ],
       "pos": [
-        756.13,
-        631.11
+        1118.57,
+        -259.86
       ]
     },
     {
@@ -658,8 +662,8 @@
         "union"
       ],
       "pos": [
-        541.36,
-        970.25
+        1343.19,
+        -138.73
       ]
     },
     {
@@ -669,8 +673,8 @@
         "union"
       ],
       "pos": [
-        -115.84,
-        -169.93
+        737.63,
+        978.77
       ]
     },
     {
@@ -680,8 +684,8 @@
         "union"
       ],
       "pos": [
-        39.73,
-        -1078.73
+        749.54,
+        1838.36
       ]
     },
     {
@@ -691,8 +695,8 @@
         "union"
       ],
       "pos": [
-        1516.92,
-        53.19
+        675.83,
+        774.15
       ]
     },
     {
@@ -706,8 +710,8 @@
         "en": "This class identifies additional courses that enhance the preparation of students"
       },
       "pos": [
-        1653.19,
-        806.98
+        253.85,
+        -384.19
       ]
     },
     {
@@ -735,8 +739,8 @@
         }
       ],
       "pos": [
-        -805.76,
-        27.1
+        682.62,
+        938.2
       ]
     },
     {
@@ -746,12 +750,17 @@
       "label": {
         "IRI-based": "Person"
       },
-      "comment": {
-        "en": "This class identifies generic individuals"
-      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Individual",
+          "labels": {
+            "IRI-based": "Individual"
+          }
+        }
+      ],
       "pos": [
-        649.23,
-        1151.19
+        1557.62,
+        339.29
       ]
     },
     {
@@ -761,8 +770,8 @@
         "union"
       ],
       "pos": [
-        1677.58,
-        -720.01
+        -787.78,
+        886.61
       ]
     },
     {
@@ -772,8 +781,8 @@
         "union"
       ],
       "pos": [
-        1088.27,
-        881.3
+        1223.81,
+        -137.95
       ]
     },
     {
@@ -783,8 +792,8 @@
         "union"
       ],
       "pos": [
-        1852.92,
-        -484.38
+        -869.08,
+        589.04
       ]
     },
     {
@@ -794,8 +803,8 @@
         "union"
       ],
       "pos": [
-        -167.04,
-        327.96
+        1344.53,
+        129.74
       ]
     },
     {
@@ -841,8 +850,8 @@
         }
       ],
       "pos": [
-        761.31,
-        438.81
+        775.4,
+        284.93
       ]
     },
     {
@@ -856,8 +865,8 @@
         "en": "This class identifies an object which is the result of an artistic process"
       },
       "pos": [
-        -518.83,
-        1836.79
+        -731.5,
+        -1002.7
       ]
     },
     {
@@ -879,8 +888,8 @@
         }
       ],
       "pos": [
-        -622.22,
-        1243.54
+        -445.77,
+        -458.81
       ]
     },
     {
@@ -902,8 +911,8 @@
         }
       ],
       "pos": [
-        1781.38,
-        853.6
+        505.4,
+        -528.33
       ]
     },
     {
@@ -925,8 +934,8 @@
         }
       ],
       "pos": [
-        -607.87,
-        1414.08
+        -499.88,
+        -637.21
       ]
     },
     {
@@ -948,8 +957,8 @@
         }
       ],
       "pos": [
-        1629.41,
-        385.9
+        717.99,
+        18.1
       ]
     },
     {
@@ -963,8 +972,8 @@
         "en": "This class identifies a didacitic activity held by a teacher and attended by students"
       },
       "pos": [
-        1258.49,
-        97.54
+        56.16,
+        640.86
       ]
     },
     {
@@ -992,8 +1001,8 @@
         }
       ],
       "pos": [
-        250.55,
-        736.85
+        1904.87,
+        651.84
       ]
     },
     {
@@ -1007,8 +1016,8 @@
         "en": "This class identifies all the acts of visualizing something (or also someone)"
       },
       "pos": [
-        1358.17,
-        -464.48
+        -438.51,
+        662.83
       ]
     },
     {
@@ -1022,12 +1031,12 @@
         "en": "This class identifies the act or process of forming an idea or principle in own's mind"
       },
       "pos": [
-        1431.95,
-        -218.62
+        -380.74,
+        567.34
       ]
     },
     {
-      "id": "106",
+      "id": "103",
       "iri": "https://digimof.github.io/keGropius/ontoGropius#Role",
       "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
       "label": {
@@ -1037,8 +1046,8 @@
         "en": "This class identifies the position or purpose of a thing in a specific context"
       },
       "pos": [
-        457.24,
-        -1127.36
+        359.56,
+        1674.07
       ]
     },
     {
@@ -1066,23 +1075,28 @@
         }
       ],
       "pos": [
-        27.14,
-        -620.96
+        982.24,
+        1431
       ]
     },
     {
-      "id": "98",
+      "id": "102",
       "iri": "https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct",
       "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
       "label": {
         "IRI-based": "IndustrialProduct"
       },
-      "comment": {
-        "en": "This class identifies a dialy-life product which is the result of an industrial process"
-      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#IndustrialObject",
+          "labels": {
+            "IRI-based": "IndustrialObject"
+          }
+        }
+      ],
       "pos": [
-        -314.54,
-        2348.91
+        -1184.99,
+        -1198.89
       ]
     },
     {
@@ -1096,8 +1110,8 @@
         "datatype"
       ],
       "pos": [
-        1651.46,
-        8.79
+        -224.99,
+        955.15
       ]
     },
     {
@@ -1108,8 +1122,8 @@
         "undefined": "Thing"
       },
       "pos": [
-        -1741.85,
-        798.92
+        -481.42,
+        2426.31
       ]
     },
     {
@@ -1131,12 +1145,12 @@
         }
       ],
       "pos": [
-        1307.44,
-        617.22
+        799.17,
+        138.93
       ]
     },
     {
-      "id": "124",
+      "id": "121",
       "iri": "https://digimof.github.io/keGropius/ontoGropius#Outcome",
       "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
       "label": {
@@ -1146,8 +1160,8 @@
         "en": "This class identifies the results of a process"
       },
       "pos": [
-        1707.42,
-        331.72
+        -234.03,
+        254.83
       ]
     },
     {
@@ -1157,30 +1171,30 @@
         "union"
       ],
       "pos": [
-        -182.25,
-        1047.69
+        -1.81,
+        -555.74
       ]
     },
     {
-      "id": "125",
+      "id": "122",
       "attributes": [
         "anonymous",
         "union"
       ],
       "pos": [
-        555.53,
-        -75.79
+        432.66,
+        631.76
       ]
     },
     {
-      "id": "126",
+      "id": "123",
       "attributes": [
         "anonymous",
         "union"
       ],
       "pos": [
-        865.36,
-        -120.46
+        167.51,
+        452.97
       ]
     },
     {
@@ -1214,8 +1228,8 @@
         }
       ],
       "pos": [
-        8.07,
-        651.29
+        1743.68,
+        255.39
       ]
     },
     {
@@ -1243,8 +1257,8 @@
         }
       ],
       "pos": [
-        326.47,
-        366.64
+        540.74,
+        109.37
       ]
     },
     {
@@ -1278,8 +1292,8 @@
         }
       ],
       "pos": [
-        433.01,
-        585.45
+        988.93,
+        105.15
       ]
     },
     {
@@ -1293,8 +1307,8 @@
         "en": "This class identifies a work which emphasizes the manual qualities of the worker"
       },
       "pos": [
-        1639.07,
-        -1098.73
+        -428.12,
+        1318.1
       ]
     },
     {
@@ -1308,8 +1322,8 @@
         "en": "This class identifies new training methods, aimed at improving academic education"
       },
       "pos": [
-        1088.75,
-        165.98
+        1095.72,
+        348.88
       ]
     },
     {
@@ -1323,8 +1337,8 @@
         "en": "This class identifies believes that things are divided into two often very different or opposing parts"
       },
       "pos": [
-        -647.99,
-        284.06
+        1840.34,
+        -38.93
       ]
     },
     {
@@ -1358,8 +1372,8 @@
         }
       ],
       "pos": [
-        1171.03,
-        1273.95
+        1130.25,
+        -668.62
       ]
     },
     {
@@ -1393,8 +1407,8 @@
         }
       ],
       "pos": [
-        794.63,
-        237.15
+        1012.86,
+        604.94
       ]
     },
     {
@@ -1408,8 +1422,8 @@
         "en": "This class identifies an object produced to answer to daily-life needs"
       },
       "pos": [
-        -553.07,
-        1961.92
+        -868.87,
+        -1001.44
       ]
     },
     {
@@ -1423,8 +1437,8 @@
         "en": "This class identifies a work which emphasizes the mental quality of the worker (creativity, culture etc)"
       },
       "pos": [
-        653.31,
-        -621.9
+        367.19,
+        1111.55
       ]
     },
     {
@@ -1446,8 +1460,8 @@
         }
       ],
       "pos": [
-        -7.42,
-        -573.9
+        939.56,
+        1393.19
       ]
     },
     {
@@ -1461,8 +1475,8 @@
         "en": "This class identifies a group of artist sharing similar ideas concerning the role e and the nature of Art"
       },
       "pos": [
-        -125,
-        719.61
+        568.29,
+        -437.06
       ]
     },
     {
@@ -1472,8 +1486,8 @@
         "union"
       ],
       "pos": [
-        974.72,
-        1228.31
+        1069.7,
+        -599.68
       ]
     },
     {
@@ -1483,8 +1497,8 @@
         "union"
       ],
       "pos": [
-        1554.41,
-        1282.95
+        703.94,
+        -869.33
       ]
     },
     {
@@ -1494,8 +1508,8 @@
         "union"
       ],
       "pos": [
-        1270.63,
-        512.7
+        247.82,
+        92.67
       ]
     },
     {
@@ -1505,8 +1519,8 @@
         "union"
       ],
       "pos": [
-        811.03,
-        716.43
+        981.9,
+        255.81
       ]
     },
     {
@@ -1540,19 +1554,19 @@
         }
       ],
       "pos": [
-        708.38,
-        1003.48
+        733.95,
+        -400.25
       ]
     },
     {
-      "id": "132",
+      "id": "129",
       "attributes": [
         "anonymous",
         "union"
       ],
       "pos": [
-        -522.28,
-        -508.25
+        1275.92,
+        1463.95
       ]
     },
     {
@@ -1566,8 +1580,8 @@
         "en": "This class identifies any object that is the result of a specific work"
       },
       "pos": [
-        -824.73,
-        1681.53
+        -893.26,
+        -663.65
       ]
     },
     {
@@ -1581,8 +1595,8 @@
         "en": "This class identifies any kind of activity performed by an individual"
       },
       "pos": [
-        1807.23,
-        -342.28
+        -341.91,
+        326.06
       ]
     }
   ],
@@ -1644,6 +1658,10 @@
       "type": "rdfs:subClassOf"
     },
     {
+      "id": "50",
+      "type": "owl:ObjectProperty"
+    },
+    {
       "id": "94",
       "type": "rdfs:subClassOf"
     },
@@ -1656,11 +1674,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "50",
-      "type": "owl:ObjectProperty"
+      "id": "97",
+      "type": "rdfs:subClassOf"
     },
     {
-      "id": "97",
+      "id": "98",
       "type": "rdfs:subClassOf"
     },
     {
@@ -1676,19 +1694,15 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "102",
-      "type": "rdfs:subClassOf"
-    },
-    {
-      "id": "103",
-      "type": "rdfs:subClassOf"
-    },
-    {
       "id": "104",
       "type": "rdfs:subClassOf"
     },
     {
       "id": "105",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "106",
       "type": "rdfs:subClassOf"
     },
     {
@@ -1741,22 +1755,10 @@
     },
     {
       "id": "119",
-      "type": "rdf:Property"
-    },
-    {
-      "id": "120",
-      "type": "rdf:Property"
-    },
-    {
-      "id": "121",
-      "type": "rdf:Property"
-    },
-    {
-      "id": "122",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "123",
+      "id": "120",
       "type": "rdfs:subClassOf"
     },
     {
@@ -1768,7 +1770,7 @@
       "type": "owl:ObjectProperty"
     },
     {
-      "id": "127",
+      "id": "124",
       "type": "owl:disjointWith"
     },
     {
@@ -1776,12 +1778,24 @@
       "type": "owl:ObjectProperty"
     },
     {
+      "id": "125",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "126",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "127",
+      "type": "owl:disjointWith"
+    },
+    {
       "id": "128",
       "type": "owl:disjointWith"
     },
     {
-      "id": "129",
-      "type": "owl:disjointWith"
+      "id": "48",
+      "type": "owl:ObjectProperty"
     },
     {
       "id": "130",
@@ -1792,8 +1806,8 @@
       "type": "owl:disjointWith"
     },
     {
-      "id": "48",
-      "type": "owl:ObjectProperty"
+      "id": "132",
+      "type": "owl:disjointWith"
     },
     {
       "id": "133",
@@ -1808,6 +1822,10 @@
       "type": "owl:disjointWith"
     },
     {
+      "id": "55",
+      "type": "owl:ObjectProperty"
+    },
+    {
       "id": "136",
       "type": "owl:disjointWith"
     },
@@ -1818,10 +1836,6 @@
     {
       "id": "138",
       "type": "owl:disjointWith"
-    },
-    {
-      "id": "55",
-      "type": "owl:ObjectProperty"
     },
     {
       "id": "139",
@@ -1865,18 +1879,6 @@
     },
     {
       "id": "149",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "150",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "151",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "152",
       "type": "owl:ObjectProperty"
     },
     {
@@ -1884,12 +1886,24 @@
       "type": "owl:ObjectProperty"
     },
     {
-      "id": "153",
+      "id": "150",
       "type": "owl:disjointWith"
     },
     {
       "id": "47",
       "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "151",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "152",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "153",
+      "type": "owl:disjointWith"
     },
     {
       "id": "154",
@@ -1908,6 +1922,10 @@
       "type": "owl:disjointWith"
     },
     {
+      "id": "51",
+      "type": "owl:ObjectProperty"
+    },
+    {
       "id": "158",
       "type": "owl:disjointWith"
     },
@@ -1918,10 +1936,6 @@
     {
       "id": "160",
       "type": "owl:disjointWith"
-    },
-    {
-      "id": "51",
-      "type": "owl:ObjectProperty"
     },
     {
       "id": "161",
@@ -1968,6 +1982,10 @@
       "type": "owl:disjointWith"
     },
     {
+      "id": "41",
+      "type": "owl:ObjectProperty"
+    },
+    {
       "id": "172",
       "type": "owl:disjointWith"
     },
@@ -1978,10 +1996,6 @@
     {
       "id": "174",
       "type": "owl:disjointWith"
-    },
-    {
-      "id": "41",
-      "type": "owl:ObjectProperty"
     },
     {
       "id": "175",
@@ -2040,27 +2054,15 @@
       "type": "owl:disjointWith"
     },
     {
+      "id": "58",
+      "type": "owl:ObjectProperty"
+    },
+    {
       "id": "189",
       "type": "owl:disjointWith"
     },
     {
       "id": "190",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "191",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "58",
-      "type": "owl:ObjectProperty"
-    },
-    {
-      "id": "192",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "193",
       "type": "owl:disjointWith"
     },
     {
@@ -2070,6 +2072,18 @@
     {
       "id": "40",
       "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "191",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "192",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "193",
+      "type": "owl:disjointWith"
     },
     {
       "id": "194",
@@ -2100,6 +2114,10 @@
       "type": "owl:disjointWith"
     },
     {
+      "id": "46",
+      "type": "owl:ObjectProperty"
+    },
+    {
       "id": "201",
       "type": "owl:disjointWith"
     },
@@ -2110,10 +2128,6 @@
     {
       "id": "203",
       "type": "owl:disjointWith"
-    },
-    {
-      "id": "46",
-      "type": "owl:ObjectProperty"
     },
     {
       "id": "204",
@@ -2152,6 +2166,10 @@
       "type": "owl:disjointWith"
     },
     {
+      "id": "54",
+      "type": "owl:ObjectProperty"
+    },
+    {
       "id": "213",
       "type": "owl:disjointWith"
     },
@@ -2164,27 +2182,11 @@
       "type": "owl:disjointWith"
     },
     {
-      "id": "54",
-      "type": "owl:ObjectProperty"
-    },
-    {
       "id": "216",
       "type": "owl:disjointWith"
     },
     {
       "id": "217",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "218",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "219",
-      "type": "owl:disjointWith"
-    },
-    {
-      "id": "220",
       "type": "owl:disjointWith"
     },
     {
@@ -2464,51 +2466,51 @@
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-125-26-0",
+      "id": "GENERATED-UNION-122-26-0",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-125-19-1",
+      "id": "GENERATED-UNION-122-19-1",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-125-20-2",
+      "id": "GENERATED-UNION-122-20-2",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-125-21-3",
+      "id": "GENERATED-UNION-122-21-3",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-125-23-4",
+      "id": "GENERATED-UNION-122-23-4",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-126-19-0",
+      "id": "GENERATED-UNION-123-19-0",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-126-20-1",
+      "id": "GENERATED-UNION-123-20-1",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-126-21-2",
+      "id": "GENERATED-UNION-123-21-2",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-126-22-3",
+      "id": "GENERATED-UNION-123-22-3",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-126-23-4",
+      "id": "GENERATED-UNION-123-23-4",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-126-24-5",
+      "id": "GENERATED-UNION-123-24-5",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-126-5-6",
+      "id": "GENERATED-UNION-123-5-6",
       "type": "setOperatorProperty"
     },
     {
@@ -2544,7 +2546,7 @@
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-87-124-3",
+      "id": "GENERATED-UNION-87-121-3",
       "type": "setOperatorProperty"
     },
     {
@@ -2564,11 +2566,11 @@
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-132-1-0",
+      "id": "GENERATED-UNION-129-1-0",
       "type": "setOperatorProperty"
     },
     {
-      "id": "GENERATED-UNION-132-2-1",
+      "id": "GENERATED-UNION-129-2-1",
       "type": "setOperatorProperty"
     }
   ],
@@ -2589,8 +2591,8 @@
         "17"
       ],
       "pos": [
-        -646.62,
-        -210.59
+        996.95,
+        1140.57
       ]
     },
     {
@@ -2610,8 +2612,8 @@
       ],
       "inverse": "32",
       "pos": [
-        100.93,
-        93.03
+        640.7,
+        550.8
       ]
     },
     {
@@ -2655,8 +2657,8 @@
         "59"
       ],
       "pos": [
-        -1700.53,
-        947.44
+        -617.12,
+        2353.04
       ]
     },
     {
@@ -2692,8 +2694,8 @@
         "17"
       ],
       "pos": [
-        -338.11,
-        1012.24
+        106.49,
+        -719.38
       ]
     },
     {
@@ -2712,8 +2714,8 @@
         "17"
       ],
       "pos": [
-        1127.99,
-        1069.75
+        1178.43,
+        -395.36
       ]
     },
     {
@@ -2733,8 +2735,8 @@
       ],
       "inverse": "45",
       "pos": [
-        1264.57,
-        1255.63
+        886.82,
+        -734.51
       ]
     },
     {
@@ -2748,9 +2750,6 @@
         "object",
         "symmetric"
       ],
-      "comment": {
-        "undefined": "Qua il reasoner ha proposto di aggiungere InverseOf simultaneousTo, l'ho aggiunto perché mi sembra abbia senso (domains e ranges sono incrociati: conceptualization è simultaneousTo visualization e viceversa), inoltre la proprietà è simmetrica quindi ci sta"
-      },
       "domain": "78",
       "range": "81",
       "superproperty": [
@@ -2758,8 +2757,8 @@
       ],
       "inverse": "38",
       "pos": [
-        1765.25,
-        -602.2
+        -828.43,
+        737.82
       ]
     },
     {
@@ -2778,8 +2777,8 @@
         "17"
       ],
       "pos": [
-        1040.83,
-        614.56
+        614.86,
+        174.24
       ]
     },
     {
@@ -2798,8 +2797,8 @@
         "17"
       ],
       "pos": [
-        516.83,
-        684.08
+        636.93,
+        -144.36
       ]
     },
     {
@@ -2818,8 +2817,8 @@
         "17"
       ],
       "pos": [
-        588.1,
-        -79.4
+        1185.5,
+        904.21
       ]
     },
     {
@@ -2855,8 +2854,8 @@
       "domain": "19",
       "range": "92",
       "pos": [
-        1471.11,
-        49.52
+        -96.61,
+        811.64
       ]
     },
     {
@@ -2866,53 +2865,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "69",
-      "range": "35",
-      "pos": [
-        1605.61,
-        -527.89
-      ]
-    },
-    {
-      "id": "94",
-      "label": "Subclass of",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "34",
-      "range": "35",
-      "pos": [
-        1796.84,
-        -55.76
-      ]
-    },
-    {
-      "id": "95",
-      "label": "Subclass of",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "22",
-      "range": "35",
-      "pos": [
-        1582.7,
-        -403.38
-      ]
-    },
-    {
-      "id": "96",
-      "label": "Subclass of",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
       "domain": "24",
       "range": "35",
       "pos": [
-        1619.59,
-        -280.45
+        -361.32,
+        446.7
       ]
     },
     {
@@ -2931,8 +2888,50 @@
         "17"
       ],
       "pos": [
-        -824,
-        426.16
+        262.38,
+        461.73
+      ]
+    },
+    {
+      "id": "94",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "84",
+      "range": "85",
+      "pos": [
+        -812.38,
+        -833.18
+      ]
+    },
+    {
+      "id": "95",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "88",
+      "range": "85",
+      "pos": [
+        -881.06,
+        -832.54
+      ]
+    },
+    {
+      "id": "96",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "69",
+      "range": "35",
+      "pos": [
+        -203.62,
+        649.2
       ]
     },
     {
@@ -2942,11 +2941,25 @@
         "anonymous",
         "object"
       ],
-      "domain": "98",
-      "range": "88",
+      "domain": "34",
+      "range": "35",
       "pos": [
-        -433.81,
-        2155.42
+        -37.55,
+        156.14
+      ]
+    },
+    {
+      "id": "98",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "22",
+      "range": "35",
+      "pos": [
+        -390.21,
+        494.45
       ]
     },
     {
@@ -2956,11 +2969,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "1",
-      "range": "21",
+      "domain": "76",
+      "range": "36",
       "pos": [
-        347.12,
-        -621.44
+        951.75,
+        246.95
       ]
     },
     {
@@ -2970,11 +2983,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "2",
-      "range": "21",
+      "domain": "11",
+      "range": "88",
       "pos": [
-        328.2,
-        -598.28
+        -688.12,
+        -823.03
       ]
     },
     {
@@ -2984,39 +2997,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "84",
-      "range": "85",
+      "domain": "102",
+      "range": "88",
       "pos": [
-        -671.78,
-        1759.16
-      ]
-    },
-    {
-      "id": "102",
-      "label": "Subclass of",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "88",
-      "range": "85",
-      "pos": [
-        -688.9,
-        1821.73
-      ]
-    },
-    {
-      "id": "103",
-      "label": "Subclass of",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "7",
-      "range": "19",
-      "pos": [
-        1455.84,
-        452.26
+        -1022.46,
+        -1097.37
       ]
     },
     {
@@ -3026,11 +3011,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "62",
-      "range": "19",
+      "domain": "1",
+      "range": "21",
       "pos": [
-        1034.26,
-        165.03
+        668.59,
+        1268.1
       ]
     },
     {
@@ -3040,11 +3025,25 @@
         "anonymous",
         "object"
       ],
-      "domain": "89",
-      "range": "36",
+      "domain": "2",
+      "range": "21",
       "pos": [
-        1354.2,
-        273.96
+        648.64,
+        1250.04
+      ]
+    },
+    {
+      "id": "106",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "84",
+      "pos": [
+        -618.51,
+        -824.41
       ]
     },
     {
@@ -3054,11 +3053,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "76",
-      "range": "36",
+      "domain": "28",
+      "range": "12",
       "pos": [
-        1195.8,
-        386.85
+        -151.58,
+        -469.08
       ]
     },
     {
@@ -3068,11 +3067,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "11",
-      "range": "88",
+      "domain": "85",
+      "range": "12",
       "pos": [
-        -579.95,
-        1693.25
+        -674.31,
+        -563.42
       ]
     },
     {
@@ -3082,11 +3081,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "70",
-      "range": "69",
+      "domain": "7",
+      "range": "19",
       "pos": [
-        1521.53,
-        -906.11
+        155.01,
+        128.34
       ]
     },
     {
@@ -3096,11 +3095,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "66",
-      "range": "63",
+      "domain": "62",
+      "range": "19",
       "pos": [
-        454.67,
-        948.99
+        526.47,
+        623.2
       ]
     },
     {
@@ -3110,11 +3109,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "5",
-      "range": "63",
+      "domain": "89",
+      "range": "36",
       "pos": [
-        544,
-        875.84
+        910.82,
+        186.96
       ]
     },
     {
@@ -3124,11 +3123,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "11",
-      "range": "84",
+      "domain": "21",
+      "range": "69",
       "pos": [
-        -562.27,
-        1630.6
+        158.05,
+        1048.32
       ]
     },
     {
@@ -3138,11 +3137,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "28",
-      "range": "12",
+      "domain": "70",
+      "range": "69",
       "pos": [
-        -320.72,
-        1132.46
+        -248.54,
+        1153.63
       ]
     },
     {
@@ -3152,11 +3151,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "85",
-      "range": "12",
+      "domain": "66",
+      "range": "63",
       "pos": [
-        -725.69,
-        1467.32
+        1730.04,
+        494.48
       ]
     },
     {
@@ -3166,11 +3165,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "36",
-      "range": "34",
+      "domain": "5",
+      "range": "63",
       "pos": [
-        1437.6,
-        198.37
+        1275.84,
+        223.28
       ]
     },
     {
@@ -3180,11 +3179,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "4",
-      "range": "28",
+      "domain": "33",
+      "range": "20",
       "pos": [
-        331.59,
-        1014.48
+        630.27,
+        -305.42
       ]
     },
     {
@@ -3194,11 +3193,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "23",
-      "range": "28",
+      "domain": "9",
+      "range": "34",
       "pos": [
-        145.41,
-        701.9
+        383.89,
+        -266.28
       ]
     },
     {
@@ -3208,87 +3207,39 @@
         "anonymous",
         "object"
       ],
-      "domain": "21",
-      "range": "69",
+      "domain": "36",
+      "range": "34",
       "pos": [
-        1028.65,
-        -667.69
+        681.27,
+        167.54
       ]
     },
     {
       "id": "119",
-      "label": {
-        "IRI-based": "124",
-        "undefined": "is a"
-      },
+      "label": "Subclass of",
       "attributes": [
-        "rdf"
+        "anonymous",
+        "object"
       ],
-      "domain": "63",
-      "range": "63",
+      "domain": "4",
+      "range": "28",
       "pos": [
-        635.19,
-        1349.05
+        425.03,
+        -440.66
       ]
     },
     {
       "id": "120",
-      "label": {
-        "IRI-based": "125",
-        "undefined": "is a"
-      },
-      "attributes": [
-        "rdf"
-      ],
-      "domain": "69",
-      "range": "69",
-      "pos": [
-        1438.58,
-        -893.39
-      ]
-    },
-    {
-      "id": "121",
-      "label": {
-        "IRI-based": "126",
-        "undefined": "is a"
-      },
-      "attributes": [
-        "rdf"
-      ],
-      "domain": "98",
-      "range": "98",
-      "pos": [
-        -211.92,
-        2477.06
-      ]
-    },
-    {
-      "id": "122",
       "label": "Subclass of",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "domain": "33",
-      "range": "20",
+      "domain": "23",
+      "range": "28",
       "pos": [
-        37.8,
-        457.16
-      ]
-    },
-    {
-      "id": "123",
-      "label": "Subclass of",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "9",
-      "range": "34",
-      "pos": [
-        1783.96,
-        536.91
+        332.47,
+        -190.47
       ]
     },
     {
@@ -3307,8 +3258,8 @@
         "17"
       ],
       "pos": [
-        146.19,
-        654.41
+        773.68,
+        -172.31
       ]
     },
     {
@@ -3327,12 +3278,12 @@
         "17"
       ],
       "pos": [
-        820.26,
-        262.68
+        987.08,
+        406.05
       ]
     },
     {
-      "id": "127",
+      "id": "124",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3352,27 +3303,27 @@
         "object"
       ],
       "domain": "19",
-      "range": "124",
+      "range": "121",
       "superproperty": [
         "17"
       ],
       "pos": [
-        1482.95,
-        214.63
+        -88.93,
+        447.85
       ]
     },
     {
-      "id": "128",
+      "id": "125",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "19",
-      "range": "124"
+      "range": "121"
     },
     {
-      "id": "129",
+      "id": "126",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3382,7 +3333,7 @@
       "range": "19"
     },
     {
-      "id": "130",
+      "id": "127",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3392,7 +3343,7 @@
       "range": "8"
     },
     {
-      "id": "131",
+      "id": "128",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3411,18 +3362,18 @@
       "attributes": [
         "object"
       ],
-      "domain": "132",
+      "domain": "129",
       "range": "16",
       "superproperty": [
         "17"
       ],
       "pos": [
-        -660.79,
-        -246.67
+        984.43,
+        1205.65
       ]
     },
     {
-      "id": "133",
+      "id": "130",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3432,7 +3383,7 @@
       "range": "20"
     },
     {
-      "id": "134",
+      "id": "131",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3442,7 +3393,7 @@
       "range": "12"
     },
     {
-      "id": "135",
+      "id": "132",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3452,7 +3403,7 @@
       "range": "29"
     },
     {
-      "id": "136",
+      "id": "133",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3462,7 +3413,7 @@
       "range": "63"
     },
     {
-      "id": "137",
+      "id": "134",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3472,14 +3423,14 @@
       "range": "83"
     },
     {
-      "id": "138",
+      "id": "135",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "29",
-      "range": "106"
+      "range": "103"
     },
     {
       "id": "55",
@@ -3497,12 +3448,12 @@
         "17"
       ],
       "pos": [
-        1329.63,
-        336.41
+        1014.09,
+        761.82
       ]
     },
     {
-      "id": "139",
+      "id": "136",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3512,7 +3463,7 @@
       "range": "29"
     },
     {
-      "id": "140",
+      "id": "137",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3522,17 +3473,17 @@
       "range": "29"
     },
     {
-      "id": "141",
+      "id": "138",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "domain": "124",
+      "domain": "121",
       "range": "29"
     },
     {
-      "id": "142",
+      "id": "139",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3542,7 +3493,7 @@
       "range": "65"
     },
     {
-      "id": "143",
+      "id": "140",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3552,7 +3503,7 @@
       "range": "29"
     },
     {
-      "id": "144",
+      "id": "141",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3562,7 +3513,7 @@
       "range": "29"
     },
     {
-      "id": "145",
+      "id": "142",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3572,7 +3523,7 @@
       "range": "29"
     },
     {
-      "id": "146",
+      "id": "143",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3582,7 +3533,7 @@
       "range": "35"
     },
     {
-      "id": "147",
+      "id": "144",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3592,17 +3543,17 @@
       "range": "29"
     },
     {
-      "id": "148",
+      "id": "145",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "35",
-      "range": "106"
+      "range": "103"
     },
     {
-      "id": "149",
+      "id": "146",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3612,7 +3563,7 @@
       "range": "12"
     },
     {
-      "id": "150",
+      "id": "147",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3622,7 +3573,7 @@
       "range": "8"
     },
     {
-      "id": "151",
+      "id": "148",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3632,7 +3583,7 @@
       "range": "20"
     },
     {
-      "id": "152",
+      "id": "149",
       "iri": "https://digimof.github.io/keGropius/ontoGropius#mustHaveRole",
       "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
       "label": {
@@ -3642,13 +3593,13 @@
         "object"
       ],
       "domain": "21",
-      "range": "106",
+      "range": "103",
       "superproperty": [
         "41"
       ],
       "pos": [
-        555.27,
-        -874.63
+        363.37,
+        1392.81
       ]
     },
     {
@@ -3661,21 +3612,18 @@
       "attributes": [
         "object"
       ],
-      "comment": {
-        "undefined": "Qua le proposte del reasoner le ignorerei tutte (far partire il reasoner per verificare)"
-      },
       "domain": "13",
       "range": "36",
       "superproperty": [
         "45"
       ],
       "pos": [
-        801.4,
-        -153.98
+        1192.25,
+        690.49
       ]
     },
     {
-      "id": "153",
+      "id": "150",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3700,32 +3648,32 @@
         "17"
       ],
       "pos": [
-        613.82,
-        411.3
+        1000.9,
+        355.04
       ]
     },
     {
-      "id": "154",
+      "id": "151",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "domain": "124",
+      "domain": "121",
       "range": "65"
     },
     {
-      "id": "155",
+      "id": "152",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "65",
-      "range": "106"
+      "range": "103"
     },
     {
-      "id": "156",
+      "id": "153",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3735,7 +3683,7 @@
       "range": "65"
     },
     {
-      "id": "157",
+      "id": "154",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3745,7 +3693,7 @@
       "range": "65"
     },
     {
-      "id": "158",
+      "id": "155",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3755,7 +3703,7 @@
       "range": "65"
     },
     {
-      "id": "159",
+      "id": "156",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3765,7 +3713,7 @@
       "range": "65"
     },
     {
-      "id": "160",
+      "id": "157",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3784,29 +3732,29 @@
       "attributes": [
         "object"
       ],
-      "domain": "126",
-      "range": "125",
+      "domain": "123",
+      "range": "122",
       "superproperty": [
         "17"
       ],
       "inverse": "39",
       "pos": [
-        710.44,
-        -98.13
+        300.09,
+        542.36
       ]
     },
     {
-      "id": "161",
+      "id": "158",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "83",
-      "range": "106"
+      "range": "103"
     },
     {
-      "id": "162",
+      "id": "159",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3816,7 +3764,7 @@
       "range": "83"
     },
     {
-      "id": "163",
+      "id": "160",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3826,7 +3774,7 @@
       "range": "63"
     },
     {
-      "id": "164",
+      "id": "161",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3836,7 +3784,7 @@
       "range": "83"
     },
     {
-      "id": "165",
+      "id": "162",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3846,17 +3794,17 @@
       "range": "83"
     },
     {
-      "id": "166",
+      "id": "163",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "domain": "124",
+      "domain": "121",
       "range": "83"
     },
     {
-      "id": "167",
+      "id": "164",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3866,17 +3814,17 @@
       "range": "83"
     },
     {
-      "id": "168",
+      "id": "165",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "19",
-      "range": "106"
+      "range": "103"
     },
     {
-      "id": "169",
+      "id": "166",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3886,7 +3834,7 @@
       "range": "26"
     },
     {
-      "id": "170",
+      "id": "167",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3896,7 +3844,7 @@
       "range": "83"
     },
     {
-      "id": "171",
+      "id": "168",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3906,34 +3854,34 @@
       "range": "65"
     },
     {
-      "id": "172",
+      "id": "169",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "domain": "124",
+      "domain": "121",
       "range": "63"
     },
     {
-      "id": "173",
+      "id": "170",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "16",
-      "range": "106"
+      "range": "103"
     },
     {
-      "id": "174",
+      "id": "171",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
-      "domain": "124",
-      "range": "106"
+      "domain": "121",
+      "range": "103"
     },
     {
       "id": "41",
@@ -3946,30 +3894,30 @@
         "object"
       ],
       "domain": "74",
-      "range": "106",
+      "range": "103",
       "subproperty": [
-        "152"
+        "149"
       ],
       "superproperty": [
         "17"
       ],
       "pos": [
-        248.49,
-        -1103.05
+        554.55,
+        1756.21
       ]
     },
     {
-      "id": "175",
+      "id": "172",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "26",
-      "range": "124"
+      "range": "121"
     },
     {
-      "id": "176",
+      "id": "173",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3979,7 +3927,7 @@
       "range": "26"
     },
     {
-      "id": "177",
+      "id": "174",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -3987,6 +3935,36 @@
       ],
       "domain": "16",
       "range": "63"
+    },
+    {
+      "id": "175",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "121"
+    },
+    {
+      "id": "176",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "20",
+      "range": "63"
+    },
+    {
+      "id": "177",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "20",
+      "range": "121"
     },
     {
       "id": "178",
@@ -3995,41 +3973,11 @@
         "anonymous",
         "object"
       ],
-      "domain": "16",
-      "range": "124"
+      "domain": "20",
+      "range": "103"
     },
     {
       "id": "179",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "20",
-      "range": "63"
-    },
-    {
-      "id": "180",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "20",
-      "range": "124"
-    },
-    {
-      "id": "181",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "20",
-      "range": "106"
-    },
-    {
-      "id": "182",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4039,7 +3987,7 @@
       "range": "20"
     },
     {
-      "id": "183",
+      "id": "180",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4049,7 +3997,7 @@
       "range": "12"
     },
     {
-      "id": "184",
+      "id": "181",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4059,13 +4007,43 @@
       "range": "63"
     },
     {
-      "id": "185",
+      "id": "182",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "16",
+      "range": "20"
+    },
+    {
+      "id": "183",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "103"
+    },
+    {
+      "id": "184",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "12"
+    },
+    {
+      "id": "185",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
       "range": "20"
     },
     {
@@ -4076,40 +4054,10 @@
         "object"
       ],
       "domain": "12",
-      "range": "106"
+      "range": "121"
     },
     {
       "id": "187",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "16",
-      "range": "12"
-    },
-    {
-      "id": "188",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "12",
-      "range": "20"
-    },
-    {
-      "id": "189",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "12",
-      "range": "124"
-    },
-    {
-      "id": "190",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4119,14 +4067,14 @@
       "range": "63"
     },
     {
-      "id": "191",
+      "id": "188",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "8",
-      "range": "124"
+      "range": "121"
     },
     {
       "id": "58",
@@ -4144,22 +4092,22 @@
         "17"
       ],
       "pos": [
-        648.75,
-        800.68
+        1230.88,
+        -199.3
       ]
     },
     {
-      "id": "192",
+      "id": "189",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "8",
-      "range": "106"
+      "range": "103"
     },
     {
-      "id": "193",
+      "id": "190",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4178,8 +4126,8 @@
       "attributes": [
         "object"
       ],
-      "domain": "125",
-      "range": "126",
+      "domain": "122",
+      "range": "123",
       "superproperty": [
         "17"
       ],
@@ -4201,12 +4149,12 @@
         "17"
       ],
       "pos": [
-        22.72,
-        200.38
+        1381.84,
+        445.11
       ]
     },
     {
-      "id": "194",
+      "id": "191",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4216,7 +4164,7 @@
       "range": "76"
     },
     {
-      "id": "195",
+      "id": "192",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4226,7 +4174,7 @@
       "range": "36"
     },
     {
-      "id": "196",
+      "id": "193",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4236,7 +4184,7 @@
       "range": "83"
     },
     {
-      "id": "197",
+      "id": "194",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4246,13 +4194,43 @@
       "range": "65"
     },
     {
-      "id": "198",
+      "id": "195",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "8",
+      "range": "35"
+    },
+    {
+      "id": "196",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "35",
+      "range": "12"
+    },
+    {
+      "id": "197",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "35",
+      "range": "20"
+    },
+    {
+      "id": "198",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
       "range": "35"
     },
     {
@@ -4263,40 +4241,10 @@
         "object"
       ],
       "domain": "35",
-      "range": "12"
+      "range": "121"
     },
     {
       "id": "200",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "35",
-      "range": "20"
-    },
-    {
-      "id": "201",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "16",
-      "range": "35"
-    },
-    {
-      "id": "202",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "35",
-      "range": "124"
-    },
-    {
-      "id": "203",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4321,12 +4269,12 @@
         "17"
       ],
       "pos": [
-        95.31,
-        547.37
+        554.86,
+        -170.73
       ]
     },
     {
-      "id": "204",
+      "id": "201",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4336,7 +4284,7 @@
       "range": "29"
     },
     {
-      "id": "205",
+      "id": "202",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4346,13 +4294,43 @@
       "range": "35"
     },
     {
-      "id": "206",
+      "id": "203",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "34",
+      "range": "69"
+    },
+    {
+      "id": "204",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "34",
+      "range": "22"
+    },
+    {
+      "id": "205",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "102"
+    },
+    {
+      "id": "206",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "22",
       "range": "69"
     },
     {
@@ -4363,40 +4341,10 @@
         "object"
       ],
       "domain": "34",
-      "range": "22"
-    },
-    {
-      "id": "208",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "11",
-      "range": "98"
-    },
-    {
-      "id": "209",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "22",
-      "range": "69"
-    },
-    {
-      "id": "210",
-      "label": "Disjoint With",
-      "attributes": [
-        "anonymous",
-        "object"
-      ],
-      "domain": "34",
       "range": "24"
     },
     {
-      "id": "211",
+      "id": "208",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4406,7 +4354,7 @@
       "range": "5"
     },
     {
-      "id": "212",
+      "id": "209",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4416,7 +4364,7 @@
       "range": "69"
     },
     {
-      "id": "213",
+      "id": "210",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4426,7 +4374,7 @@
       "range": "24"
     },
     {
-      "id": "214",
+      "id": "211",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4436,7 +4384,7 @@
       "range": "23"
     },
     {
-      "id": "215",
+      "id": "212",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4461,12 +4409,12 @@
         "17"
       ],
       "pos": [
-        1010.24,
-        808.85
+        766.89,
+        -127.91
       ]
     },
     {
-      "id": "216",
+      "id": "213",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4476,17 +4424,17 @@
       "range": "7"
     },
     {
-      "id": "217",
+      "id": "214",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "63",
-      "range": "106"
+      "range": "103"
     },
     {
-      "id": "218",
+      "id": "215",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4496,7 +4444,7 @@
       "range": "63"
     },
     {
-      "id": "219",
+      "id": "216",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
@@ -4506,22 +4454,22 @@
       "range": "70"
     },
     {
-      "id": "220",
+      "id": "217",
       "label": "Disjoint With",
       "attributes": [
         "anonymous",
         "object"
       ],
       "domain": "26",
-      "range": "106"
+      "range": "103"
     },
     {
       "id": "GENERATED-UNION-0-1-0",
       "domain": "0",
       "range": "1",
       "pos": [
-        -119.84,
-        -799.16
+        1040.59,
+        1646.15
       ]
     },
     {
@@ -4529,8 +4477,8 @@
       "domain": "0",
       "range": "2",
       "pos": [
-        -135.57,
-        -774.76
+        1019.15,
+        1625.58
       ]
     },
     {
@@ -4538,8 +4486,8 @@
       "domain": "3",
       "range": "4",
       "pos": [
-        509.58,
-        1089.22
+        997.43,
+        -430.16
       ]
     },
     {
@@ -4547,8 +4495,8 @@
       "domain": "3",
       "range": "5",
       "pos": [
-        377.83,
-        884.93
+        1120.25,
+        -183.88
       ]
     },
     {
@@ -4556,8 +4504,8 @@
       "domain": "6",
       "range": "7",
       "pos": [
-        1680.85,
-        1041.92
+        422.47,
+        -640.35
       ]
     },
     {
@@ -4565,8 +4513,8 @@
       "domain": "6",
       "range": "8",
       "pos": [
-        1447.81,
-        1275.45
+        853.27,
+        -785.7
       ]
     },
     {
@@ -4574,8 +4522,8 @@
       "domain": "6",
       "range": "9",
       "pos": [
-        1744.05,
-        1070.43
+        549.44,
+        -717.56
       ]
     },
     {
@@ -4583,8 +4531,8 @@
       "domain": "10",
       "range": "11",
       "pos": [
-        -726.65,
-        1107.84
+        -321.75,
+        -316.19
       ]
     },
     {
@@ -4592,8 +4540,8 @@
       "domain": "10",
       "range": "12",
       "pos": [
-        -734.31,
-        1022.79
+        -294.37,
+        -227.18
       ]
     },
     {
@@ -4601,8 +4549,8 @@
       "domain": "13",
       "range": "1",
       "pos": [
-        277.2,
-        -545.46
+        1139.71,
+        1226.09
       ]
     },
     {
@@ -4610,8 +4558,8 @@
       "domain": "13",
       "range": "2",
       "pos": [
-        258.5,
-        -522.93
+        1117.84,
+        1208.86
       ]
     },
     {
@@ -4619,8 +4567,8 @@
       "domain": "18",
       "range": "19",
       "pos": [
-        1050.07,
-        18.88
+        97.55,
+        518.15
       ]
     },
     {
@@ -4628,8 +4576,8 @@
       "domain": "18",
       "range": "20",
       "pos": [
-        590.08,
-        176.93
+        358.02,
+        192.68
       ]
     },
     {
@@ -4637,8 +4585,8 @@
       "domain": "18",
       "range": "21",
       "pos": [
-        747.47,
-        -340.84
+        253.06,
+        753.49
       ]
     },
     {
@@ -4646,8 +4594,8 @@
       "domain": "18",
       "range": "22",
       "pos": [
-        1099.91,
-        -262.13
+        -149.79,
+        529.13
       ]
     },
     {
@@ -4655,8 +4603,8 @@
       "domain": "18",
       "range": "23",
       "pos": [
-        589.37,
-        149.04
+        334.22,
+        256.4
       ]
     },
     {
@@ -4664,8 +4612,8 @@
       "domain": "18",
       "range": "24",
       "pos": [
-        1136.8,
-        -139.2
+        -120.9,
+        481.39
       ]
     },
     {
@@ -4673,8 +4621,8 @@
       "domain": "18",
       "range": "5",
       "pos": [
-        641.63,
-        256.04
+        556.32,
+        252.89
       ]
     },
     {
@@ -4682,8 +4630,8 @@
       "domain": "25",
       "range": "26",
       "pos": [
-        724.16,
-        188.62
+        593.12,
+        430.17
       ]
     },
     {
@@ -4691,8 +4639,8 @@
       "domain": "25",
       "range": "19",
       "pos": [
-        974.17,
-        27.54
+        241.06,
+        602.11
       ]
     },
     {
@@ -4700,8 +4648,8 @@
       "domain": "25",
       "range": "20",
       "pos": [
-        513.09,
-        184.59
+        506,
+        279.38
       ]
     },
     {
@@ -4709,8 +4657,8 @@
       "domain": "25",
       "range": "21",
       "pos": [
-        671.58,
-        -332.18
+        396.57,
+        837.45
       ]
     },
     {
@@ -4718,8 +4666,8 @@
       "domain": "25",
       "range": "23",
       "pos": [
-        512.74,
-        156.94
+        481.66,
+        343.05
       ]
     },
     {
@@ -4727,8 +4675,8 @@
       "domain": "27",
       "range": "28",
       "pos": [
-        -261.54,
-        1000.9
+        173.43,
+        -681
       ]
     },
     {
@@ -4736,8 +4684,8 @@
       "domain": "27",
       "range": "29",
       "pos": [
-        -309.48,
-        848.2
+        391.54,
+        -660.03
       ]
     },
     {
@@ -4745,8 +4693,8 @@
       "domain": "61",
       "range": "62",
       "pos": [
-        973.9,
-        434.35
+        1190.01,
+        680.36
       ]
     },
     {
@@ -4754,8 +4702,8 @@
       "domain": "61",
       "range": "63",
       "pos": [
-        895.79,
-        885.42
+        1452.63,
+        549.1
       ]
     },
     {
@@ -4763,8 +4711,8 @@
       "domain": "15",
       "range": "1",
       "pos": [
-        -240.5,
-        -526.6
+        1147.57,
+        1381.25
       ]
     },
     {
@@ -4772,8 +4720,8 @@
       "domain": "15",
       "range": "2",
       "pos": [
-        -256.36,
-        -503.94
+        1124.83,
+        1363.49
       ]
     },
     {
@@ -4781,8 +4729,8 @@
       "domain": "64",
       "range": "65",
       "pos": [
-        112.95,
-        354.46
+        1577.07,
+        514.7
       ]
     },
     {
@@ -4790,8 +4738,8 @@
       "domain": "64",
       "range": "62",
       "pos": [
-        495.81,
-        152.79
+        1223.52,
+        685.59
       ]
     },
     {
@@ -4799,8 +4747,8 @@
       "domain": "64",
       "range": "66",
       "pos": [
-        231.12,
-        397.94
+        1655.29,
+        707.67
       ]
     },
     {
@@ -4808,8 +4756,8 @@
       "domain": "64",
       "range": "1",
       "pos": [
-        121.59,
-        -267.42
+        1204.46,
+        1089.97
       ]
     },
     {
@@ -4817,8 +4765,8 @@
       "domain": "64",
       "range": "36",
       "pos": [
-        650.62,
-        119.39
+        1257.44,
+        554.68
       ]
     },
     {
@@ -4826,8 +4774,8 @@
       "domain": "64",
       "range": "2",
       "pos": [
-        104.23,
-        -245.56
+        1182.55,
+        1072.63
       ]
     },
     {
@@ -4835,8 +4783,8 @@
       "domain": "64",
       "range": "5",
       "pos": [
-        319.57,
-        321.74
+        1208.46,
+        439.54
       ]
     },
     {
@@ -4844,8 +4792,8 @@
       "domain": "67",
       "range": "62",
       "pos": [
-        620.07,
-        36.85
+        1022.44,
+        756.33
       ]
     },
     {
@@ -4853,8 +4801,8 @@
       "domain": "67",
       "range": "1",
       "pos": [
-        246.27,
-        -381.05
+        1007.24,
+        1154.46
       ]
     },
     {
@@ -4862,8 +4810,8 @@
       "domain": "67",
       "range": "2",
       "pos": [
-        228.23,
-        -359.06
+        986.23,
+        1137.23
       ]
     },
     {
@@ -4871,8 +4819,8 @@
       "domain": "68",
       "range": "8",
       "pos": [
-        1177.91,
-        967.27
+        1034.28,
+        -366.42
       ]
     },
     {
@@ -4880,8 +4828,8 @@
       "domain": "68",
       "range": "9",
       "pos": [
-        1477.85,
-        763.64
+        727.96,
+        -300.17
       ]
     },
     {
@@ -4889,8 +4837,8 @@
       "domain": "71",
       "range": "1",
       "pos": [
-        214.52,
-        -497.93
+        1171.93,
+        1306.49
       ]
     },
     {
@@ -4898,8 +4846,8 @@
       "domain": "71",
       "range": "2",
       "pos": [
-        196.22,
-        -475.9
+        1149.56,
+        1289.02
       ]
     },
     {
@@ -4907,8 +4855,8 @@
       "domain": "72",
       "range": "4",
       "pos": [
-        733.28,
-        809.31
+        933.81,
+        -327.3
       ]
     },
     {
@@ -4916,8 +4864,8 @@
       "domain": "72",
       "range": "20",
       "pos": [
-        549.03,
-        533.13
+        863.75,
+        -145.49
       ]
     },
     {
@@ -4925,8 +4873,8 @@
       "domain": "72",
       "range": "36",
       "pos": [
-        922.44,
-        398.54
+        1107.14,
+        44.51
       ]
     },
     {
@@ -4934,8 +4882,8 @@
       "domain": "73",
       "range": "65",
       "pos": [
-        281.62,
-        814.9
+        1537.7,
+        52.69
       ]
     },
     {
@@ -4943,8 +4891,8 @@
       "domain": "73",
       "range": "26",
       "pos": [
-        647.64,
-        713.46
+        1067.04,
+        67.32
       ]
     },
     {
@@ -4952,8 +4900,8 @@
       "domain": "73",
       "range": "8",
       "pos": [
-        848.95,
-        1118.6
+        1239.72,
+        -396.21
       ]
     },
     {
@@ -4961,8 +4909,8 @@
       "domain": "73",
       "range": "20",
       "pos": [
-        436.49,
-        707.54
+        976.8,
+        -82.43
       ]
     },
     {
@@ -4970,8 +4918,8 @@
       "domain": "31",
       "range": "1",
       "pos": [
-        -46.43,
-        -388.88
+        856.65,
+        1198.82
       ]
     },
     {
@@ -4979,8 +4927,8 @@
       "domain": "31",
       "range": "2",
       "pos": [
-        -63,
-        -366.83
+        836.29,
+        1181.24
       ]
     },
     {
@@ -4988,8 +4936,8 @@
       "domain": "74",
       "range": "1",
       "pos": [
-        33.63,
-        -856.74
+        862.47,
+        1640.67
       ]
     },
     {
@@ -4997,8 +4945,8 @@
       "domain": "74",
       "range": "2",
       "pos": [
-        16.65,
-        -831.57
+        842.48,
+        1620.62
       ]
     },
     {
@@ -5006,8 +4954,8 @@
       "domain": "75",
       "range": "69",
       "pos": [
-        1460.45,
-        -330.15
+        312.4,
+        876.66
       ]
     },
     {
@@ -5015,8 +4963,8 @@
       "domain": "75",
       "range": "76",
       "pos": [
-        1414.01,
-        330.26
+        736.49,
+        461.72
       ]
     },
     {
@@ -5024,8 +4972,8 @@
       "domain": "78",
       "range": "22",
       "pos": [
-        1517.87,
-        -592.24
+        -613.15,
+        774.72
       ]
     },
     {
@@ -5033,8 +4981,8 @@
       "domain": "78",
       "range": "24",
       "pos": [
-        1554.76,
-        -469.32
+        -584.26,
+        726.98
       ]
     },
     {
@@ -5042,8 +4990,8 @@
       "domain": "77",
       "range": "4",
       "pos": [
-        905.98,
-        939.93
+        985.97,
+        -265.3
       ]
     },
     {
@@ -5051,8 +4999,8 @@
       "domain": "77",
       "range": "62",
       "pos": [
-        944.79,
-        566.55
+        1120.54,
+        225.75
       ]
     },
     {
@@ -5060,8 +5008,8 @@
       "domain": "81",
       "range": "22",
       "pos": [
-        1605.54,
-        -474.43
+        -653.8,
+        625.94
       ]
     },
     {
@@ -5069,8 +5017,8 @@
       "domain": "81",
       "range": "24",
       "pos": [
-        1642.43,
-        -351.5
+        -624.91,
+        578.19
       ]
     },
     {
@@ -5078,8 +5026,8 @@
       "domain": "82",
       "range": "65",
       "pos": [
-        -83.32,
-        482.55
+        1536.43,
+        190.15
       ]
     },
     {
@@ -5087,8 +5035,8 @@
       "domain": "82",
       "range": "20",
       "pos": [
-        69.22,
-        375.51
+        977.38,
+        55.19
       ]
     },
     {
@@ -5096,8 +5044,8 @@
       "domain": "82",
       "range": "23",
       "pos": [
-        72.84,
-        346.76
+        949.52,
+        119.73
       ]
     },
     {
@@ -5105,8 +5053,8 @@
       "domain": "82",
       "range": "5",
       "pos": [
-        125.59,
-        453.53
+        1174.76,
+        118
       ]
     },
     {
@@ -5114,8 +5062,8 @@
       "domain": "82",
       "range": "83",
       "pos": [
-        -407.52,
-        306.01
+        1592.44,
+        45.4
       ]
     },
     {
@@ -5123,8 +5071,8 @@
       "domain": "60",
       "range": "20",
       "pos": [
-        64.98,
-        744.77
+        287.55,
+        -295.93
       ]
     },
     {
@@ -5132,116 +5080,116 @@
       "domain": "60",
       "range": "11",
       "pos": [
-        -391.06,
-        1227.44
+        -245.64,
+        -595.63
       ]
     },
     {
-      "id": "GENERATED-UNION-125-26-0",
-      "domain": "125",
+      "id": "GENERATED-UNION-122-26-0",
+      "domain": "122",
       "range": "26",
       "pos": [
-        654.83,
-        172.53
+        597.24,
+        465.22
       ]
     },
     {
-      "id": "GENERATED-UNION-125-19-1",
-      "domain": "125",
+      "id": "GENERATED-UNION-122-19-1",
+      "domain": "122",
       "range": "19",
       "pos": [
-        907.01,
-        10.88
+        244.41,
+        636.31
       ]
     },
     {
-      "id": "GENERATED-UNION-125-20-2",
-      "domain": "125",
+      "id": "GENERATED-UNION-122-20-2",
+      "domain": "122",
       "range": "20",
       "pos": [
-        444.02,
-        166.76
+        509.7,
+        313.67
       ]
     },
     {
-      "id": "GENERATED-UNION-125-21-3",
-      "domain": "125",
+      "id": "GENERATED-UNION-122-21-3",
+      "domain": "122",
       "range": "21",
       "pos": [
-        604.42,
-        -348.84
+        399.92,
+        871.65
       ]
     },
     {
-      "id": "GENERATED-UNION-125-23-4",
-      "domain": "125",
+      "id": "GENERATED-UNION-122-23-4",
+      "domain": "122",
       "range": "23",
       "pos": [
-        444.17,
-        139.3
+        485.3,
+        377.32
       ]
     },
     {
-      "id": "GENERATED-UNION-126-19-0",
-      "domain": "126",
+      "id": "GENERATED-UNION-123-19-0",
+      "domain": "123",
       "range": "19",
       "pos": [
-        1061.92,
-        -11.46
+        111.84,
+        546.92
       ]
     },
     {
-      "id": "GENERATED-UNION-126-20-1",
-      "domain": "126",
+      "id": "GENERATED-UNION-123-20-1",
+      "domain": "123",
       "range": "20",
       "pos": [
-        601.69,
-        146.34
+        372.97,
+        222.11
       ]
     },
     {
-      "id": "GENERATED-UNION-126-21-2",
-      "domain": "126",
+      "id": "GENERATED-UNION-123-21-2",
+      "domain": "123",
       "range": "21",
       "pos": [
-        759.33,
-        -371.18
+        267.35,
+        782.26
       ]
     },
     {
-      "id": "GENERATED-UNION-126-22-3",
-      "domain": "126",
+      "id": "GENERATED-UNION-123-22-3",
+      "domain": "123",
       "range": "22",
       "pos": [
-        1111.76,
-        -292.47
+        -135.5,
+        557.9
       ]
     },
     {
-      "id": "GENERATED-UNION-126-23-4",
-      "domain": "126",
+      "id": "GENERATED-UNION-123-23-4",
+      "domain": "123",
       "range": "23",
       "pos": [
-        601.03,
-        118.47
+        349.05,
+        285.84
       ]
     },
     {
-      "id": "GENERATED-UNION-126-24-5",
-      "domain": "126",
+      "id": "GENERATED-UNION-123-24-5",
+      "domain": "123",
       "range": "24",
       "pos": [
-        1148.66,
-        -169.54
+        -106.62,
+        510.16
       ]
     },
     {
-      "id": "GENERATED-UNION-126-5-6",
-      "domain": "126",
+      "id": "GENERATED-UNION-123-5-6",
+      "domain": "123",
       "range": "5",
       "pos": [
-        653.39,
-        225.63
+        570.81,
+        282.2
       ]
     },
     {
@@ -5249,8 +5197,8 @@
       "domain": "80",
       "range": "4",
       "pos": [
-        847.7,
-        1121.08
+        908.74,
+        -504.08
       ]
     },
     {
@@ -5258,8 +5206,8 @@
       "domain": "80",
       "range": "5",
       "pos": [
-        709.05,
-        913.03
+        1030.23,
+        -255.26
       ]
     },
     {
@@ -5267,8 +5215,8 @@
       "domain": "79",
       "range": "7",
       "pos": [
-        1603.8,
-        1044.97
+        478.9,
+        -626.76
       ]
     },
     {
@@ -5276,8 +5224,8 @@
       "domain": "79",
       "range": "8",
       "pos": [
-        1370.76,
-        1278.64
+        909.82,
+        -772.4
       ]
     },
     {
@@ -5285,8 +5233,8 @@
       "domain": "79",
       "range": "9",
       "pos": [
-        1665.43,
-        1072.94
+        607.32,
+        -703.39
       ]
     },
     {
@@ -5294,8 +5242,8 @@
       "domain": "87",
       "range": "26",
       "pos": [
-        1025.54,
-        477.15
+        502.53,
+        185.49
       ]
     },
     {
@@ -5303,8 +5251,8 @@
       "domain": "87",
       "range": "4",
       "pos": [
-        995.56,
-        752.8
+        485.23,
+        -148.06
       ]
     },
     {
@@ -5312,17 +5260,17 @@
       "domain": "87",
       "range": "89",
       "pos": [
-        1445.05,
-        451.06
+        477.7,
+        56.21
       ]
     },
     {
-      "id": "GENERATED-UNION-87-124-3",
+      "id": "GENERATED-UNION-87-121-3",
       "domain": "87",
-      "range": "124",
+      "range": "121",
       "pos": [
-        1489.02,
-        422.21
+        6.89,
+        173.75
       ]
     },
     {
@@ -5330,8 +5278,8 @@
       "domain": "87",
       "range": "24",
       "pos": [
-        1351.29,
-        147.04
+        -66.46,
+        330.01
       ]
     },
     {
@@ -5339,8 +5287,8 @@
       "domain": "86",
       "range": "62",
       "pos": [
-        803.1,
-        484.83
+        996.67,
+        422.36
       ]
     },
     {
@@ -5348,8 +5296,8 @@
       "domain": "86",
       "range": "63",
       "pos": [
-        730.13,
-        933.81
+        1264.54,
+        296.79
       ]
     },
     {
@@ -5357,26 +5305,26 @@
       "domain": "86",
       "range": "23",
       "pos": [
-        574.34,
-        545.57
+        767.86,
+        184.76
       ]
     },
     {
-      "id": "GENERATED-UNION-132-1-0",
-      "domain": "132",
+      "id": "GENERATED-UNION-129-1-0",
+      "domain": "129",
       "range": "1",
       "pos": [
-        -254.32,
-        -563.22
+        1135.93,
+        1448.24
       ]
     },
     {
-      "id": "GENERATED-UNION-132-2-1",
-      "domain": "132",
+      "id": "GENERATED-UNION-129-2-1",
+      "domain": "129",
       "range": "2",
       "pos": [
-        -270.08,
-        -540.41
+        1112.9,
+        1429.65
       ]
     }
   ]
