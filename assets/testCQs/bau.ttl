@@ -860,17 +860,17 @@ mof:Dissolution rdf:type owl:NamedIndividual ,
                              mof:MonumentNoValue .
 
 
-###  https://digimof.github.io/keGropius/ontoBau#EducationalChange
-mof:EducationalChange rdf:type owl:NamedIndividual ,
-                               mof:SecondaryGoal .
+###  https://digimof.github.io/keGropius/ontoBau#EduChange
+mof:EduChange rdf:type owl:NamedIndividual ,
+                       mof:SecondaryGoal .
 
 
-###  https://digimof.github.io/keGropius/ontoBau#EducationalProgram
-mof:EducationalProgram rdf:type owl:NamedIndividual ,
-                                mof:EducationalProgram ,
-                                mof:NewApproach ;
-                       mof:involves mof:Freedom ,
-                                    mof:ManualTraining .
+###  https://digimof.github.io/keGropius/ontoBau#EduProgram
+mof:EduProgram rdf:type owl:NamedIndividual ,
+                        mof:EducationalProgram ,
+                        mof:NewApproach ;
+               mof:involves mof:Freedom ,
+                            mof:ManualTraining .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Formlehre
@@ -882,8 +882,14 @@ mof:Formlehre rdf:type owl:NamedIndividual ,
 ###  https://digimof.github.io/keGropius/ontoBau#Freedom
 mof:Freedom rdf:type owl:NamedIndividual ,
                      mof:SecondaryGoal ;
-            mof:involvedBy mof:EducationalProgram ;
+            mof:involvedBy mof:EduProgram ;
             mof:replaces mof:GovernmentDomination .
+
+
+###  https://digimof.github.io/keGropius/ontoBau#GovernamentalInstitution
+mof:GovernamentalInstitution rdf:type owl:NamedIndividual ,
+                                      mof:GovernmentInstitution ;
+                             mof:aimsAt mof:Promotion .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#GovernmentDomination
@@ -892,10 +898,9 @@ mof:GovernmentDomination rdf:type owl:NamedIndividual ,
                          mof:replacedBy mof:Freedom .
 
 
-###  https://digimof.github.io/keGropius/ontoBau#GovernmentInstitution
-mof:GovernmentInstitution rdf:type owl:NamedIndividual ,
-                                   mof:GovernmentInstitution ;
-                          mof:aimsAt mof:Promotion .
+###  https://digimof.github.io/keGropius/ontoBau#Individual
+mof:Individual rdf:type owl:NamedIndividual ,
+                        mof:Person .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Isolation
@@ -925,7 +930,7 @@ mof:Kunstgewerbeschule rdf:type owl:NamedIndividual ,
 mof:ManualTraining rdf:type owl:NamedIndividual ,
                             mof:PersonalExperience ;
                    mof:involvedBy mof:Bauhaus ,
-                                  mof:EducationalProgram .
+                                  mof:EduProgram .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#MonumentDispropValue
@@ -943,8 +948,7 @@ mof:MonumentNoValue rdf:type owl:NamedIndividual ,
 ###  https://digimof.github.io/keGropius/ontoBau#Museum
 mof:Museum rdf:type owl:NamedIndividual ,
                     mof:ArtisticInstitution ,
-                    mof:GovernmentInstitution ;
-           mof:responsibleFor mof:EducationalChange .
+                    mof:GovernmentInstitution .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#NewlyFormedInstitutions
@@ -955,12 +959,6 @@ mof:NewlyFormedInstitutions rdf:type owl:NamedIndividual ,
                                          mof:RoyalPrussianStateArtCommission .
 
 
-###  https://digimof.github.io/keGropius/ontoBau#Person
-mof:Person rdf:type owl:NamedIndividual ,
-                    mof:Person ;
-           mof:mustRethink mof:Work .
-
-
 ###  https://digimof.github.io/keGropius/ontoBau#PieceOfWork
 mof:PieceOfWork rdf:type owl:NamedIndividual ,
                          mof:Form .
@@ -969,7 +967,7 @@ mof:PieceOfWork rdf:type owl:NamedIndividual ,
 ###  https://digimof.github.io/keGropius/ontoBau#Promotion
 mof:Promotion rdf:type owl:NamedIndividual ,
                        mof:SecondaryGoal ;
-              mof:fosteredBy mof:GovernmentInstitution .
+              mof:fosteredBy mof:GovernamentalInstitution .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#PublicNature
@@ -1027,31 +1025,15 @@ mof:Werklehre rdf:type owl:NamedIndividual ,
               mof:involvedBy mof:Bauhaus .
 
 
-###  https://digimof.github.io/keGropius/ontoBau#Work
-mof:Work rdf:type owl:NamedIndividual ,
-                  mof:Work .
+###  https://digimof.github.io/keGropius/ontoBau#WorkActivity
+mof:WorkActivity rdf:type owl:NamedIndividual ,
+                          mof:Work .
 
 
 ###  https://digimof.github.io/keGropius/ontoBau#Zeitgeist
 mof:Zeitgeist rdf:type owl:NamedIndividual ,
                        mof:Idea ;
               mof:embodiedIn mof:PieceOfWork .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-mof:EducationalProgram rdfs:comment "This class identifies the formative path followed by artists during their education. It is usually provided by an authoritative institution. In this ontology specifically it is described by Taut as the program that should be followed by newly formed institution to train new artists, therefore it is equivalent to what Gropius describes as \"New Approach\" (see class NewApproach)."@en .
-
-
-mof:GovernmentInstitution rdfs:comment "This class identifies an institution founded to organize, rule or manage people living in a society and their activities"@en .
-
-
-mof:Person rdfs:comment "This class identifies generic individuals"@en .
-
-
-mof:Work rdfs:comment "This class identifies any activity performed with a mental or manual effort. Usually people rely on it for their own survival"@en .
 
 
 #################################################################

@@ -296,10 +296,10 @@ mof:Dissolution rdf:type owl:NamedIndividual ,
                              mof:MonumentNoValue .
 
 
-###  https://digimof.github.io/keGropius/ontoTaut#EducationalChange
-mof:EducationalChange rdf:type owl:NamedIndividual ,
-                               mof:SecondaryGoal ;
-                      mof:fosteredBy mof:Museum .
+###  https://digimof.github.io/keGropius/ontoTaut#EduChange
+mof:EduChange rdf:type owl:NamedIndividual ,
+                       mof:SecondaryGoal ;
+              mof:fosteredBy mof:Museum .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#Freedom
@@ -336,7 +336,7 @@ mof:MonumentNoValue rdf:type owl:NamedIndividual ,
 mof:Museum rdf:type owl:NamedIndividual ,
                     mof:ArtisticInstitution ,
                     mof:GovernmentInstitution ;
-           mof:responsibleFor mof:EducationalChange .
+           mof:responsibleFor mof:EduChange .
 
 
 ###  https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions

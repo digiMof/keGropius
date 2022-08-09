@@ -728,14 +728,20 @@ mof:GrandDucalSaxonAcademyForPictorialArt rdf:type owl:NamedIndividual ,
                                           mof:changedInto mof:Bauhaus .
 
 
+###  https://digimof.github.io/keGropius/ontoGropius#Individual
+mof:Individual rdf:type owl:NamedIndividual ,
+                        mof:Person ;
+               mof:mustRethink mof:WorkActivity .
+
+
 ###  https://digimof.github.io/keGropius/ontoGropius#IndustrialDesigner
 mof:IndustrialDesigner rdf:type owl:NamedIndividual ,
                                 mof:NonArtist .
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct
-mof:IndustrialProduct rdf:type owl:NamedIndividual ,
-                               mof:IndustrialProduct .
+###  https://digimof.github.io/keGropius/ontoGropius#IndustrialObject
+mof:IndustrialObject rdf:type owl:NamedIndividual ,
+                              mof:IndustrialProduct .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#Instructor
@@ -780,12 +786,6 @@ mof:ManualTraining rdf:type owl:NamedIndividual ,
 ###  https://digimof.github.io/keGropius/ontoGropius#Originality
 mof:Originality rdf:type owl:NamedIndividual ,
                          mof:Quality .
-
-
-###  https://digimof.github.io/keGropius/ontoGropius#Person
-mof:Person rdf:type owl:NamedIndividual ,
-                    mof:Person ;
-           mof:mustRethink mof:Work .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#PieceOfWork
@@ -842,28 +842,15 @@ mof:Werklehre rdf:type owl:NamedIndividual ,
                        mof:BauhausCourse .
 
 
-###  https://digimof.github.io/keGropius/ontoGropius#Work
-mof:Work rdf:type owl:NamedIndividual ,
-                  mof:Work .
+###  https://digimof.github.io/keGropius/ontoGropius#WorkActivity
+mof:WorkActivity rdf:type owl:NamedIndividual ,
+                          mof:Work .
 
 
 ###  https://digimof.github.io/keGropius/ontoGropius#Zeitgeist
 mof:Zeitgeist rdf:type owl:NamedIndividual ,
                        mof:Idea ;
               mof:embodiedIn mof:PieceOfWork .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-mof:IndustrialProduct rdfs:comment "This class identifies a dialy-life product which is the result of an industrial process"@en .
-
-
-mof:Person rdfs:comment "This class identifies generic individuals"@en .
-
-
-mof:Work rdfs:comment "This class identifies any activity performed with a mental or manual effort. Usually people rely on it for their own survival"@en .
 
 
 #################################################################
