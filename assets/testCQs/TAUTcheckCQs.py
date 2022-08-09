@@ -77,7 +77,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?institution
 WHERE {
-    ?institution mof:responsibleFor mof:EducationalChange    
+    ?institution mof:responsibleFor mof:EduChange    
 }
 
 '''

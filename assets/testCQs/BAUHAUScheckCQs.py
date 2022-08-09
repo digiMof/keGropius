@@ -52,7 +52,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?demand
 WHERE {
 ?demand mof:involvedBy ?education .
-{?education rdf:type mof:EducationalProgram}
+{?education rdf:type mof:EduProgram}
 UNION
 {?education rdf:type mof:NewApproach}
 }
