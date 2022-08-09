@@ -1,0 +1,614 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Craft"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#FineArt"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Text"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Academy"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#FineArt"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalProgram"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SloganGoal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalProgram"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SloganGoal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Academy"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#FineArt"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Academy"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Error"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Academy"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Error"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Artist"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Nation"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalProgram"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Error"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Institution"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Nation"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Techne"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Text"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Craft"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#FineArt"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Text"
+    } ]
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Academy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies an artistic institution with follows the model of 19th century's academies, i.e. a clear separation between fine arts and crafts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArbeitsratProgram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Text" ],
+  "https://digimof.github.io/keGropius/ontoTaut#aimsAt" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Unity"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArbeitsratfürKunst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed" ],
+  "https://digimof.github.io/keGropius/ontoTaut#replaces" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArchitecture"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArts"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalPrussianStateArtCommission"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Artist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a person who deals with art in his professional life"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#NonArtist"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies an institution which as the consvervation, training and appreciation of arts as main vocation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Institution"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#BuildActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Craft", "https://digimof.github.io/keGropius/ontoTaut#FineArt" ],
+  "https://digimof.github.io/keGropius/ontoTaut#aimsAt" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#PublicNature"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Craft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a technique which usually does not produce work of art but object used in every-day life"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Techne"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#DailyObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies any product built without any artistic intent and used  by people in their ordinary life"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Dissolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal" ],
+  "https://digimof.github.io/keGropius/ontoTaut#involves" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#MonumentDispropValue"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#MonumentNoValue"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal" ],
+  "https://digimof.github.io/keGropius/ontoTaut#fosteredBy" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Museum"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalProgram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the formative path followed by artists during their education. It is usually provided by an authoritative institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Error",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies an invalid approach or misconception. In this ontology it usually involves an institution and a process (e.g. education)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#FineArt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a technique which allows to create a work of art"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Techne"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Freedom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal" ],
+  "https://digimof.github.io/keGropius/ontoTaut#replaces" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentDomination"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the goals stated by the manifesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentDomination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Error" ],
+  "https://digimof.github.io/keGropius/ontoTaut#replacedBy" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Freedom"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies an institution founded to organize, rule or manage people living in a society and their activities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Institution"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentalInstitution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution" ],
+  "https://digimof.github.io/keGropius/ontoTaut#aimsAt" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Promotion"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Institution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies any insitituiton. Its individuals and subclasses are of different nature and pursue different goals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Monument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies identifies a building, experienced every day by people but also product of architecture, one of the \"major arts\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#DailyObject"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#WorkOfArt"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#MonumentDispropValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Monument" ],
+  "https://digimof.github.io/keGropius/ontoTaut#involvedBy" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Dissolution"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#MonumentNoValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Monument" ],
+  "https://digimof.github.io/keGropius/ontoTaut#involvedBy" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Dissolution"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Museum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution", "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Allora qua ho una questione da sottoporvi: Museum è responsibleFor EducationalChange e ok, però nell'individual EducationalChange c'è fosteredBy Museum, quindi qua (nell'individuo Museum) il reasoner ha aggiunto automaticamente aimsAt EducationalChange... io ce lo lascerei anche perché ci sta mantenere il collegamento in entrambi i sensi tra Museum e EducationalChange, però mi rendo anche conto che responsibleFor è più adatto di aimsAt (almeno credo) -> allora però bisognerebbe modificate un attimo le object properties aggiungendo responsibleFor tra gli opposti di fosteredBy (e a questo punto aggiungere le classi mancanti tra i Range e i domains delle due object properties)"
+  } ],
+  "https://digimof.github.io/keGropius/ontoTaut#responsibleFor" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalChange"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Nation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a group of people considering himself as belonging to the same country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies an artistic institution which has been recently founded and usually does not recognize as valid the distinction between fine arts and crafts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed" ],
+  "https://digimof.github.io/keGropius/ontoTaut#replaces" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArchitecture"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArts"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalPrussianStateArtCommission"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#NonArtist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a person who does not deal with art in his professional life"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a generic human being"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies any object used and produced by a person or machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Promotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal" ],
+  "https://digimof.github.io/keGropius/ontoTaut#fosteredBy" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentalInstitution"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#PublicNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal" ],
+  "https://digimof.github.io/keGropius/ontoTaut#fosteredBy" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#BuildActivity"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArchitecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Academy" ],
+  "https://digimof.github.io/keGropius/ontoTaut#replacedBy" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Academy" ],
+  "https://digimof.github.io/keGropius/ontoTaut#replacedBy" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalPrussianStateArtCommission",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Academy" ],
+  "https://digimof.github.io/keGropius/ontoTaut#replacedBy" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a second-level goal: it is not the main aim of the text, but it is necessary condition to achieve the \"SloganGoal\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#SloganGoal"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#SloganGoal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the main goal of the manifesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Techne",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies any activity where a technique is applied to produce an object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Text",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies any documents. In this ontology, each text is analyzed from a pragmatical point of view, i.e. the effect he wants to achieve"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Unity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SloganGoal" ],
+  "https://digimof.github.io/keGropius/ontoTaut#fosteredBy" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArbeitsratProgram"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#WorkOfArt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies an object created with a specific artistic intent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#aimsAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#fosteredBy"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#fosteredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#involvedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#involves"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#involves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid21"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid25"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#replacedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoTaut#replaces"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#replaces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid40"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoTaut#responsibleFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid43"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid46"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+} ]

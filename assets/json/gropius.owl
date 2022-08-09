@@ -1,0 +1,1368 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vocabulary"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Effect"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Dualism"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Effect"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Form"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Idea"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Outcome"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Role"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid142",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Training"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Form"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Institution"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Outcome"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#PersonalExperience"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Dualism"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Effect"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Effect"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NonArtist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
+    }, {
+      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
+    } ]
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Academy" ],
+  "https://digimof.github.io/keGropius/ontoGropius#changedInto" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Bauhaus"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Kunstgewerbeschule"
+  } ],
+  "https://digimof.github.io/keGropius/ontoGropius#produces" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Isolation"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies an institution aimed at the education in the fine arts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Institution"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies any kind of activity performed by an individual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Aestheticism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Error" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Arts", "https://digimof.github.io/keGropius/ontoGropius#Crafts" ],
+  "https://digimof.github.io/keGropius/ontoGropius#dependsOn" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Cooperation"
+  } ],
+  "https://digimof.github.io/keGropius/ontoGropius#reflects" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Zeitgeist"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies who is directly involved in the Arts from a professional points of view"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NonArtist"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticDesigner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Artist" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a group of artist sharing similar ideas concerning the role e and the nature of Art"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a technique which allows to create a work of art"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Bauhaus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution" ],
+  "https://digimof.github.io/keGropius/ontoGropius#aimsAt" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Cooperation"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Union"
+  } ],
+  "https://digimof.github.io/keGropius/ontoGropius#involves" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Formlehre"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ManualTraining"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vorlehre"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Werklehre"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the courses held at the Bauhaus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#BuildingActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a work of art in which no barriers exist between the structural and the decorative arts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#WorkOfArt"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies additional courses that enhance the preparation of students"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the act or process of forming an idea or principle in own's mind"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a training method which follows the out-of-date guidelines of fine arts' academies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Training"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Cooperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Goal" ],
+  "https://digimof.github.io/keGropius/ontoGropius#basisOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Coordination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Goal" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a didacitic activity held by a teacher and attended by students"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a technique which allows to create a work of art"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativePower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Goal" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a work which emphasizes the mental quality of the worker (creativity, culture etc)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#MechanicWork"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Creativity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Quality" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies an object produced to answer to daily-life needs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Product"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Death",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Effect" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Dilettantism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Error" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Dualism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies believes that things are divided into two often very different or opposing parts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Effect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the consequences of a pecualiar cause"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies different kinds of mistake (in this ontology, mainly at a theoritical level)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Experimentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Goal" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Expressivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Quality" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#FolkArts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Arts" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Form",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the shape or appearance of something"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Formlehre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Formulae",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies aims pursued by specific actors (individuals, institution) with different means"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForArtsAndCrafts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Academy" ],
+  "https://digimof.github.io/keGropius/ontoGropius#changedInto" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Bauhaus"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForPictorialArt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Academy" ],
+  "https://digimof.github.io/keGropius/ontoGropius#changedInto" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Bauhaus"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Idea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies beliefs or opinions concerning a specific field of knowledge. It is usually considered as opposed to form"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#IndustrialDesigner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#NonArtist" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a dialy-life product which is the result of an industrial process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Institution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a peculiar kind of form, coinciding with an organization pursuing a specific aim"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Form"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Product"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Instructor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Artist" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Isolation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Effect" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Journeyman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Artist" ],
+  "https://digimof.github.io/keGropius/ontoGropius#mustRethink" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Knowledge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Quality" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Vocabulary" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Kunstgewerbeschule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution" ],
+  "https://digimof.github.io/keGropius/ontoGropius#aimsAt" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Cooperation"
+  } ],
+  "https://digimof.github.io/keGropius/ontoGropius#involves" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ManualTraining"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#MainGoal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the principal goal. it allows to create a hierarchy between the aims pursued by an actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ManualTraining",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#PersonalExperience" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#MechanicWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies a work which emphasizes the manual qualities of the worker"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies new training methods, aimed at improving academic education"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Training"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies an institution working in the art education fielding which refuses the division between fine arts and crafts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Institution"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#NonArtist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies who is not involved in the Arts from a professional points of view"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Originality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Quality" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Outcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the results of a process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Person" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies generic individuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://digimof.github.io/keGropius/ontoGropius#mustRethink" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#PersonalExperience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies all the manual activities included in the Bauhaus' educational program aimed at training new students"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vocabulary"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#PieceOfWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Form" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies any object that is the result of a specific work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Form"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Promotion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Effect" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies positive features of individuals, which are useful to pursue goals or accomplish tasks in a specific field"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the position or purpose of a thing in a specific context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Sovereign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#NonArtist" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Idea" ],
+  "https://digimof.github.io/keGropius/ontoGropius#embodiedIn" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#PieceOfWork"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Synthesis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Goal" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Talent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Quality" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Training",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies any form of educational activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Union",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#MainGoal" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ValueDiscounting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Error" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies all the acts of visualizing something (or also someone)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vocabulary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies the elements of form and colors and their structural laws needed to create a specific language of construction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vorlehre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse" ],
+  "https://digimof.github.io/keGropius/ontoGropius#improves" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Creativity"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Expressivity"
+  }, {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Originality"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Werklehre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse" ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Work" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies any activity performed with a mental or manual effort. Usually people rely on it for their own survival"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#WorkOfArt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class identifies an object which is the result of an artistic process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Product"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Zeitgeist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Idea" ],
+  "https://digimof.github.io/keGropius/ontoGropius#embodiedIn" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#PieceOfWork"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#against",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#aimsAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#basisOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#dependsOn"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#changedInto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#dependsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid24"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid30"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#embodiedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Idea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid38"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#emphasizedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid41"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#emphasizes"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#emphasizes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid44"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#failedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vocabulary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#followedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid47"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid51"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#follows"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#follows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid54"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid57"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#formalizes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid61"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Idea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#founded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#freeFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid64"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid68"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#hasDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#hasOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Outcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid71"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#improves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid74"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid78"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#influencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#involves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid84"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid90"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#joins",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#mustFollow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Qua le proposte del reasoner le ignorerei tutte (far partire il reasoner per verificare)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid98"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#follows"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#mustHaveRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#hasRole"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#mustRethink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid101"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid104"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#prerequisitFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid107"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#produces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid110"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid114"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#reflects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid119"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Idea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://digimof.github.io/keGropius/ontoGropius#simultaneousTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Qua il reasoner ha proposto di aggiungere InverseOf simultaneousTo, l'ho aggiunto perché mi sembra abbia senso (domains e ranges sono incrociati: conceptualization è simultaneousTo visualization e viceversa), inoltre la proprietà è simmetrica quindi ci sta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid122"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid125"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://digimof.github.io/keGropius/ontoGropius#simultaneousTo"
+  } ]
+} ]
