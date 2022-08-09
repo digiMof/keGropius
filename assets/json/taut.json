@@ -1,614 +1,2306 @@
-[ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Craft"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#FineArt"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Text"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Academy"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#FineArt"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalProgram"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SloganGoal"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalProgram"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SloganGoal"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid25",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Academy"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#FineArt"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Academy"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Error"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid37",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid40",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Academy"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Error"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid43",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Artist"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid46",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Nation"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid49",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalProgram"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Error"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Institution"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Nation"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Techne"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Text"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Craft"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#FineArt"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoTaut#Text"
-    } ]
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Academy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies an artistic institution with follows the model of 19th century's academies, i.e. a clear separation between fine arts and crafts"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArbeitsratProgram",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Text" ],
-  "https://digimof.github.io/keGropius/ontoTaut#aimsAt" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Unity"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArbeitsratfürKunst",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed" ],
-  "https://digimof.github.io/keGropius/ontoTaut#replaces" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArchitecture"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArts"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalPrussianStateArtCommission"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Artist",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a person who deals with art in his professional life"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#NonArtist"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies an institution which as the consvervation, training and appreciation of arts as main vocation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Institution"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#BuildActivity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Craft", "https://digimof.github.io/keGropius/ontoTaut#FineArt" ],
-  "https://digimof.github.io/keGropius/ontoTaut#aimsAt" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#PublicNature"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Craft",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a technique which usually does not produce work of art but object used in every-day life"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Techne"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#DailyObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies any product built without any artistic intent and used  by people in their ordinary life"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Dissolution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal" ],
-  "https://digimof.github.io/keGropius/ontoTaut#involves" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#MonumentDispropValue"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#MonumentNoValue"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalChange",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal" ],
-  "https://digimof.github.io/keGropius/ontoTaut#fosteredBy" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Museum"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalProgram",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the formative path followed by artists during their education. It is usually provided by an authoritative institution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Error",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies an invalid approach or misconception. In this ontology it usually involves an institution and a process (e.g. education)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#FineArt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a technique which allows to create a work of art"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Techne"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Freedom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal" ],
-  "https://digimof.github.io/keGropius/ontoTaut#replaces" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentDomination"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the goals stated by the manifesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentDomination",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Error" ],
-  "https://digimof.github.io/keGropius/ontoTaut#replacedBy" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Freedom"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies an institution founded to organize, rule or manage people living in a society and their activities"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Institution"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentalInstitution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution" ],
-  "https://digimof.github.io/keGropius/ontoTaut#aimsAt" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Promotion"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Institution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies any insitituiton. Its individuals and subclasses are of different nature and pursue different goals"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Monument",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies identifies a building, experienced every day by people but also product of architecture, one of the \"major arts\""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#DailyObject"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#WorkOfArt"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#MonumentDispropValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Monument" ],
-  "https://digimof.github.io/keGropius/ontoTaut#involvedBy" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Dissolution"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#MonumentNoValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Monument" ],
-  "https://digimof.github.io/keGropius/ontoTaut#involvedBy" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Dissolution"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Museum",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution", "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Allora qua ho una questione da sottoporvi: Museum è responsibleFor EducationalChange e ok, però nell'individual EducationalChange c'è fosteredBy Museum, quindi qua (nell'individuo Museum) il reasoner ha aggiunto automaticamente aimsAt EducationalChange... io ce lo lascerei anche perché ci sta mantenere il collegamento in entrambi i sensi tra Museum e EducationalChange, però mi rendo anche conto che responsibleFor è più adatto di aimsAt (almeno credo) -> allora però bisognerebbe modificate un attimo le object properties aggiungendo responsibleFor tra gli opposti di fosteredBy (e a questo punto aggiungere le classi mancanti tra i Range e i domains delle due object properties)"
-  } ],
-  "https://digimof.github.io/keGropius/ontoTaut#responsibleFor" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#EducationalChange"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Nation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a group of people considering himself as belonging to the same country"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies an artistic institution which has been recently founded and usually does not recognize as valid the distinction between fine arts and crafts"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed" ],
-  "https://digimof.github.io/keGropius/ontoTaut#replaces" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArchitecture"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArts"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalPrussianStateArtCommission"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#NonArtist",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a person who does not deal with art in his professional life"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Person",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a generic human being"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies any object used and produced by a person or machine"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Promotion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal" ],
-  "https://digimof.github.io/keGropius/ontoTaut#fosteredBy" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#GovernmentalInstitution"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#PublicNature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal" ],
-  "https://digimof.github.io/keGropius/ontoTaut#fosteredBy" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#BuildActivity"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArchitecture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Academy" ],
-  "https://digimof.github.io/keGropius/ontoTaut#replacedBy" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Academy" ],
-  "https://digimof.github.io/keGropius/ontoTaut#replacedBy" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#RoyalPrussianStateArtCommission",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#Academy" ],
-  "https://digimof.github.io/keGropius/ontoTaut#replacedBy" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a second-level goal: it is not the main aim of the text, but it is necessary condition to achieve the \"SloganGoal\""
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#SloganGoal"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#SloganGoal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the main goal of the manifesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Techne",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies any activity where a technique is applied to produce an object"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Text",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies any documents. In this ontology, each text is analyzed from a pragmatical point of view, i.e. the effect he wants to achieve"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#Unity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoTaut#SloganGoal" ],
-  "https://digimof.github.io/keGropius/ontoTaut#fosteredBy" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#ArbeitsratProgram"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#WorkOfArt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies an object created with a specific artistic intent"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Product"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#aimsAt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#fosteredBy"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#fosteredBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#Goal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid6"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#involvedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid11"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid17"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#involves"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#involves",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid21"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid25"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#replacedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid31"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid34"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoTaut#replaces"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#replaces",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid37"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid40"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoTaut#responsibleFor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid43"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid46"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-} ]
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined",
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://www.w3.org/2002/07/owl",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "https://digimof.github.io/keGropius/ontoTaut"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "mof": "https://digimof.github.io/keGropius/ontoTaut#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "https://digimof.github.io/keGropius/ontoTaut",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri": "https://digimof.github.io/keGropius/ontoTaut"
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.21",
+      "translation": [
+        394.54,
+        170.95
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "34",
+      "type": "owl:Class"
+    },
+    {
+      "id": "35",
+      "type": "owl:Class"
+    },
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "29",
+      "type": "owl:Class"
+    },
+    {
+      "id": "48",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "33",
+      "type": "owl:Class"
+    },
+    {
+      "id": "16",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "36",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "14",
+      "type": "owl:Class"
+    },
+    {
+      "id": "51",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "52",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "53",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "54",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "56",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "57",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "58",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "59",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "60",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "61",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "63",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "67",
+      "type": "owl:Class"
+    },
+    {
+      "id": "55",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "37",
+      "type": "owl:Class"
+    },
+    {
+      "id": "49",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "32",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "0",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Institution",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Institution"
+      },
+      "comment": {
+        "en": "This class identifies any insitituiton. Its individuals and subclasses are of different nature and pursue different goals"
+      },
+      "pos": [
+        767.39,
+        -538.02
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Monument",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Monument"
+      },
+      "comment": {
+        "en": "This class identifies identifies a building, experienced every day by people but also product of architecture, one of the \"major arts\""
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#MonumentDispropValue",
+          "labels": {
+            "IRI-based": "MonumentDispropValue"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#MonumentNoValue",
+          "labels": {
+            "IRI-based": "MonumentNoValue"
+          }
+        }
+      ],
+      "pos": [
+        1705.24,
+        1249.22
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Artist",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Artist"
+      },
+      "comment": {
+        "en": "This class identifies a person who deals with art in his professional life"
+      },
+      "pos": [
+        490.6,
+        538.41
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Text",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Text"
+      },
+      "comment": {
+        "en": "This class identifies any documents. In this ontology, each text is analyzed from a pragmatical point of view, i.e. the effect he wants to achieve"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#ArbeitsratProgram",
+          "labels": {
+            "IRI-based": "ArbeitsratProgram"
+          }
+        }
+      ],
+      "pos": [
+        -377.04,
+        -247.4
+      ]
+    },
+    {
+      "id": "1",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#ArtisticInstitution",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "ArtisticInstitution"
+      },
+      "comment": {
+        "en": "This class identifies an institution which as the consvervation, training and appreciation of arts as main vocation"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#Museum",
+          "labels": {
+            "IRI-based": "Museum"
+          }
+        }
+      ],
+      "pos": [
+        1091.68,
+        -244.01
+      ]
+    },
+    {
+      "id": "34",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Craft",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Craft"
+      },
+      "comment": {
+        "en": "This class identifies a technique which usually does not produce work of art but object used in every-day life"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#BuildActivity",
+          "labels": {
+            "IRI-based": "BuildActivity"
+          }
+        }
+      ],
+      "pos": [
+        -274.82,
+        -398.92
+      ]
+    },
+    {
+      "id": "35",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Error",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Error"
+      },
+      "comment": {
+        "en": "This class identifies an invalid approach or misconception. In this ontology it usually involves an institution and a process (e.g. education)"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#GovernmentDomination",
+          "labels": {
+            "IRI-based": "GovernmentDomination"
+          }
+        }
+      ],
+      "pos": [
+        1572.18,
+        -330.38
+      ]
+    },
+    {
+      "id": "7",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#WorkOfArt",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "WorkOfArt"
+      },
+      "comment": {
+        "en": "This class identifies an object created with a specific artistic intent"
+      },
+      "pos": [
+        1340.4,
+        1219.35
+      ]
+    },
+    {
+      "id": "29",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Goal",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Goal"
+      },
+      "comment": {
+        "en": "This class identifies the goals stated by the manifesto"
+      },
+      "pos": [
+        -93.12,
+        453.39
+      ]
+    },
+    {
+      "id": "48",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        -61.06,
+        -22.08
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#NewlyFormed",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "NewlyFormed"
+      },
+      "comment": {
+        "en": "This class identifies an artistic institution which has been recently founded and usually does not recognize as valid the distinction between fine arts and crafts"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#NewlyFormedInstitutions",
+          "labels": {
+            "IRI-based": "NewlyFormedInstitutions"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#ArbeitsratfürKunst",
+          "labels": {
+            "IRI-based": "ArbeitsratfürKunst"
+          }
+        }
+      ],
+      "pos": [
+        1197.63,
+        142.57
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        -919.72,
+        475.37
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#SecondaryGoal",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "SecondaryGoal"
+      },
+      "comment": {
+        "en": "This class identifies a second-level goal: it is not the main aim of the text, but it is necessary condition to achieve the \"SloganGoal\""
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#EducationalChange",
+          "labels": {
+            "IRI-based": "EducationalChange"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#Dissolution",
+          "labels": {
+            "IRI-based": "Dissolution"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#Freedom",
+          "labels": {
+            "IRI-based": "Freedom"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#Promotion",
+          "labels": {
+            "IRI-based": "Promotion"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#PublicNature",
+          "labels": {
+            "IRI-based": "PublicNature"
+          }
+        }
+      ],
+      "pos": [
+        380.96,
+        559.36
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Nation",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Nation"
+      },
+      "comment": {
+        "en": "This class identifies a group of people considering himself as belonging to the same country"
+      },
+      "pos": [
+        268.3,
+        -152.55
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Techne",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Techne"
+      },
+      "comment": {
+        "en": "This class identifies any activity where a technique is applied to produce an object"
+      },
+      "pos": [
+        10.85,
+        -115.93
+      ]
+    },
+    {
+      "id": "51",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        136.15,
+        229.1
+      ]
+    },
+    {
+      "id": "52",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        466.49,
+        36.87
+      ]
+    },
+    {
+      "id": "53",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        758.74,
+        634.81
+      ]
+    },
+    {
+      "id": "54",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        309.12,
+        967.74
+      ]
+    },
+    {
+      "id": "56",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        192.54,
+        998.14
+      ]
+    },
+    {
+      "id": "57",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        821.02,
+        339.45
+      ]
+    },
+    {
+      "id": "58",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        39,
+        -260.54
+      ]
+    },
+    {
+      "id": "59",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        831.88,
+        556.09
+      ]
+    },
+    {
+      "id": "60",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1575.98,
+        48.52
+      ]
+    },
+    {
+      "id": "61",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1232.5,
+        -133.9
+      ]
+    },
+    {
+      "id": "63",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        822.12,
+        136.31
+      ]
+    },
+    {
+      "id": "67",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#NonArtist",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "NonArtist"
+      },
+      "comment": {
+        "en": "This class identifies a person who does not deal with art in his professional life"
+      },
+      "pos": [
+        711,
+        1366.86
+      ]
+    },
+    {
+      "id": "55",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#EducationalProgram",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "EducationalProgram"
+      },
+      "comment": {
+        "en": "This class identifies the formative path followed by artists during their education. It is usually provided by an authoritative institution"
+      },
+      "pos": [
+        -10.88,
+        1260.21
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#GovernmentInstitution",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "GovernmentInstitution"
+      },
+      "comment": {
+        "en": "This class identifies an institution founded to organize, rule or manage people living in a society and their activities"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#GovernmentalInstitution",
+          "labels": {
+            "IRI-based": "GovernmentalInstitution"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#Museum",
+          "labels": {
+            "IRI-based": "Museum"
+          }
+        }
+      ],
+      "pos": [
+        352.26,
+        -387.57
+      ]
+    },
+    {
+      "id": "37",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#SloganGoal",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "SloganGoal"
+      },
+      "comment": {
+        "en": "This class identifies the main goal of the manifesto"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#Unity",
+          "labels": {
+            "IRI-based": "Unity"
+          }
+        }
+      ],
+      "pos": [
+        -135.87,
+        873.84
+      ]
+    },
+    {
+      "id": "49",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#FineArt",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "FineArt"
+      },
+      "comment": {
+        "en": "This class identifies a technique which allows to create a work of art"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#BuildActivity",
+          "labels": {
+            "IRI-based": "BuildActivity"
+          }
+        }
+      ],
+      "pos": [
+        376.69,
+        183.8
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#DailyObject",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "DailyObject"
+      },
+      "comment": {
+        "en": "This class identifies any product built without any artistic intent and used  by people in their ordinary life"
+      },
+      "pos": [
+        1546.74,
+        924.65
+      ]
+    },
+    {
+      "id": "4",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Person",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Person"
+      },
+      "comment": {
+        "en": "This class identifies a generic human being"
+      },
+      "pos": [
+        703.16,
+        972.33
+      ]
+    },
+    {
+      "id": "32",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Academy",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Academy"
+      },
+      "comment": {
+        "en": "This class identifies an artistic institution with follows the model of 19th century's academies, i.e. a clear separation between fine arts and crafts"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#RoyalPrussianStateArtCommission",
+          "labels": {
+            "IRI-based": "RoyalPrussianStateArtCommission"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArchitecture",
+          "labels": {
+            "IRI-based": "RoyalAcademyofArchitecture"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoTaut#RoyalAcademyofArts",
+          "labels": {
+            "IRI-based": "RoyalAcademyofArts"
+          }
+        }
+      ],
+      "pos": [
+        1187.49,
+        269.12
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#Product",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "Product"
+      },
+      "comment": {
+        "en": "This class identifies any object used and produced by a person or machine"
+      },
+      "pos": [
+        1152.6,
+        869.21
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "3",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "10",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "13",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "15",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "23",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "24",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "25",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "26",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "27",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "28",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "30",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "31",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "38",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "39",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "40",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "41",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "42",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "43",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "44",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "45",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "46",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "47",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "50",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "19",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "62",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "18",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "64",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "65",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "66",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "68",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "20",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "69",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "70",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "71",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "72",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "17",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "73",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "74",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "75",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "76",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "77",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "78",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "22",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "79",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "80",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "81",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "82",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "83",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "84",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "85",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "86",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "87",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "88",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "89",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "90",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "91",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "92",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "93",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "94",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "95",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "21",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "GENERATED-UNION-48-11-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-48-49-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-48-2-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-48-34-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-51-12-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-51-36-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-52-9-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-52-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-53-32-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-53-36-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-53-49-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-53-4-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-53-5-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-54-36-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-54-55-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-54-37-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-56-36-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-56-55-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-56-37-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-57-33-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-57-36-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-58-11-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-58-49-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-58-2-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-58-34-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-59-32-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-59-36-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-59-49-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-59-4-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-59-5-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-60-32-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-60-35-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-61-32-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-61-35-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-63-33-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-63-36-1",
+      "type": "setOperatorProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "3",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "4",
+      "range": "5"
+    },
+    {
+      "id": "10",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "12"
+    },
+    {
+      "id": "13",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "14"
+    },
+    {
+      "id": "15",
+      "iri": "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "baseIri": "http://www.w3.org/2002/07/owl",
+      "label": {
+        "IRI-based": "topObjectProperty"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "16",
+      "range": "16",
+      "subproperty": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22"
+      ],
+      "pos": [
+        -941.57,
+        322.81
+      ]
+    },
+    {
+      "id": "23",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "0",
+      "range": "11"
+    },
+    {
+      "id": "24",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "0",
+      "range": "14"
+    },
+    {
+      "id": "25",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "5"
+    },
+    {
+      "id": "26",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "4"
+    },
+    {
+      "id": "27",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "0",
+      "range": "12"
+    },
+    {
+      "id": "28",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "11"
+    },
+    {
+      "id": "30",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "0",
+      "range": "5"
+    },
+    {
+      "id": "31",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "0",
+      "range": "4"
+    },
+    {
+      "id": "38",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "5"
+    },
+    {
+      "id": "39",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "4"
+    },
+    {
+      "id": "40",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "14"
+    },
+    {
+      "id": "41",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "35"
+    },
+    {
+      "id": "42",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "14",
+      "range": "35"
+    },
+    {
+      "id": "43",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "12"
+    },
+    {
+      "id": "44",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "0",
+      "range": "29"
+    },
+    {
+      "id": "45",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "35"
+    },
+    {
+      "id": "46",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "5",
+      "range": "35"
+    },
+    {
+      "id": "47",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "4",
+      "range": "35"
+    },
+    {
+      "id": "50",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "1",
+      "range": "0",
+      "pos": [
+        925.63,
+        -394.56
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#aimsAt",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "aimsAt"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "48",
+      "range": "29",
+      "superproperty": [
+        "15"
+      ],
+      "inverse": "18",
+      "pos": [
+        -77.09,
+        215.65
+      ]
+    },
+    {
+      "id": "62",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#replacedBy",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "replacedBy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "61",
+      "range": "63",
+      "inverse": "21",
+      "pos": [
+        1027.31,
+        1.2
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#fosteredBy",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "fosteredBy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "29",
+      "range": "48",
+      "superproperty": [
+        "15"
+      ],
+      "inverse": "19"
+    },
+    {
+      "id": "64",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "36",
+      "range": "37"
+    },
+    {
+      "id": "65",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "14"
+    },
+    {
+      "id": "66",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "67",
+      "range": "9"
+    },
+    {
+      "id": "68",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "33",
+      "range": "32"
+    },
+    {
+      "id": "20",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#involvedBy",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "involvedBy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "53",
+      "range": "54",
+      "superproperty": [
+        "15"
+      ],
+      "inverse": "22",
+      "pos": [
+        533.93,
+        801.27
+      ]
+    },
+    {
+      "id": "69",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "4"
+    },
+    {
+      "id": "70",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "14",
+      "range": "4"
+    },
+    {
+      "id": "71",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "5"
+    },
+    {
+      "id": "72",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "14",
+      "range": "5"
+    },
+    {
+      "id": "17",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#responsibleFor",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "responsibleFor"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "52",
+      "range": "51",
+      "superproperty": [
+        "15"
+      ],
+      "pos": [
+        301.32,
+        132.99
+      ]
+    },
+    {
+      "id": "73",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "5",
+      "pos": [
+        1349.67,
+        896.93
+      ]
+    },
+    {
+      "id": "74",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "7",
+      "range": "5",
+      "pos": [
+        1246.5,
+        1044.28
+      ]
+    },
+    {
+      "id": "75",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "6",
+      "range": "8",
+      "pos": [
+        1622.96,
+        1080.74
+      ]
+    },
+    {
+      "id": "76",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "34",
+      "range": "14",
+      "pos": [
+        -128.24,
+        -253.71
+      ]
+    },
+    {
+      "id": "77",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "4",
+      "pos": [
+        596.88,
+        755.37
+      ]
+    },
+    {
+      "id": "78",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "67",
+      "range": "4",
+      "pos": [
+        707.08,
+        1169.59
+      ]
+    },
+    {
+      "id": "22",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#involves",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "involves"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "54",
+      "range": "53",
+      "superproperty": [
+        "15"
+      ],
+      "inverse": "20"
+    },
+    {
+      "id": "79",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "37",
+      "range": "29",
+      "pos": [
+        -113.96,
+        658.37
+      ]
+    },
+    {
+      "id": "80",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "36",
+      "range": "29",
+      "pos": [
+        134.49,
+        504.26
+      ]
+    },
+    {
+      "id": "81",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "49",
+      "range": "14",
+      "pos": [
+        189.69,
+        30.59
+      ]
+    },
+    {
+      "id": "82",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "32",
+      "range": "1",
+      "pos": [
+        1139.07,
+        9.83
+      ]
+    },
+    {
+      "id": "83",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "2",
+      "range": "0",
+      "pos": [
+        566.31,
+        -465.15
+      ]
+    },
+    {
+      "id": "84",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "6",
+      "range": "7",
+      "pos": [
+        1515.95,
+        1233.72
+      ]
+    },
+    {
+      "id": "85",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "33",
+      "range": "1",
+      "pos": [
+        1144.23,
+        -52.28
+      ]
+    },
+    {
+      "id": "86",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "0",
+      "range": "55"
+    },
+    {
+      "id": "87",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "55"
+    },
+    {
+      "id": "88",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "4",
+      "range": "55"
+    },
+    {
+      "id": "89",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "5",
+      "range": "55"
+    },
+    {
+      "id": "90",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "14",
+      "range": "55"
+    },
+    {
+      "id": "91",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "55"
+    },
+    {
+      "id": "92",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "35"
+    },
+    {
+      "id": "93",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "0",
+      "range": "35"
+    },
+    {
+      "id": "94",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "55",
+      "range": "35"
+    },
+    {
+      "id": "95",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "55"
+    },
+    {
+      "id": "21",
+      "iri": "https://digimof.github.io/keGropius/ontoTaut#replaces",
+      "baseIri": "https://digimof.github.io/keGropius/ontoTaut",
+      "label": {
+        "IRI-based": "replaces"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "63",
+      "range": "61",
+      "superproperty": [
+        "15"
+      ],
+      "inverse": "62"
+    },
+    {
+      "id": "GENERATED-UNION-48-11-0",
+      "domain": "48",
+      "range": "11",
+      "pos": [
+        -214.76,
+        -131.68
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-48-49-1",
+      "domain": "48",
+      "range": "49",
+      "pos": [
+        153.04,
+        78.61
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-48-2-2",
+      "domain": "48",
+      "range": "2",
+      "pos": [
+        140.44,
+        -200.26
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-48-34-3",
+      "domain": "48",
+      "range": "34",
+      "pos": [
+        -165.34,
+        -205.91
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-51-12-0",
+      "domain": "51",
+      "range": "12",
+      "pos": [
+        202.23,
+        38.28
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-51-36-1",
+      "domain": "51",
+      "range": "36",
+      "pos": [
+        252.8,
+        386.46
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-52-9-0",
+      "domain": "52",
+      "range": "9",
+      "pos": [
+        478.55,
+        287.64
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-52-2-1",
+      "domain": "52",
+      "range": "2",
+      "pos": [
+        411.17,
+        -168.69
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-53-32-0",
+      "domain": "53",
+      "range": "32",
+      "pos": [
+        967,
+        457.18
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-53-36-1",
+      "domain": "53",
+      "range": "36",
+      "pos": [
+        579.33,
+        598.98
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-53-49-2",
+      "domain": "53",
+      "range": "49",
+      "pos": [
+        571.12,
+        413.32
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-53-4-3",
+      "domain": "53",
+      "range": "4",
+      "pos": [
+        730.95,
+        803.57
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-53-5-4",
+      "domain": "53",
+      "range": "5",
+      "pos": [
+        955.67,
+        752.01
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-54-36-0",
+      "domain": "54",
+      "range": "36",
+      "pos": [
+        343.37,
+        773.07
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-54-55-1",
+      "domain": "54",
+      "range": "55",
+      "pos": [
+        149.12,
+        1113.98
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-54-37-2",
+      "domain": "54",
+      "range": "37",
+      "pos": [
+        91.79,
+        921.88
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-56-36-0",
+      "domain": "56",
+      "range": "36",
+      "pos": [
+        282.94,
+        787.63
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-56-55-1",
+      "domain": "56",
+      "range": "55",
+      "pos": [
+        90.83,
+        1129.18
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-56-37-2",
+      "domain": "56",
+      "range": "37",
+      "pos": [
+        33.27,
+        937.86
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-57-33-0",
+      "domain": "57",
+      "range": "33",
+      "pos": [
+        1003.22,
+        244.2
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-57-36-1",
+      "domain": "57",
+      "range": "36",
+      "pos": [
+        609.64,
+        445.08
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-58-11-0",
+      "domain": "58",
+      "range": "11",
+      "pos": [
+        -163.75,
+        -254.14
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-58-49-1",
+      "domain": "58",
+      "range": "49",
+      "pos": [
+        204.65,
+        -42.57
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-58-2-2",
+      "domain": "58",
+      "range": "2",
+      "pos": [
+        189.24,
+        -321.46
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-58-34-3",
+      "domain": "58",
+      "range": "34",
+      "pos": [
+        -113.09,
+        -327.6
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-59-32-0",
+      "domain": "59",
+      "range": "32",
+      "pos": [
+        1003.42,
+        417.65
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-59-36-1",
+      "domain": "59",
+      "range": "36",
+      "pos": [
+        616.09,
+        557.65
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-59-49-2",
+      "domain": "59",
+      "range": "49",
+      "pos": [
+        608.36,
+        373.28
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-59-4-3",
+      "domain": "59",
+      "range": "4",
+      "pos": [
+        767.52,
+        764.21
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-59-5-4",
+      "domain": "59",
+      "range": "5",
+      "pos": [
+        992.24,
+        712.65
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-60-32-0",
+      "domain": "60",
+      "range": "32",
+      "pos": [
+        1388.73,
+        154.85
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-60-35-1",
+      "domain": "60",
+      "range": "35",
+      "pos": [
+        1574.13,
+        -135.66
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-61-32-0",
+      "domain": "61",
+      "range": "32",
+      "pos": [
+        1210.89,
+        59.61
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-61-35-1",
+      "domain": "61",
+      "range": "35",
+      "pos": [
+        1397.77,
+        -229.5
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-63-33-0",
+      "domain": "63",
+      "range": "33",
+      "pos": [
+        1002.98,
+        139.32
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-63-36-1",
+      "domain": "63",
+      "range": "36",
+      "pos": [
+        608.52,
+        341.14
+      ]
+    }
+  ]
+}

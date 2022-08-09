@@ -1,1368 +1,5383 @@
-[ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid101",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid104",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vocabulary"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid107",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid110",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid114",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Effect"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid119",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid122",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid125",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid128",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Dualism"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Effect"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Form"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Idea"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Outcome"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Role"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid142",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Training"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid38",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Form"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Institution"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid41",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid47",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid51",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid54",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid57",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid61",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid64",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid68",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid71",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid74",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid78",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Outcome"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#PersonalExperience"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid84",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Dualism"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Effect"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid90",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Effect"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#NonArtist"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid98",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts"
-    }, {
-      "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts"
-    } ]
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academia",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Academy" ],
-  "https://digimof.github.io/keGropius/ontoGropius#changedInto" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Bauhaus"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Kunstgewerbeschule"
-  } ],
-  "https://digimof.github.io/keGropius/ontoGropius#produces" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Isolation"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies an institution aimed at the education in the fine arts"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Institution"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies any kind of activity performed by an individual"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Aestheticism",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Error" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Arts", "https://digimof.github.io/keGropius/ontoGropius#Crafts" ],
-  "https://digimof.github.io/keGropius/ontoGropius#dependsOn" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Cooperation"
-  } ],
-  "https://digimof.github.io/keGropius/ontoGropius#reflects" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Zeitgeist"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies who is directly involved in the Arts from a professional points of view"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NonArtist"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticDesigner",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Artist" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a group of artist sharing similar ideas concerning the role e and the nature of Art"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Arts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a technique which allows to create a work of art"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Bauhaus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution" ],
-  "https://digimof.github.io/keGropius/ontoGropius#aimsAt" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Cooperation"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Union"
-  } ],
-  "https://digimof.github.io/keGropius/ontoGropius#involves" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Formlehre"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ManualTraining"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vorlehre"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Werklehre"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the courses held at the Bauhaus"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#BuildingActivity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a work of art in which no barriers exist between the structural and the decorative arts"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#WorkOfArt"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies additional courses that enhance the preparation of students"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Conceptualization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the act or process of forming an idea or principle in own's mind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a training method which follows the out-of-date guidelines of fine arts' academies"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Training"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Cooperation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Goal" ],
-  "https://digimof.github.io/keGropius/ontoGropius#basisOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Coordination",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Goal" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a didacitic activity held by a teacher and attended by students"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Crafts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a technique which allows to create a work of art"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativePower",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Goal" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a work which emphasizes the mental quality of the worker (creativity, culture etc)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#MechanicWork"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Creativity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Quality" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies an object produced to answer to daily-life needs"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Product"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Death",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Effect" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Dilettantism",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Error" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Dualism",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies believes that things are divided into two often very different or opposing parts"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Effect",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the consequences of a pecualiar cause"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies different kinds of mistake (in this ontology, mainly at a theoritical level)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Experimentation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Goal" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Expressivity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Quality" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#FolkArts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Arts" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Form",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the shape or appearance of something"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Formlehre",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Formulae",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies aims pursued by specific actors (individuals, institution) with different means"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForArtsAndCrafts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Academy" ],
-  "https://digimof.github.io/keGropius/ontoGropius#changedInto" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Bauhaus"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForPictorialArt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Academy" ],
-  "https://digimof.github.io/keGropius/ontoGropius#changedInto" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Bauhaus"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Idea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies beliefs or opinions concerning a specific field of knowledge. It is usually considered as opposed to form"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#IndustrialDesigner",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#NonArtist" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a dialy-life product which is the result of an industrial process"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Institution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a peculiar kind of form, coinciding with an organization pursuing a specific aim"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Form"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Product"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Instructor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Artist" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Isolation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Effect" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Journeyman",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Artist" ],
-  "https://digimof.github.io/keGropius/ontoGropius#mustRethink" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Knowledge",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Quality" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Vocabulary" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Kunstgewerbeschule",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution" ],
-  "https://digimof.github.io/keGropius/ontoGropius#aimsAt" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Cooperation"
-  } ],
-  "https://digimof.github.io/keGropius/ontoGropius#involves" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ManualTraining"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#MainGoal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the principal goal. it allows to create a hierarchy between the aims pursued by an actor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Goal"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ManualTraining",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#PersonalExperience" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#MechanicWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies a work which emphasizes the manual qualities of the worker"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies new training methods, aimed at improving academic education"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Training"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies an institution working in the art education fielding which refuses the division between fine arts and crafts"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Institution"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#NonArtist",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies who is not involved in the Arts from a professional points of view"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Originality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Quality" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Outcome",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the results of a process"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Person",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Person" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies generic individuals"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ],
-  "https://digimof.github.io/keGropius/ontoGropius#mustRethink" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#PersonalExperience",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies all the manual activities included in the Bauhaus' educational program aimed at training new students"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vocabulary"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#PieceOfWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Form" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Product",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies any object that is the result of a specific work"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Form"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Promotion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Effect" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Quality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies positive features of individuals, which are useful to pursue goals or accomplish tasks in a specific field"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Role",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the position or purpose of a thing in a specific context"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Sovereign",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#NonArtist" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Space",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Idea" ],
-  "https://digimof.github.io/keGropius/ontoGropius#embodiedIn" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#PieceOfWork"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Synthesis",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Goal" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Talent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Quality" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Training",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies any form of educational activity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Union",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#MainGoal" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#ValueDiscounting",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Error" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Visualization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies all the acts of visualizing something (or also someone)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vocabulary",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies the elements of form and colors and their structural laws needed to create a specific language of construction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vorlehre",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse" ],
-  "https://digimof.github.io/keGropius/ontoGropius#improves" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Creativity"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Expressivity"
-  }, {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Originality"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Werklehre",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse" ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Work",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Work" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies any activity performed with a mental or manual effort. Usually people rely on it for their own survival"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Acitivity"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#WorkOfArt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This class identifies an object which is the result of an artistic process"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Product"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#Zeitgeist",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://digimof.github.io/keGropius/ontoGropius#Idea" ],
-  "https://digimof.github.io/keGropius/ontoGropius#embodiedIn" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#PieceOfWork"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#against",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Error"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#aimsAt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid4"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid7"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#basisOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid10"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid18"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#dependsOn"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#changedInto",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#dependsOn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid24"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid30"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#embodiedIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Idea"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid38"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#emphasizedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid41"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#emphasizes"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#emphasizes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid44"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#failedAt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Academy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Vocabulary"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#followedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid47"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid51"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#follows"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#follows",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid54"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid57"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#formalizes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid61"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Idea"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#founded",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#freeFrom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid64"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid68"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#hasDuration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#int"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#hasOutcome",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Course"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Outcome"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#hasRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid71"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Role"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#improves",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid74"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid78"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#influencedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#involves",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid84"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid90"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#joins",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Artist"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#mustFollow",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Qua le proposte del reasoner le ignorerei tutte (far partire il reasoner per verificare)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid98"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#NewApproach"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#follows"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#mustHaveRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Role"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#hasRole"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#mustRethink",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid101"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid104"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#prerequisitFor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid107"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#produces",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid110"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid114"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#reflects",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid119"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#Idea"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ]
-}, {
-  "@id" : "https://digimof.github.io/keGropius/ontoGropius#simultaneousTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Qua il reasoner ha proposto di aggiungere InverseOf simultaneousTo, l'ho aggiunto perché mi sembra abbia senso (domains e ranges sono incrociati: conceptualization è simultaneousTo visualization e viceversa), inoltre la proprietà è simmetrica quindi ci sta"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid122"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid125"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://digimof.github.io/keGropius/ontoGropius#simultaneousTo"
-  } ]
-} ]
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined",
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://www.w3.org/2002/07/owl",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "https://digimof.github.io/keGropius/ontoGropius"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "mof": "https://digimof.github.io/keGropius/ontoGropius#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "https://digimof.github.io/keGropius/ontoGropius",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri": "https://digimof.github.io/keGropius/ontoGropius"
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.12",
+      "translation": [
+        595.55,
+        359.86
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "0",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "3",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "6",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "10",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "13",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "18",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "25",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "27",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "20",
+      "type": "owl:Class"
+    },
+    {
+      "id": "34",
+      "type": "owl:Class"
+    },
+    {
+      "id": "33",
+      "type": "owl:Class"
+    },
+    {
+      "id": "61",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "15",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "28",
+      "type": "owl:Class"
+    },
+    {
+      "id": "64",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "67",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "68",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "69",
+      "type": "owl:Class"
+    },
+    {
+      "id": "71",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "72",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "73",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "31",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "74",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "75",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "16",
+      "type": "owl:Class"
+    },
+    {
+      "id": "63",
+      "type": "owl:Class"
+    },
+    {
+      "id": "78",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "77",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "81",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "82",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "26",
+      "type": "owl:Class"
+    },
+    {
+      "id": "84",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "11",
+      "type": "owl:Class"
+    },
+    {
+      "id": "89",
+      "type": "owl:Class"
+    },
+    {
+      "id": "19",
+      "type": "owl:Class"
+    },
+    {
+      "id": "66",
+      "type": "owl:Class"
+    },
+    {
+      "id": "22",
+      "type": "owl:Class"
+    },
+    {
+      "id": "24",
+      "type": "owl:Class"
+    },
+    {
+      "id": "106",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "98",
+      "type": "owl:Class"
+    },
+    {
+      "id": "92",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "37",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "76",
+      "type": "owl:Class"
+    },
+    {
+      "id": "124",
+      "type": "owl:Class"
+    },
+    {
+      "id": "60",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "125",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "126",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "65",
+      "type": "owl:Class"
+    },
+    {
+      "id": "23",
+      "type": "owl:Class"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "70",
+      "type": "owl:Class"
+    },
+    {
+      "id": "36",
+      "type": "owl:Class"
+    },
+    {
+      "id": "83",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "62",
+      "type": "owl:Class"
+    },
+    {
+      "id": "88",
+      "type": "owl:Class"
+    },
+    {
+      "id": "21",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "29",
+      "type": "owl:Class"
+    },
+    {
+      "id": "80",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "79",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "87",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "86",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "132",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "85",
+      "type": "owl:Class"
+    },
+    {
+      "id": "35",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "0",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        -258.06,
+        -966.72
+      ]
+    },
+    {
+      "id": "3",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        325.55,
+        1168.59
+      ]
+    },
+    {
+      "id": "6",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1708.51,
+        1276.87
+      ]
+    },
+    {
+      "id": "10",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        -841.62,
+        811.44
+      ]
+    },
+    {
+      "id": "13",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        514.05,
+        -473.95
+      ]
+    },
+    {
+      "id": "18",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        841.64,
+        -59.78
+      ]
+    },
+    {
+      "id": "25",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        689.86,
+        -42.46
+      ]
+    },
+    {
+      "id": "27",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        -493.97,
+        976.79
+      ]
+    },
+    {
+      "id": "20",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Goal",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Goal"
+      },
+      "comment": {
+        "en": "This class identifies aims pursued by specific actors (individuals, institution) with different means"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Experimentation",
+          "labels": {
+            "IRI-based": "Experimentation"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Synthesis",
+          "labels": {
+            "IRI-based": "Synthesis"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Cooperation",
+          "labels": {
+            "IRI-based": "Cooperation"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Coordination",
+          "labels": {
+            "IRI-based": "Coordination"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#CreativePower",
+          "labels": {
+            "IRI-based": "CreativePower"
+          }
+        }
+      ],
+      "pos": [
+        324.44,
+        426.89
+      ]
+    },
+    {
+      "id": "34",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Training",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Training"
+      },
+      "comment": {
+        "en": "This class identifies any form of educational activity"
+      },
+      "pos": [
+        1786.45,
+        230.75
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#MainGoal",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "MainGoal"
+      },
+      "comment": {
+        "en": "This class identifies the principal goal. it allows to create a hierarchy between the aims pursued by an actor"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Union",
+          "labels": {
+            "IRI-based": "Union"
+          }
+        }
+      ],
+      "pos": [
+        -240.09,
+        486.52
+      ]
+    },
+    {
+      "id": "61",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1142.35,
+        619.64
+      ]
+    },
+    {
+      "id": "15",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        -495.15,
+        -436.83
+      ]
+    },
+    {
+      "id": "28",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Institution",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Institution"
+      },
+      "comment": {
+        "en": "This class identifies a peculiar kind of form, coinciding with an organization pursuing a specific aim"
+      },
+      "pos": [
+        -29.1,
+        1025.02
+      ]
+    },
+    {
+      "id": "64",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        212.48,
+        72.8
+      ]
+    },
+    {
+      "id": "67",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        456.09,
+        -151.31
+      ]
+    },
+    {
+      "id": "68",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1184.43,
+        676.67
+      ]
+    },
+    {
+      "id": "69",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Work",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Work"
+      },
+      "comment": {
+        "en": "This class identifies any activity performed with a mental or manual effort. Usually people rely on it for their own survival"
+      },
+      "pos": [
+        1403.99,
+        -713.49
+      ]
+    },
+    {
+      "id": "71",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        390.36,
+        -382.47
+      ]
+    },
+    {
+      "id": "72",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        756.13,
+        631.11
+      ]
+    },
+    {
+      "id": "73",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        541.36,
+        970.25
+      ]
+    },
+    {
+      "id": "31",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        -115.84,
+        -169.93
+      ]
+    },
+    {
+      "id": "74",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        39.73,
+        -1078.73
+      ]
+    },
+    {
+      "id": "75",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1516.92,
+        53.19
+      ]
+    },
+    {
+      "id": "7",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#ComplementaryCourse",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "ComplementaryCourse"
+      },
+      "comment": {
+        "en": "This class identifies additional courses that enhance the preparation of students"
+      },
+      "pos": [
+        1653.19,
+        806.98
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Idea",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Idea"
+      },
+      "comment": {
+        "en": "This class identifies beliefs or opinions concerning a specific field of knowledge. It is usually considered as opposed to form"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Zeitgeist",
+          "labels": {
+            "IRI-based": "Zeitgeist"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Space",
+          "labels": {
+            "IRI-based": "Space"
+          }
+        }
+      ],
+      "pos": [
+        -805.76,
+        27.1
+      ]
+    },
+    {
+      "id": "63",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Person",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Person"
+      },
+      "comment": {
+        "en": "This class identifies generic individuals"
+      },
+      "pos": [
+        649.23,
+        1151.19
+      ]
+    },
+    {
+      "id": "78",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1677.58,
+        -720.01
+      ]
+    },
+    {
+      "id": "77",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1088.27,
+        881.3
+      ]
+    },
+    {
+      "id": "81",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1852.92,
+        -484.38
+      ]
+    },
+    {
+      "id": "82",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        -167.04,
+        327.96
+      ]
+    },
+    {
+      "id": "26",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Quality",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Quality"
+      },
+      "comment": {
+        "en": "This class identifies positive features of individuals, which are useful to pursue goals or accomplish tasks in a specific field"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Originality",
+          "labels": {
+            "IRI-based": "Originality"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Talent",
+          "labels": {
+            "IRI-based": "Talent"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Knowledge",
+          "labels": {
+            "IRI-based": "Knowledge"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Expressivity",
+          "labels": {
+            "IRI-based": "Expressivity"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Creativity",
+          "labels": {
+            "IRI-based": "Creativity"
+          }
+        }
+      ],
+      "pos": [
+        761.31,
+        438.81
+      ]
+    },
+    {
+      "id": "84",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#WorkOfArt",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "WorkOfArt"
+      },
+      "comment": {
+        "en": "This class identifies an object which is the result of an artistic process"
+      },
+      "pos": [
+        -518.83,
+        1836.79
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Form",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Form"
+      },
+      "comment": {
+        "en": "This class identifies the shape or appearance of something"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#PieceOfWork",
+          "labels": {
+            "IRI-based": "PieceOfWork"
+          }
+        }
+      ],
+      "pos": [
+        -622.22,
+        1243.54
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#ConventionalApproach",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "ConventionalApproach"
+      },
+      "comment": {
+        "en": "This class identifies a training method which follows the out-of-date guidelines of fine arts' academies"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Formulae",
+          "labels": {
+            "IRI-based": "Formulae"
+          }
+        }
+      ],
+      "pos": [
+        1781.38,
+        853.6
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#CollaborativeWorkOfArt",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "CollaborativeWorkOfArt"
+      },
+      "comment": {
+        "en": "This class identifies a work of art in which no barriers exist between the structural and the decorative arts"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#BuildingActivity",
+          "labels": {
+            "IRI-based": "BuildingActivity"
+          }
+        }
+      ],
+      "pos": [
+        -607.87,
+        1414.08
+      ]
+    },
+    {
+      "id": "89",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#PersonalExperience",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "PersonalExperience"
+      },
+      "comment": {
+        "en": "This class identifies all the manual activities included in the Bauhaus' educational program aimed at training new students"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#ManualTraining",
+          "labels": {
+            "IRI-based": "ManualTraining"
+          }
+        }
+      ],
+      "pos": [
+        1629.41,
+        385.9
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Course",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Course"
+      },
+      "comment": {
+        "en": "This class identifies a didacitic activity held by a teacher and attended by students"
+      },
+      "pos": [
+        1258.49,
+        97.54
+      ]
+    },
+    {
+      "id": "66",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#NonArtist",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "NonArtist"
+      },
+      "comment": {
+        "en": "This class identifies who is not involved in the Arts from a professional points of view"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#IndustrialDesigner",
+          "labels": {
+            "IRI-based": "IndustrialDesigner"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Sovereign",
+          "labels": {
+            "IRI-based": "Sovereign"
+          }
+        }
+      ],
+      "pos": [
+        250.55,
+        736.85
+      ]
+    },
+    {
+      "id": "22",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Visualization",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Visualization"
+      },
+      "comment": {
+        "en": "This class identifies all the acts of visualizing something (or also someone)"
+      },
+      "pos": [
+        1358.17,
+        -464.48
+      ]
+    },
+    {
+      "id": "24",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Conceptualization",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Conceptualization"
+      },
+      "comment": {
+        "en": "This class identifies the act or process of forming an idea or principle in own's mind"
+      },
+      "pos": [
+        1431.95,
+        -218.62
+      ]
+    },
+    {
+      "id": "106",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Role",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Role"
+      },
+      "comment": {
+        "en": "This class identifies the position or purpose of a thing in a specific context"
+      },
+      "pos": [
+        457.24,
+        -1127.36
+      ]
+    },
+    {
+      "id": "1",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Arts",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Arts"
+      },
+      "comment": {
+        "en": "This class identifies a technique which allows to create a work of art"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#FolkArts",
+          "labels": {
+            "IRI-based": "FolkArts"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign",
+          "labels": {
+            "IRI-based": "ArchitectureDesign"
+          }
+        }
+      ],
+      "pos": [
+        27.14,
+        -620.96
+      ]
+    },
+    {
+      "id": "98",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#IndustrialProduct",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "IndustrialProduct"
+      },
+      "comment": {
+        "en": "This class identifies a dialy-life product which is the result of an industrial process"
+      },
+      "pos": [
+        -314.54,
+        2348.91
+      ]
+    },
+    {
+      "id": "92",
+      "iri": "http://www.w3.org/2001/XMLSchema#int",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "int"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1651.46,
+        8.79
+      ]
+    },
+    {
+      "id": "37",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        -1741.85,
+        798.92
+      ]
+    },
+    {
+      "id": "76",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Vocabulary",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Vocabulary"
+      },
+      "comment": {
+        "en": "This class identifies the elements of form and colors and their structural laws needed to create a specific language of construction"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#KnowledgeOfTheory",
+          "labels": {
+            "IRI-based": "KnowledgeOfTheory"
+          }
+        }
+      ],
+      "pos": [
+        1307.44,
+        617.22
+      ]
+    },
+    {
+      "id": "124",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Outcome",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Outcome"
+      },
+      "comment": {
+        "en": "This class identifies the results of a process"
+      },
+      "pos": [
+        1707.42,
+        331.72
+      ]
+    },
+    {
+      "id": "60",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        -182.25,
+        1047.69
+      ]
+    },
+    {
+      "id": "125",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        555.53,
+        -75.79
+      ]
+    },
+    {
+      "id": "126",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        865.36,
+        -120.46
+      ]
+    },
+    {
+      "id": "65",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Effect",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Effect"
+      },
+      "comment": {
+        "en": "This class identifies the consequences of a pecualiar cause"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Death",
+          "labels": {
+            "IRI-based": "Death"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Promotion",
+          "labels": {
+            "IRI-based": "Promotion"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Isolation",
+          "labels": {
+            "IRI-based": "Isolation"
+          }
+        }
+      ],
+      "pos": [
+        8.07,
+        651.29
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#NewlyFormedInstitution",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "NewlyFormedInstitution"
+      },
+      "comment": {
+        "en": "This class identifies an institution working in the art education fielding which refuses the division between fine arts and crafts"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Kunstgewerbeschule",
+          "labels": {
+            "IRI-based": "Kunstgewerbeschule"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Bauhaus",
+          "labels": {
+            "IRI-based": "Bauhaus"
+          }
+        }
+      ],
+      "pos": [
+        326.47,
+        366.64
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Artist",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Artist"
+      },
+      "comment": {
+        "en": "This class identifies who is directly involved in the Arts from a professional points of view"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#ArtisticDesigner",
+          "labels": {
+            "IRI-based": "ArtisticDesigner"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Instructor",
+          "labels": {
+            "IRI-based": "Instructor"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Journeyman",
+          "labels": {
+            "IRI-based": "Journeyman"
+          }
+        }
+      ],
+      "pos": [
+        433.01,
+        585.45
+      ]
+    },
+    {
+      "id": "70",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#MechanicWork",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "MechanicWork"
+      },
+      "comment": {
+        "en": "This class identifies a work which emphasizes the manual qualities of the worker"
+      },
+      "pos": [
+        1639.07,
+        -1098.73
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#NewApproach",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "NewApproach"
+      },
+      "comment": {
+        "en": "This class identifies new training methods, aimed at improving academic education"
+      },
+      "pos": [
+        1088.75,
+        165.98
+      ]
+    },
+    {
+      "id": "83",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Dualism",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Dualism"
+      },
+      "comment": {
+        "en": "This class identifies believes that things are divided into two often very different or opposing parts"
+      },
+      "pos": [
+        -647.99,
+        284.06
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Error",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Error"
+      },
+      "comment": {
+        "en": "This class identifies different kinds of mistake (in this ontology, mainly at a theoritical level)"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Aestheticism",
+          "labels": {
+            "IRI-based": "Aestheticism"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Dilettantism",
+          "labels": {
+            "IRI-based": "Dilettantism"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#ValueDiscounting",
+          "labels": {
+            "IRI-based": "ValueDiscounting"
+          }
+        }
+      ],
+      "pos": [
+        1171.03,
+        1273.95
+      ]
+    },
+    {
+      "id": "62",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#BauhausCourse",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "BauhausCourse"
+      },
+      "comment": {
+        "en": "This class identifies the courses held at the Bauhaus"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Vorlehre",
+          "labels": {
+            "IRI-based": "Vorlehre"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Werklehre",
+          "labels": {
+            "IRI-based": "Werklehre"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Formlehre",
+          "labels": {
+            "IRI-based": "Formlehre"
+          }
+        }
+      ],
+      "pos": [
+        794.63,
+        237.15
+      ]
+    },
+    {
+      "id": "88",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#DailyLifeProduct",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "DailyLifeProduct"
+      },
+      "comment": {
+        "en": "This class identifies an object produced to answer to daily-life needs"
+      },
+      "pos": [
+        -553.07,
+        1961.92
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#CreativeWork",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "CreativeWork"
+      },
+      "comment": {
+        "en": "This class identifies a work which emphasizes the mental quality of the worker (creativity, culture etc)"
+      },
+      "pos": [
+        653.31,
+        -621.9
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Crafts",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Crafts"
+      },
+      "comment": {
+        "en": "This class identifies a technique which allows to create a work of art"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#ArchitectureDesign",
+          "labels": {
+            "IRI-based": "ArchitectureDesign"
+          }
+        }
+      ],
+      "pos": [
+        -7.42,
+        -573.9
+      ]
+    },
+    {
+      "id": "29",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#ArtisticMovement",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "ArtisticMovement"
+      },
+      "comment": {
+        "en": "This class identifies a group of artist sharing similar ideas concerning the role e and the nature of Art"
+      },
+      "pos": [
+        -125,
+        719.61
+      ]
+    },
+    {
+      "id": "80",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        974.72,
+        1228.31
+      ]
+    },
+    {
+      "id": "79",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1554.41,
+        1282.95
+      ]
+    },
+    {
+      "id": "87",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        1270.63,
+        512.7
+      ]
+    },
+    {
+      "id": "86",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        811.03,
+        716.43
+      ]
+    },
+    {
+      "id": "4",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Academy",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Academy"
+      },
+      "comment": {
+        "en": "This class identifies an institution aimed at the education in the fine arts"
+      },
+      "individuals": [
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForPictorialArt",
+          "labels": {
+            "IRI-based": "GrandDucalSaxonAcademyForPictorialArt"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#GrandDucalSaxonAcademyForArtsAndCrafts",
+          "labels": {
+            "IRI-based": "GrandDucalSaxonAcademyForArtsAndCrafts"
+          }
+        },
+        {
+          "iri": "https://digimof.github.io/keGropius/ontoGropius#Academia",
+          "labels": {
+            "IRI-based": "Academia"
+          }
+        }
+      ],
+      "pos": [
+        708.38,
+        1003.48
+      ]
+    },
+    {
+      "id": "132",
+      "attributes": [
+        "anonymous",
+        "union"
+      ],
+      "pos": [
+        -522.28,
+        -508.25
+      ]
+    },
+    {
+      "id": "85",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Product",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Product"
+      },
+      "comment": {
+        "en": "This class identifies any object that is the result of a specific work"
+      },
+      "pos": [
+        -824.73,
+        1681.53
+      ]
+    },
+    {
+      "id": "35",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#Acitivity",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "Acitivity"
+      },
+      "comment": {
+        "en": "This class identifies any kind of activity performed by an individual"
+      },
+      "pos": [
+        1807.23,
+        -342.28
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "14",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "30",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "17",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "32",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "49",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "56",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "57",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "38",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "52",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "43",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "44",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "45",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "91",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "93",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "94",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "95",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "96",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "50",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "97",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "99",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "100",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "101",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "102",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "103",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "104",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "105",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "107",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "108",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "109",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "110",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "111",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "112",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "113",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "114",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "115",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "116",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "117",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "118",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "119",
+      "type": "rdf:Property"
+    },
+    {
+      "id": "120",
+      "type": "rdf:Property"
+    },
+    {
+      "id": "121",
+      "type": "rdf:Property"
+    },
+    {
+      "id": "122",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "123",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "53",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "59",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "127",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "42",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "128",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "129",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "130",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "131",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "48",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "133",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "134",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "135",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "136",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "137",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "138",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "55",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "139",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "140",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "141",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "142",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "143",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "144",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "145",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "146",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "147",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "148",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "149",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "150",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "151",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "152",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "90",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "153",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "47",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "154",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "155",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "156",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "157",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "158",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "159",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "160",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "51",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "161",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "162",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "163",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "164",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "165",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "166",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "167",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "168",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "169",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "170",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "171",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "172",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "173",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "174",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "41",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "175",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "176",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "177",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "178",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "179",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "180",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "181",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "182",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "183",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "184",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "185",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "186",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "187",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "188",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "189",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "190",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "191",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "58",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "192",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "193",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "39",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "40",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "194",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "195",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "196",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "197",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "198",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "199",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "200",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "201",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "202",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "203",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "46",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "204",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "205",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "206",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "207",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "208",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "209",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "210",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "211",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "212",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "213",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "214",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "215",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "54",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "216",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "217",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "218",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "219",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "220",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "GENERATED-UNION-0-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-0-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-3-4-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-3-5-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-6-7-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-6-8-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-6-9-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-10-11-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-10-12-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-13-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-13-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-18-19-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-18-20-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-18-21-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-18-22-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-18-23-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-18-24-5",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-18-5-6",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-25-26-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-25-19-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-25-20-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-25-21-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-25-23-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-27-28-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-27-29-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-61-62-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-61-63-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-15-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-15-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-64-65-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-64-62-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-64-66-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-64-1-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-64-36-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-64-2-5",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-64-5-6",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-67-62-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-67-1-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-67-2-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-68-8-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-68-9-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-71-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-71-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-72-4-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-72-20-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-72-36-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-73-65-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-73-26-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-73-8-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-73-20-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-31-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-31-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-74-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-74-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-75-69-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-75-76-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-78-22-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-78-24-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-77-4-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-77-62-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-81-22-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-81-24-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-82-65-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-82-20-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-82-23-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-82-5-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-82-83-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-60-20-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-60-11-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-125-26-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-125-19-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-125-20-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-125-21-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-125-23-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-126-19-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-126-20-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-126-21-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-126-22-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-126-23-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-126-24-5",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-126-5-6",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-80-4-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-80-5-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-79-7-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-79-8-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-79-9-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-87-26-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-87-4-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-87-89-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-87-124-3",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-87-24-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-86-62-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-86-63-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-86-23-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-132-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-132-2-1",
+      "type": "setOperatorProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "14",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#formalizes",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "formalizes"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "15",
+      "range": "16",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        -646.62,
+        -210.59
+      ]
+    },
+    {
+      "id": "30",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#emphasizedBy",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "emphasizedBy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "31",
+      "range": "23",
+      "superproperty": [
+        "17"
+      ],
+      "inverse": "32",
+      "pos": [
+        100.93,
+        93.03
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "baseIri": "http://www.w3.org/2002/07/owl",
+      "label": {
+        "IRI-based": "topObjectProperty"
+      },
+      "attributes": [
+        "object",
+        "external"
+      ],
+      "domain": "37",
+      "range": "37",
+      "subproperty": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "14",
+        "43",
+        "44",
+        "30",
+        "45",
+        "46",
+        "32",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59"
+      ],
+      "pos": [
+        -1700.53,
+        947.44
+      ]
+    },
+    {
+      "id": "32",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#emphasizes",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "emphasizes"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "23",
+      "range": "31",
+      "superproperty": [
+        "17"
+      ],
+      "inverse": "30"
+    },
+    {
+      "id": "49",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#aimsAt",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "aimsAt"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "27",
+      "range": "60",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        -338.11,
+        1012.24
+      ]
+    },
+    {
+      "id": "56",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#against",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "against"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "77",
+      "range": "8",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        1127.99,
+        1069.75
+      ]
+    },
+    {
+      "id": "57",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#followedBy",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "followedBy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "79",
+      "range": "80",
+      "superproperty": [
+        "17"
+      ],
+      "inverse": "45",
+      "pos": [
+        1264.57,
+        1255.63
+      ]
+    },
+    {
+      "id": "38",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#simultaneousTo",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "simultaneousTo"
+      },
+      "attributes": [
+        "object",
+        "symmetric"
+      ],
+      "comment": {
+        "undefined": "Qua il reasoner ha proposto di aggiungere InverseOf simultaneousTo, l'ho aggiunto perché mi sembra abbia senso (domains e ranges sono incrociati: conceptualization è simultaneousTo visualization e viceversa), inoltre la proprietà è simmetrica quindi ci sta"
+      },
+      "domain": "78",
+      "range": "81",
+      "superproperty": [
+        "17"
+      ],
+      "inverse": "38",
+      "pos": [
+        1765.25,
+        -602.2
+      ]
+    },
+    {
+      "id": "52",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#improves",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "improves"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "86",
+      "range": "87",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        1040.83,
+        614.56
+      ]
+    },
+    {
+      "id": "43",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#changedInto",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "changedInto"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "4",
+      "range": "23",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        516.83,
+        684.08
+      ]
+    },
+    {
+      "id": "44",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#prerequisitFor",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "prerequisitFor"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "62",
+      "range": "71",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        588.1,
+        -79.4
+      ]
+    },
+    {
+      "id": "45",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#follows",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "follows"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "80",
+      "range": "79",
+      "subproperty": [
+        "90"
+      ],
+      "superproperty": [
+        "17"
+      ],
+      "inverse": "57"
+    },
+    {
+      "id": "91",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#hasDuration",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "hasDuration"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "19",
+      "range": "92",
+      "pos": [
+        1471.11,
+        49.52
+      ]
+    },
+    {
+      "id": "93",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "69",
+      "range": "35",
+      "pos": [
+        1605.61,
+        -527.89
+      ]
+    },
+    {
+      "id": "94",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "34",
+      "range": "35",
+      "pos": [
+        1796.84,
+        -55.76
+      ]
+    },
+    {
+      "id": "95",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "22",
+      "range": "35",
+      "pos": [
+        1582.7,
+        -403.38
+      ]
+    },
+    {
+      "id": "96",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "24",
+      "range": "35",
+      "pos": [
+        1619.59,
+        -280.45
+      ]
+    },
+    {
+      "id": "50",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#embodiedIn",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "embodiedIn"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "16",
+      "range": "10",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        -824,
+        426.16
+      ]
+    },
+    {
+      "id": "97",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "98",
+      "range": "88",
+      "pos": [
+        -433.81,
+        2155.42
+      ]
+    },
+    {
+      "id": "99",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "1",
+      "range": "21",
+      "pos": [
+        347.12,
+        -621.44
+      ]
+    },
+    {
+      "id": "100",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "2",
+      "range": "21",
+      "pos": [
+        328.2,
+        -598.28
+      ]
+    },
+    {
+      "id": "101",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "84",
+      "range": "85",
+      "pos": [
+        -671.78,
+        1759.16
+      ]
+    },
+    {
+      "id": "102",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "88",
+      "range": "85",
+      "pos": [
+        -688.9,
+        1821.73
+      ]
+    },
+    {
+      "id": "103",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "7",
+      "range": "19",
+      "pos": [
+        1455.84,
+        452.26
+      ]
+    },
+    {
+      "id": "104",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "62",
+      "range": "19",
+      "pos": [
+        1034.26,
+        165.03
+      ]
+    },
+    {
+      "id": "105",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "89",
+      "range": "36",
+      "pos": [
+        1354.2,
+        273.96
+      ]
+    },
+    {
+      "id": "107",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "76",
+      "range": "36",
+      "pos": [
+        1195.8,
+        386.85
+      ]
+    },
+    {
+      "id": "108",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "88",
+      "pos": [
+        -579.95,
+        1693.25
+      ]
+    },
+    {
+      "id": "109",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "70",
+      "range": "69",
+      "pos": [
+        1521.53,
+        -906.11
+      ]
+    },
+    {
+      "id": "110",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "66",
+      "range": "63",
+      "pos": [
+        454.67,
+        948.99
+      ]
+    },
+    {
+      "id": "111",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "5",
+      "range": "63",
+      "pos": [
+        544,
+        875.84
+      ]
+    },
+    {
+      "id": "112",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "84",
+      "pos": [
+        -562.27,
+        1630.6
+      ]
+    },
+    {
+      "id": "113",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "28",
+      "range": "12",
+      "pos": [
+        -320.72,
+        1132.46
+      ]
+    },
+    {
+      "id": "114",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "85",
+      "range": "12",
+      "pos": [
+        -725.69,
+        1467.32
+      ]
+    },
+    {
+      "id": "115",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "36",
+      "range": "34",
+      "pos": [
+        1437.6,
+        198.37
+      ]
+    },
+    {
+      "id": "116",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "4",
+      "range": "28",
+      "pos": [
+        331.59,
+        1014.48
+      ]
+    },
+    {
+      "id": "117",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "23",
+      "range": "28",
+      "pos": [
+        145.41,
+        701.9
+      ]
+    },
+    {
+      "id": "118",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "21",
+      "range": "69",
+      "pos": [
+        1028.65,
+        -667.69
+      ]
+    },
+    {
+      "id": "119",
+      "label": {
+        "IRI-based": "124",
+        "undefined": "is a"
+      },
+      "attributes": [
+        "rdf"
+      ],
+      "domain": "63",
+      "range": "63",
+      "pos": [
+        635.19,
+        1349.05
+      ]
+    },
+    {
+      "id": "120",
+      "label": {
+        "IRI-based": "125",
+        "undefined": "is a"
+      },
+      "attributes": [
+        "rdf"
+      ],
+      "domain": "69",
+      "range": "69",
+      "pos": [
+        1438.58,
+        -893.39
+      ]
+    },
+    {
+      "id": "121",
+      "label": {
+        "IRI-based": "126",
+        "undefined": "is a"
+      },
+      "attributes": [
+        "rdf"
+      ],
+      "domain": "98",
+      "range": "98",
+      "pos": [
+        -211.92,
+        2477.06
+      ]
+    },
+    {
+      "id": "122",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "33",
+      "range": "20",
+      "pos": [
+        37.8,
+        457.16
+      ]
+    },
+    {
+      "id": "123",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "34",
+      "pos": [
+        1783.96,
+        536.91
+      ]
+    },
+    {
+      "id": "53",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#joins",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "joins"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "5",
+      "range": "29",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        146.19,
+        654.41
+      ]
+    },
+    {
+      "id": "59",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#freeFrom",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "freeFrom"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "67",
+      "range": "68",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        820.26,
+        262.68
+      ]
+    },
+    {
+      "id": "127",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "63"
+    },
+    {
+      "id": "42",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#hasOutcome",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "hasOutcome"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "19",
+      "range": "124",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        1482.95,
+        214.63
+      ]
+    },
+    {
+      "id": "128",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "124"
+    },
+    {
+      "id": "129",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "19"
+    },
+    {
+      "id": "130",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "8"
+    },
+    {
+      "id": "131",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "65"
+    },
+    {
+      "id": "48",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#reflects",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "reflects"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "132",
+      "range": "16",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        -660.79,
+        -246.67
+      ]
+    },
+    {
+      "id": "133",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "20"
+    },
+    {
+      "id": "134",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "12"
+    },
+    {
+      "id": "135",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "29"
+    },
+    {
+      "id": "136",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "63"
+    },
+    {
+      "id": "137",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "83"
+    },
+    {
+      "id": "138",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "106"
+    },
+    {
+      "id": "55",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#mustRethink",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "mustRethink"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "61",
+      "range": "75",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        1329.63,
+        336.41
+      ]
+    },
+    {
+      "id": "139",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "29"
+    },
+    {
+      "id": "140",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "20",
+      "range": "29"
+    },
+    {
+      "id": "141",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "124",
+      "range": "29"
+    },
+    {
+      "id": "142",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "29",
+      "range": "65"
+    },
+    {
+      "id": "143",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "83",
+      "range": "29"
+    },
+    {
+      "id": "144",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "29"
+    },
+    {
+      "id": "145",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "29"
+    },
+    {
+      "id": "146",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "35"
+    },
+    {
+      "id": "147",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "29"
+    },
+    {
+      "id": "148",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "35",
+      "range": "106"
+    },
+    {
+      "id": "149",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "12"
+    },
+    {
+      "id": "150",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "8"
+    },
+    {
+      "id": "151",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "20"
+    },
+    {
+      "id": "152",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#mustHaveRole",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "mustHaveRole"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "21",
+      "range": "106",
+      "superproperty": [
+        "41"
+      ],
+      "pos": [
+        555.27,
+        -874.63
+      ]
+    },
+    {
+      "id": "90",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#mustFollow",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "mustFollow"
+      },
+      "attributes": [
+        "object"
+      ],
+      "comment": {
+        "undefined": "Qua le proposte del reasoner le ignorerei tutte (far partire il reasoner per verificare)"
+      },
+      "domain": "13",
+      "range": "36",
+      "superproperty": [
+        "45"
+      ],
+      "pos": [
+        801.4,
+        -153.98
+      ]
+    },
+    {
+      "id": "153",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "65",
+      "range": "63"
+    },
+    {
+      "id": "47",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#influencedBy",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "influencedBy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "62",
+      "range": "5",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        613.82,
+        411.3
+      ]
+    },
+    {
+      "id": "154",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "124",
+      "range": "65"
+    },
+    {
+      "id": "155",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "65",
+      "range": "106"
+    },
+    {
+      "id": "156",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "65"
+    },
+    {
+      "id": "157",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "65"
+    },
+    {
+      "id": "158",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "65"
+    },
+    {
+      "id": "159",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "65"
+    },
+    {
+      "id": "160",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "20",
+      "range": "65"
+    },
+    {
+      "id": "51",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#basisOf",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "basisOf"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "126",
+      "range": "125",
+      "superproperty": [
+        "17"
+      ],
+      "inverse": "39",
+      "pos": [
+        710.44,
+        -98.13
+      ]
+    },
+    {
+      "id": "161",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "83",
+      "range": "106"
+    },
+    {
+      "id": "162",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "83"
+    },
+    {
+      "id": "163",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "83",
+      "range": "63"
+    },
+    {
+      "id": "164",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "20",
+      "range": "83"
+    },
+    {
+      "id": "165",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "83"
+    },
+    {
+      "id": "166",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "124",
+      "range": "83"
+    },
+    {
+      "id": "167",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "83"
+    },
+    {
+      "id": "168",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "106"
+    },
+    {
+      "id": "169",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "26"
+    },
+    {
+      "id": "170",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "83"
+    },
+    {
+      "id": "171",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "83",
+      "range": "65"
+    },
+    {
+      "id": "172",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "124",
+      "range": "63"
+    },
+    {
+      "id": "173",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "106"
+    },
+    {
+      "id": "174",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "124",
+      "range": "106"
+    },
+    {
+      "id": "41",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#hasRole",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "hasRole"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "74",
+      "range": "106",
+      "subproperty": [
+        "152"
+      ],
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        248.49,
+        -1103.05
+      ]
+    },
+    {
+      "id": "175",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "124"
+    },
+    {
+      "id": "176",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "26"
+    },
+    {
+      "id": "177",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "63"
+    },
+    {
+      "id": "178",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "124"
+    },
+    {
+      "id": "179",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "20",
+      "range": "63"
+    },
+    {
+      "id": "180",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "20",
+      "range": "124"
+    },
+    {
+      "id": "181",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "20",
+      "range": "106"
+    },
+    {
+      "id": "182",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "20"
+    },
+    {
+      "id": "183",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "12"
+    },
+    {
+      "id": "184",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "63"
+    },
+    {
+      "id": "185",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "20"
+    },
+    {
+      "id": "186",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "106"
+    },
+    {
+      "id": "187",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "12"
+    },
+    {
+      "id": "188",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "20"
+    },
+    {
+      "id": "189",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "124"
+    },
+    {
+      "id": "190",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "63"
+    },
+    {
+      "id": "191",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "124"
+    },
+    {
+      "id": "58",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#produces",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "produces"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "72",
+      "range": "73",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        648.75,
+        800.68
+      ]
+    },
+    {
+      "id": "192",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "106"
+    },
+    {
+      "id": "193",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "26"
+    },
+    {
+      "id": "39",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#dependsOn",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "dependsOn"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "125",
+      "range": "126",
+      "superproperty": [
+        "17"
+      ],
+      "inverse": "51"
+    },
+    {
+      "id": "40",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#involves",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "involves"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "82",
+      "range": "64",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        22.72,
+        200.38
+      ]
+    },
+    {
+      "id": "194",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "89",
+      "range": "76"
+    },
+    {
+      "id": "195",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "36"
+    },
+    {
+      "id": "196",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "35",
+      "range": "83"
+    },
+    {
+      "id": "197",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "35",
+      "range": "65"
+    },
+    {
+      "id": "198",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "35"
+    },
+    {
+      "id": "199",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "35",
+      "range": "12"
+    },
+    {
+      "id": "200",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "35",
+      "range": "20"
+    },
+    {
+      "id": "201",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "16",
+      "range": "35"
+    },
+    {
+      "id": "202",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "35",
+      "range": "124"
+    },
+    {
+      "id": "203",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "35",
+      "range": "63"
+    },
+    {
+      "id": "46",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#founded",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "founded"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "23",
+      "range": "29",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        95.31,
+        547.37
+      ]
+    },
+    {
+      "id": "204",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "35",
+      "range": "29"
+    },
+    {
+      "id": "205",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "35"
+    },
+    {
+      "id": "206",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "34",
+      "range": "69"
+    },
+    {
+      "id": "207",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "34",
+      "range": "22"
+    },
+    {
+      "id": "208",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "11",
+      "range": "98"
+    },
+    {
+      "id": "209",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "22",
+      "range": "69"
+    },
+    {
+      "id": "210",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "34",
+      "range": "24"
+    },
+    {
+      "id": "211",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "66",
+      "range": "5"
+    },
+    {
+      "id": "212",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "24",
+      "range": "69"
+    },
+    {
+      "id": "213",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "22",
+      "range": "24"
+    },
+    {
+      "id": "214",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "4",
+      "range": "23"
+    },
+    {
+      "id": "215",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "28",
+      "range": "85"
+    },
+    {
+      "id": "54",
+      "iri": "https://digimof.github.io/keGropius/ontoGropius#failedAt",
+      "baseIri": "https://digimof.github.io/keGropius/ontoGropius",
+      "label": {
+        "IRI-based": "failedAt"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "4",
+      "range": "76",
+      "superproperty": [
+        "17"
+      ],
+      "pos": [
+        1010.24,
+        808.85
+      ]
+    },
+    {
+      "id": "216",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "62",
+      "range": "7"
+    },
+    {
+      "id": "217",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "63",
+      "range": "106"
+    },
+    {
+      "id": "218",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "63"
+    },
+    {
+      "id": "219",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "21",
+      "range": "70"
+    },
+    {
+      "id": "220",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "106"
+    },
+    {
+      "id": "GENERATED-UNION-0-1-0",
+      "domain": "0",
+      "range": "1",
+      "pos": [
+        -119.84,
+        -799.16
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-0-2-1",
+      "domain": "0",
+      "range": "2",
+      "pos": [
+        -135.57,
+        -774.76
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-3-4-0",
+      "domain": "3",
+      "range": "4",
+      "pos": [
+        509.58,
+        1089.22
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-3-5-1",
+      "domain": "3",
+      "range": "5",
+      "pos": [
+        377.83,
+        884.93
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-6-7-0",
+      "domain": "6",
+      "range": "7",
+      "pos": [
+        1680.85,
+        1041.92
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-6-8-1",
+      "domain": "6",
+      "range": "8",
+      "pos": [
+        1447.81,
+        1275.45
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-6-9-2",
+      "domain": "6",
+      "range": "9",
+      "pos": [
+        1744.05,
+        1070.43
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-10-11-0",
+      "domain": "10",
+      "range": "11",
+      "pos": [
+        -726.65,
+        1107.84
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-10-12-1",
+      "domain": "10",
+      "range": "12",
+      "pos": [
+        -734.31,
+        1022.79
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-13-1-0",
+      "domain": "13",
+      "range": "1",
+      "pos": [
+        277.2,
+        -545.46
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-13-2-1",
+      "domain": "13",
+      "range": "2",
+      "pos": [
+        258.5,
+        -522.93
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-18-19-0",
+      "domain": "18",
+      "range": "19",
+      "pos": [
+        1050.07,
+        18.88
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-18-20-1",
+      "domain": "18",
+      "range": "20",
+      "pos": [
+        590.08,
+        176.93
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-18-21-2",
+      "domain": "18",
+      "range": "21",
+      "pos": [
+        747.47,
+        -340.84
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-18-22-3",
+      "domain": "18",
+      "range": "22",
+      "pos": [
+        1099.91,
+        -262.13
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-18-23-4",
+      "domain": "18",
+      "range": "23",
+      "pos": [
+        589.37,
+        149.04
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-18-24-5",
+      "domain": "18",
+      "range": "24",
+      "pos": [
+        1136.8,
+        -139.2
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-18-5-6",
+      "domain": "18",
+      "range": "5",
+      "pos": [
+        641.63,
+        256.04
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-25-26-0",
+      "domain": "25",
+      "range": "26",
+      "pos": [
+        724.16,
+        188.62
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-25-19-1",
+      "domain": "25",
+      "range": "19",
+      "pos": [
+        974.17,
+        27.54
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-25-20-2",
+      "domain": "25",
+      "range": "20",
+      "pos": [
+        513.09,
+        184.59
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-25-21-3",
+      "domain": "25",
+      "range": "21",
+      "pos": [
+        671.58,
+        -332.18
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-25-23-4",
+      "domain": "25",
+      "range": "23",
+      "pos": [
+        512.74,
+        156.94
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-27-28-0",
+      "domain": "27",
+      "range": "28",
+      "pos": [
+        -261.54,
+        1000.9
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-27-29-1",
+      "domain": "27",
+      "range": "29",
+      "pos": [
+        -309.48,
+        848.2
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-61-62-0",
+      "domain": "61",
+      "range": "62",
+      "pos": [
+        973.9,
+        434.35
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-61-63-1",
+      "domain": "61",
+      "range": "63",
+      "pos": [
+        895.79,
+        885.42
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-15-1-0",
+      "domain": "15",
+      "range": "1",
+      "pos": [
+        -240.5,
+        -526.6
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-15-2-1",
+      "domain": "15",
+      "range": "2",
+      "pos": [
+        -256.36,
+        -503.94
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-64-65-0",
+      "domain": "64",
+      "range": "65",
+      "pos": [
+        112.95,
+        354.46
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-64-62-1",
+      "domain": "64",
+      "range": "62",
+      "pos": [
+        495.81,
+        152.79
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-64-66-2",
+      "domain": "64",
+      "range": "66",
+      "pos": [
+        231.12,
+        397.94
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-64-1-3",
+      "domain": "64",
+      "range": "1",
+      "pos": [
+        121.59,
+        -267.42
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-64-36-4",
+      "domain": "64",
+      "range": "36",
+      "pos": [
+        650.62,
+        119.39
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-64-2-5",
+      "domain": "64",
+      "range": "2",
+      "pos": [
+        104.23,
+        -245.56
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-64-5-6",
+      "domain": "64",
+      "range": "5",
+      "pos": [
+        319.57,
+        321.74
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-67-62-0",
+      "domain": "67",
+      "range": "62",
+      "pos": [
+        620.07,
+        36.85
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-67-1-1",
+      "domain": "67",
+      "range": "1",
+      "pos": [
+        246.27,
+        -381.05
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-67-2-2",
+      "domain": "67",
+      "range": "2",
+      "pos": [
+        228.23,
+        -359.06
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-68-8-0",
+      "domain": "68",
+      "range": "8",
+      "pos": [
+        1177.91,
+        967.27
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-68-9-1",
+      "domain": "68",
+      "range": "9",
+      "pos": [
+        1477.85,
+        763.64
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-71-1-0",
+      "domain": "71",
+      "range": "1",
+      "pos": [
+        214.52,
+        -497.93
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-71-2-1",
+      "domain": "71",
+      "range": "2",
+      "pos": [
+        196.22,
+        -475.9
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-72-4-0",
+      "domain": "72",
+      "range": "4",
+      "pos": [
+        733.28,
+        809.31
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-72-20-1",
+      "domain": "72",
+      "range": "20",
+      "pos": [
+        549.03,
+        533.13
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-72-36-2",
+      "domain": "72",
+      "range": "36",
+      "pos": [
+        922.44,
+        398.54
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-73-65-0",
+      "domain": "73",
+      "range": "65",
+      "pos": [
+        281.62,
+        814.9
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-73-26-1",
+      "domain": "73",
+      "range": "26",
+      "pos": [
+        647.64,
+        713.46
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-73-8-2",
+      "domain": "73",
+      "range": "8",
+      "pos": [
+        848.95,
+        1118.6
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-73-20-3",
+      "domain": "73",
+      "range": "20",
+      "pos": [
+        436.49,
+        707.54
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-31-1-0",
+      "domain": "31",
+      "range": "1",
+      "pos": [
+        -46.43,
+        -388.88
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-31-2-1",
+      "domain": "31",
+      "range": "2",
+      "pos": [
+        -63,
+        -366.83
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-74-1-0",
+      "domain": "74",
+      "range": "1",
+      "pos": [
+        33.63,
+        -856.74
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-74-2-1",
+      "domain": "74",
+      "range": "2",
+      "pos": [
+        16.65,
+        -831.57
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-75-69-0",
+      "domain": "75",
+      "range": "69",
+      "pos": [
+        1460.45,
+        -330.15
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-75-76-1",
+      "domain": "75",
+      "range": "76",
+      "pos": [
+        1414.01,
+        330.26
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-78-22-0",
+      "domain": "78",
+      "range": "22",
+      "pos": [
+        1517.87,
+        -592.24
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-78-24-1",
+      "domain": "78",
+      "range": "24",
+      "pos": [
+        1554.76,
+        -469.32
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-77-4-0",
+      "domain": "77",
+      "range": "4",
+      "pos": [
+        905.98,
+        939.93
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-77-62-1",
+      "domain": "77",
+      "range": "62",
+      "pos": [
+        944.79,
+        566.55
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-81-22-0",
+      "domain": "81",
+      "range": "22",
+      "pos": [
+        1605.54,
+        -474.43
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-81-24-1",
+      "domain": "81",
+      "range": "24",
+      "pos": [
+        1642.43,
+        -351.5
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-82-65-0",
+      "domain": "82",
+      "range": "65",
+      "pos": [
+        -83.32,
+        482.55
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-82-20-1",
+      "domain": "82",
+      "range": "20",
+      "pos": [
+        69.22,
+        375.51
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-82-23-2",
+      "domain": "82",
+      "range": "23",
+      "pos": [
+        72.84,
+        346.76
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-82-5-3",
+      "domain": "82",
+      "range": "5",
+      "pos": [
+        125.59,
+        453.53
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-82-83-4",
+      "domain": "82",
+      "range": "83",
+      "pos": [
+        -407.52,
+        306.01
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-60-20-0",
+      "domain": "60",
+      "range": "20",
+      "pos": [
+        64.98,
+        744.77
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-60-11-1",
+      "domain": "60",
+      "range": "11",
+      "pos": [
+        -391.06,
+        1227.44
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-125-26-0",
+      "domain": "125",
+      "range": "26",
+      "pos": [
+        654.83,
+        172.53
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-125-19-1",
+      "domain": "125",
+      "range": "19",
+      "pos": [
+        907.01,
+        10.88
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-125-20-2",
+      "domain": "125",
+      "range": "20",
+      "pos": [
+        444.02,
+        166.76
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-125-21-3",
+      "domain": "125",
+      "range": "21",
+      "pos": [
+        604.42,
+        -348.84
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-125-23-4",
+      "domain": "125",
+      "range": "23",
+      "pos": [
+        444.17,
+        139.3
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-126-19-0",
+      "domain": "126",
+      "range": "19",
+      "pos": [
+        1061.92,
+        -11.46
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-126-20-1",
+      "domain": "126",
+      "range": "20",
+      "pos": [
+        601.69,
+        146.34
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-126-21-2",
+      "domain": "126",
+      "range": "21",
+      "pos": [
+        759.33,
+        -371.18
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-126-22-3",
+      "domain": "126",
+      "range": "22",
+      "pos": [
+        1111.76,
+        -292.47
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-126-23-4",
+      "domain": "126",
+      "range": "23",
+      "pos": [
+        601.03,
+        118.47
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-126-24-5",
+      "domain": "126",
+      "range": "24",
+      "pos": [
+        1148.66,
+        -169.54
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-126-5-6",
+      "domain": "126",
+      "range": "5",
+      "pos": [
+        653.39,
+        225.63
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-80-4-0",
+      "domain": "80",
+      "range": "4",
+      "pos": [
+        847.7,
+        1121.08
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-80-5-1",
+      "domain": "80",
+      "range": "5",
+      "pos": [
+        709.05,
+        913.03
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-79-7-0",
+      "domain": "79",
+      "range": "7",
+      "pos": [
+        1603.8,
+        1044.97
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-79-8-1",
+      "domain": "79",
+      "range": "8",
+      "pos": [
+        1370.76,
+        1278.64
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-79-9-2",
+      "domain": "79",
+      "range": "9",
+      "pos": [
+        1665.43,
+        1072.94
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-87-26-0",
+      "domain": "87",
+      "range": "26",
+      "pos": [
+        1025.54,
+        477.15
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-87-4-1",
+      "domain": "87",
+      "range": "4",
+      "pos": [
+        995.56,
+        752.8
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-87-89-2",
+      "domain": "87",
+      "range": "89",
+      "pos": [
+        1445.05,
+        451.06
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-87-124-3",
+      "domain": "87",
+      "range": "124",
+      "pos": [
+        1489.02,
+        422.21
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-87-24-4",
+      "domain": "87",
+      "range": "24",
+      "pos": [
+        1351.29,
+        147.04
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-86-62-0",
+      "domain": "86",
+      "range": "62",
+      "pos": [
+        803.1,
+        484.83
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-86-63-1",
+      "domain": "86",
+      "range": "63",
+      "pos": [
+        730.13,
+        933.81
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-86-23-2",
+      "domain": "86",
+      "range": "23",
+      "pos": [
+        574.34,
+        545.57
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-132-1-0",
+      "domain": "132",
+      "range": "1",
+      "pos": [
+        -254.32,
+        -563.22
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-132-2-1",
+      "domain": "132",
+      "range": "2",
+      "pos": [
+        -270.08,
+        -540.41
+      ]
+    }
+  ]
+}
